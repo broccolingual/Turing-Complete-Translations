@@ -1,12 +1,12 @@
 === levels/nand_gate ===
 
-$17420270098223 In this level the challenge is to figure out how the NAND component works. Be [color=#dd6576]sure[/color] to figure it out before you complete this level, or you will get stuck next level!
-$11034378482152 Correct! You have unlocked the NAND gate. With this component you can build everything else in your computer!
-$18270083417453 Check
-$19208664264770 [b]Instruction[/b]\nClick any of the gray buttons in the last row of the table.
-$17923274216766 We have decided you are probably not a plant.
-$14777350869870 We are very impressed with how well you completed the last test!
-$17994568832660 [b]Instruction[/b]\nThe NAND component in the middle changes the flow of the circuit.\nUse the bar on the left to experiment with the inputs, see how they affect the output and fill in the last row of the table.
+$17420270098223 Dans ce niveau, le but sera de comprendre comment fonctionne une porte NAND. Soyez [color=#dd6576]sur[/color] de savoir comment elle fonctionne avant de compléter le niveau, sinon vous pourriez être bloqué dans le prochain!
+$11034378482152 Correct! Vous avez débloqué la porte NAND. Avec ce composant vous pourrez construire tout le reste de votre ordinateur!
+$18270083417453 Vérifier
+$19208664264770 [b]Consigne[/b]\nClique sur un des bouttons de la dernière ligne du tableau.
+$17923274216766 Nous en avons conclus que vous n'êtes probablement pas une plante.
+$14777350869870 Nous sommes impressionnés par votre capacité à avoir résolu le dernier test!
+$17994568832660 [b]Consigne[/b]\nLa porte NAND au milieu change le comportement du circuit.\nUtilisez la barre sur votre gauche pour experimenter l'effet qu'ont les entrées sur les sorties et complétez le tableau en conséquence.
 
 
 === levels/xnor ===
