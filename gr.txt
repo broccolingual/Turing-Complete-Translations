@@ -1,12 +1,12 @@
 === levels/nand_gate ===
 
-$17420270098223 In this level the challenge is to figure out how the NAND component works. Be [color=#dd6576]sure[/color] to figure it out before you complete this level, or you will get stuck next level!
-$11034378482152 Correct! You have unlocked the NAND gate. With this component you can build everything else in your computer!
-$18270083417453 Check
-$19208664264770 [b]Instruction[/b]\nClick any of the gray buttons in the last row of the table.
-$17923274216766 We have decided you are probably not a plant.
-$14777350869870 We are very impressed with how well you completed the last test!
-$17994568832660 [b]Instruction[/b]\nThe NAND component in the middle changes the flow of the circuit.\nUse the bar on the left to experiment with the inputs, see how they affect the output and fill in the last row of thea table.
+$17420270098223 Σε αυτό το επίπεδο η πρόκληση είναι να καταλάβετε πώς λειτουργεί το εξάρτημα NAND. Να είστε [color=#dd6576]σίγουροι[/color] ότι το καταλάβετε πριν ολοκληρώσετε αυτό το επίπεδο, αλλιώς θα κολλήσετε στο επόμενο επίπεδο!
+$11034378482152 Σωστά! Ξεκλειδώσατε την πύλη NAND. Με αυτό το εξάρτημα μπορείτε να κατασκευάσετε οτιδήποτε άλλο στον υπολογιστή σας!
+$18270083417453 Έλεγχος
+$19208664264770 [b]Οδηγίες[/b]\nΚάντε κλικ σε οποιοδήποτε από τα γκρίζα κουμπιά στην τελευταία σειρά του πίνακα.
+$17923274216766 Αποφασίσαμε ότι μάλλον δεν είστε φυτό.
+$14777350869870 Είμαστε πολύ εντυπωσιασμένοι με το πόσο καλά ολοκληρώσατε το τελευταίο τεστ!
+$17994568832660 [b]Οδηγία[/b]\nΤο εξάρτημα NAND στη μέση αλλάζει τη ροή του κυκλώματος.\nΧρησιμοποιήστε τη γραμμή στα αριστερά για να πειραματιστείτε με τις εισόδους, να δείτε πώς επηρεάζουν την έξοδο και να συμπληρώσετε την τελευταία γραμμή του πίνακα.
 
 
 === levels/xnor ===
