@@ -527,15 +527,15 @@ $16301538038805 Bit 2
 === levels/first_level ===
 
 $12508086025944
-We are testing you.
+Nous allons vous tester.
 
-The rules are simple, build a functional computer or you will be eaten. Good luck.
-$16321577947087 Congratulations, you have been abducted!
+Les règles sont simples, construisez un ordinateur fonctionnel ou vous allez être manger. Bonne chance !
+$16321577947087 Félicitation, vous vous êtes fait enlever!
 $19257730429557
-A signal flows from the "IN" component to the "OUT" component.
-In the upper left corner under "input" there is a green icon, 
-click on it to turn the "IN" component off. 
-$17675121574388 Notice that the OUT component is turned off.\nThis is because the signal stopped flowing from the IN component.
+Un signal se déplace toujours de composants "IN" vers des composants "OUT".
+Dans le coin en haut à gauche en dessous de "IN" vous trouverez une icône verte, 
+cliquez dessus pour changer son état.
+$17675121574388 Le composant OUT s'est maintenant éteint, car aucun signal ne viens de l'entrée.\n
 
 
 === levels/binary_programming ===
