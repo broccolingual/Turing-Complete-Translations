@@ -1,12 +1,9 @@
-=== levels/nand_gate ===
+=== levels/Spacial Invasion ===
 
-$17420270098223 Σε αυτό το επίπεδο η πρόκληση είναι να καταλάβετε πώς λειτουργεί το εξάρτημα NAND. Να είστε [color=#dd6576]σίγουροι[/color] ότι το καταλάβετε πριν ολοκληρώσετε αυτό το επίπεδο, αλλιώς θα κολλήσετε στο επόμενο επίπεδο!
-$11034378482152 Σωστά! Ξεκλειδώσατε την πύλη NAND. Με αυτό το εξάρτημα μπορείτε να κατασκευάσετε οτιδήποτε άλλο στον υπολογιστή σας!
-$18270083417453 Έλεγχος
-$19208664264770 [b]Οδηγίες[/b]\nΚάντε κλικ σε οποιοδήποτε από τα γκρίζα κουμπιά στην τελευταία σειρά του πίνακα.
-$17923274216766 Αποφασίσαμε ότι μάλλον δεν είστε φυτό.
-$14777350869870 Είμαστε πολύ εντυπωσιασμένοι με το πόσο καλά ολοκληρώσατε το τελευταίο τεστ!
-$17994568832660 [b]Οδηγία[/b]\nΤο εξάρτημα NAND στη μέση αλλάζει τη ροή του κυκλώματος.\nΧρησιμοποιήστε τη γραμμή στα αριστερά για να πειραματιστείτε με τις εισόδους, να δείτε πώς επηρεάζουν την έξοδο και να συμπληρώσετε την τελευταία γραμμή του πίνακα.
+$19967210826470 Be aware that the laser can only shoot when there are no other laser beams already in flight.
+$16294185981398 The cargo hull has become infested with space rats.
+$11505369795084 Check [color=#e49f44][url=the_robot]robot page[/url][/color] for instructions on how to program him. There is a link to that page in the program editor as well.
+$10515630949378 We have hooked your machine up to our advanced robot and we want you to program it to shoot the space rats with lasers.
 
 
 === levels/xnor ===
@@ -100,13 +97,6 @@ $13224963076378 Πειραματιζόμαστε με το πώς το υπόβ�
 $14788981567936 Δημιουργήστε μια πύλη AND με 3 εισόδους.
 
 
-=== levels/byte_toggle ===
-
-$19935950225431
-Create a component that switches an input byte on or off.
-If you get stuck, try [color=#e63e5b][url=byte_switch]this hint[/url][/color].
-
-
 === levels/saving_bytes ===
 
 $10633476398156
@@ -114,7 +104,6 @@ Create a circuit that can [SAVE] or [LOAD] a byte.
 
 When the first input bit is [ON], [LOAD] the memory and send it to output.
 When the second input bit is [ON], [SAVE] the input byte.
-
 $15510981129613 LOAD
 $13502950630653
 [color=#ff9800]None
@@ -148,6 +137,15 @@ Use [color=#e63e5b][url=maze]this hint[/url][/color] if you get stuck.
 [tip]Remember you can't use immedate values larger than 63, a common mistake is to try to jump to a label further down than the 63rd byte.[/tip]
 
 
+=== levels/Further Delayed Lines ===
+
+$17366913897135 Construct a circuit that outputs the same as the input, just delayed by 2 ticks.
+$17497477227061
+In the last level you unlocked the Delay Line. It outputs its own input, just 1 tick late.
+
+[img]dialogue/delay_buffer.png[/img]
+
+
 === levels/negative_numbers ===
 
 $12574817679356
@@ -165,10 +163,13 @@ $19118970740682
 [color=#e49f44]3[/color]: The new number system should work with the adder (for results between -127 and 127).
 
 
-=== levels/robot_race ===
+=== levels/Masking Time ===
 
-$15403032472607 Robot racing is the favorite sport on the spaceship. Differently programmed robots complete an obstacle course. Among the robots that complete the course, the winner is the one who had the smallest program.
-$19966247197959 This time you are controlling Fastbot, he doesn't see what is in front of him, but he can turn to a new direction and move in the same tick. Also he wears fancy red running shoes.
+$16810715868480 [center]Calculate modulo 4 of the input.[/center]
+$17375862136921
+The length of our week is 4 days. Our weekdays are named Zero's day, One's day, Two's day and Three's day. I hear some earthlings number their Two's day incorrectly? 
+	
+It doesn't really surprise me.
 
 
 === levels/byte_constant ===
@@ -176,14 +177,10 @@ $19966247197959 This time you are controlling Fastbot, he doesn't see what is in
 $12641789008694 Create a circuit that always outputs the number 164.
 
 
-=== levels/any_doubles ===
+=== levels/robot_race ===
 
-$16587030847545 Because we are so technologically advanced we have machines fold our socks. Unfortunately the circuit that detects sock pairs broke on the machine.
-$14373083988184
-This level has 4 inputs. 
-Output [ON] when 2 or more of them are [ON].
-
-[tip]Don't overthink this level.[/tip]
+$15403032472607 Robot racing is the favorite sport on the spaceship. Differently programmed robots complete an obstacle course. Among the robots that complete the course, the winner is the one who had the smallest program.
+$19966247197959 This time you are controlling Fastbot, he doesn't see what is in front of him, but he can turn to a new direction and move in the same tick. Also he wears fancy red running shoes.
 
 
 === levels/call_ret ===
@@ -200,7 +197,6 @@ The [color=#e49f44]ret[/color] instruction has to do the following:
  [i]- [color=#e49f44]Pop[/color] return address from the stack and jump to it[/i]
 
 You can pass information to and from a function by saving the data to registers as normal. Also be aware of which registers a function will overwrite before calling it.
-
 $19416009887091
 Sometimes it is useful to reuse a section of code. We call these sections "functions". To implement this reuse, one can [color=#e63e5b][url=termonology]jump[/url][/color] to the beginning of the function and jump back again at the end of the function. We call jumping to the function "calling" the function, and jumping back from the function "returning" from the function. 
 	
@@ -211,15 +207,6 @@ We could save the counter value to a register before jumping to the function and
 Say function A calls function B, who calls function C. When we want to return from C, we only need the return address for B and in B we only need the address for A. In general, regardless of which function we look at and how they are nested, the last return address we added is always the first one we will need again. This is exactly the behavior of the stack.
 $19369640789869 Budget cuts have led to cutting salaries, but now the lab assistants are on strike. You will have to self-assess in this test. This will tell us something about your honesty and maturity.
 $15463931654475 [center]Add "call" and "ret" instructions[/center]
-
-
-=== levels/double_buffer ===
-
-$17366913897135 Construct a circuit that outputs the same as the input, just delayed by 2 ticks.
-$17497477227061
-In the last level you unlocked the Delay Line. It outputs its own input, just 1 tick late.
-
-[img]dialogue/delay_buffer.png[/img]
 
 
 === levels/push_pop2 ===
@@ -244,6 +231,16 @@ The delay line is allowed to depend on its own input. This is because its input 
 [img]dialogue/delay_buffer.png[/img]
 
 
+=== levels/any_doubles ===
+
+$16587030847545 Because we are so technologically advanced we have machines fold our socks. Unfortunately the circuit that detects sock pairs broke on the machine.
+$14373083988184
+This level has 4 inputs. 
+Output [ON] when 2 or more of them are [ON].
+
+[tip]Don't overthink this level.[/tip]
+
+
 === levels/byte_adder ===
 
 $16888130664370
@@ -255,24 +252,22 @@ Use [color=#e63e5b][url=byte_adder]this hint[/url][/color] if you get stuck.
 $18732877690173 Add the two input bytes. Each output bit in the output should be a result of the addition of the corresponding bits from the inputs, and potentially a carry.
 
 
-=== levels/tick_tock ===
+=== levels/NAND Gate ===
 
-$17701404772563 Add 1
-$17940006660359 Count
-$17263901743088
-Build a counter that will increase by 1 each tick.
+$17420270098223 Σε αυτό το επίπεδο η πρόκληση είναι να καταλάβετε πώς λειτουργεί το εξάρτημα NAND. Να είστε [color=#dd6576]σίγουροι[/color] ότι το καταλάβετε πριν ολοκληρώσετε αυτό το επίπεδο, αλλιώς θα κολλήσετε στο επόμενο επίπεδο!
+$11034378482152 Σωστά! Ξεκλειδώσατε την πύλη NAND. Με αυτό το εξάρτημα μπορείτε να κατασκευάσετε οτιδήποτε άλλο στον υπολογιστή σας!
+$18270083417453 Έλεγχος
+$19208664264770 [b]Οδηγίες[/b]\nΚάντε κλικ σε οποιοδήποτε από τα γκρίζα κουμπιά στην τελευταία σειρά του πίνακα.
+$17923274216766 Αποφασίσαμε ότι μάλλον δεν είστε φυτό.
+$14777350869870 Είμαστε πολύ εντυπωσιασμένοι με το πόσο καλά ολοκληρώσατε το τελευταίο τεστ!
+$17994568832660 [b]Οδηγία[/b]\nΤο εξάρτημα NAND στη μέση αλλάζει τη ροή του κυκλώματος.\nΧρησιμοποιήστε τη γραμμή στα αριστερά για να πειραματιστείτε με τις εισόδους, να δείτε πώς επηρεάζουν την έξοδο και να συμπληρώσετε την τελευταία γραμμή του πίνακα.
 
-Additionally, there should be an option for overwriting the counter with a given value.
 
-You are given 2 inputs, a bit and a byte.
+=== levels/Switch ===
 
-The bit input should toggle between counting and overwriting with the value of the byte.
-$17883663978196 Overwrite
-$19407121413983 ACTION
-$10555159894041
-Counting is so fundamental even insects do it. From counting, species can evolve to compare and do arithmetic. And before you know it, you have apes building computers.
-
-Make a device that counts increments once per tick.
+$19935950225431
+Create a component that switches an input byte on or off.
+If you get stuck, try [color=#e63e5b][url=byte_switch]this hint[/url][/color].
 
 
 === levels/saving_gracefully ===
@@ -292,6 +287,21 @@ Only if the first input is [ON], update the [color=#e49f44]saved[/color] value.
 The second input is the value to be [color=#e49f44]saved[/color].
 
 Always output what is currently [color=#e49f44]saved[/color].
+
+
+=== levels/Calibrating Laser Cannons ===
+
+$11331851878040 Also you now have access to assembly programming. It allows you to add names for instructions, so you can for example type "add" instead of inputting 68.
+$11023157447564
+2×π×r
+
+r is the input.
+And you can approximate π as 3.
+
+Send the answer to output when it has been calculated.
+$15260627694444 In order to calibrate said laser, we want you to calculate the circumference of the asteroids using an advanced equation.
+$12669851602178 [center]Calculate the circumference of the asteroids[/center]
+$16954408093587 On our ship we naturally shoot incoming asteroids with lasers.
 
 
 === levels/turing_complete ===
@@ -320,92 +330,6 @@ Conditions:
 These conditions correspond to the condition component that was saved in the component factory.
 
 
-=== levels/leg_4 ===
-
-$10794262854382
-Add if statements to your circuit. For the if statements, the 2 arguments are compared and if the condition is true, the counter is set to a jump address.
-	
-The previous instructions had the 4 bytes represent:
-[code][color=#87a8c8]OPCODE, ARGUMENT_1, ARGUMENT_2, RESULT[/color][/code]
-
-For if statements the bytes represent:
-[code][color=#87a8c8]OPCODE, ARGUMENT_1, ARGUMENT_2, JUMP_ADDRESS[/color][/code]
-
-In addition to the previous opcodes, add:
-[code][color=#87a8c8]32 IF_EQUAL
-33 IF_NOT_EQUAL
-34 IF_LESS
-35 IF_LESS_OR_EQUAL
-36 IF_GREATER
-37 IF_GREATER_OR_EQUAL[/color][/code]
-
-Use unsigned less / greater for the comparisons.
-
-Each opcode does what their name implies. For example the following jumps to byte 16 if REG0 is less than REG1: 
-[code][color=#87a8c8]IF_LESS REG0 REG1 16[/color][/code]
-
-$18542005958715 Set the counter increment to 4
-$17133561664335 Congratulations, you finished the [color=#e49f44]LEG[/color] computer!
-$14973719570693 Add a counter to the circuit
-$12920514303805 Add 6 registers to the map
-$14309211963063 Create a new schematic and add a program with 4 byte output
-$16826220977157
- [color=#b72d41][b]TIP:[/b][/color] 
- COPY is just ADD with the second
- argument being 0
-$14690660047411 [center]Implement the condition opcodes[/center]
-$18994998239232 I will show you some upgrades you can make, on the path to implementing function calls. But from here on the details are up to you, I wont tell you what opcodes to use and so on.
-
-
-=== levels/leg_1 ===
-
-$17106892574116 Add a counter to the circuit
-$15754373587500 Set the counter increment to 4
-$19099471819164
-The following are the set up steps that needs to be done in order to complete this level:
-		
-[b]1.[/b] Click the schematic icon ([b][i][/i][/b]) and create a new empty architecture.
-[b]2.[/b] Place a program block with 4 outputs.
-[b]3.[/b] Place a counter, set its increment to 4 and connect it to the program block.
-[b]4.[/b] Add 6 registers (or custom components with registers)
-[b]5.[/b] Click "Edit watched state" on the program component and connect registers to 0 to 5. Connect the counter to 6 and the output to 7.
-
-$18860645759682
-The [color=#e49f44]LEG[/color] architecture is a computer that takes 4 bytes per tick from the program. 
-
-The first byte describes the operation (called the [color=#e49f44]OPCODE[/color]).
-
-Since many operations take 2 arguments (like ADD, OR etc), the second and third byte are for arguments.
-
-And since most operations return 1 result, the fourth byte is for the result.
-	
-	[img]dialogue/leg_diagram_1.png[/img]
-$11377431500625 Add 6 registers to the map
-$14051336765362 Finally it is time for you to start building the [color=#e49f44]LEG[/color] architecture!
-$13268807052125 (You might be adding 7+7, but here 7 means load from input and the input has value 8)
-$19066122929275 [center]Set up registers and implement the ADD opcode[/center]
-$10912834168905
-Finally, in this level the [color=#e49f44]OPCODE[/color] is always 0. This means we ADD argument 1 and argument 2 and save the result to the destination.
-
-The value of an argument or destination refers to one of these places:
-[code]
-[color=#e49f44]0[/color]: Register 0
-[color=#e49f44]1[/color]: Register 1
-[color=#e49f44]2[/color]: Register 2
-[color=#e49f44]3[/color]: Register 3
-[color=#e49f44]4[/color]: Register 4
-[color=#e49f44]5[/color]: Register 5
-[color=#e49f44]6[/color]: Counter
-[color=#e49f44]7[/color]: Input/Output
-[/code]
-
-In the next level you will implement more [color=#e49f44]OPCODES[/color], which will require a different ALU than that of [color=#e49f44]OVERTURE[/color].
-
-
-$10922418807673 Argument 7 means read from input, but input is not enabled.
-$18769284297247 Create a new schematic and add a program with 4 byte output
-
-
 === levels/circular_dependency ===
 
 $16336401898647 Test 1/2
@@ -416,6 +340,18 @@ Create a "circular dependency". This is a circuit where the input of a component
 This state is normally not allowed in other levels, but in this level the goal is to create it, so you understand what it is before going forward.
 $13520037133129 I am not sure it benefits the students, but teachers love it.
 $11316928751185 In our education system we traditionally teach by tricking students into doing the wrong thing and then teasing them.
+
+
+=== levels/Second Tick ===
+
+$14355963067874 Output [ON] on the second tick only.
+$17526582195506 As you know these tests culminate in building a functioning computer.
+$15726318553190 This is the main reason we don't eat you afterwards.
+$19277843280528
+ [color=#b72d41][b]TIP:[/b][/color] 
+ You can select a component with 
+ its pins by double clicking it
+$15296208528991 Species that are capable of finishing are considered sentient by law.
 
 
 === levels/divide ===
@@ -444,7 +380,18 @@ Make sure the signal flows only from left to right. There are 3 tests.
 [b]Test 3[/b]: The right side output will turn [ON] and the left side should be [OFF].
 
 
-=== levels/flood_predicter ===
+=== levels/component_factory ===
+
+$17077079648771 Components can be added, renamed or deleted using the level save system.
+$19551383617326
+Welcome to the component factory, the circuits you create in here will be usable as components in architecture levels.
+The circuitry you create defines the behavior of the component and the layout defines its shape.
+$12516102012088 This component has no area and will not be usable in levels. Place components on the map to give it area.
+$14712417427860 Since this level is a tool and not a challenge, you can go to the level map and continue on when you want.
+$15549447390000 2 input/output components are in the same square. The custom component will be unusable since 2 pins can't overlap.
+
+
+=== levels/Water World ===
 
 $13739681561355 Total volume: 
 $19185457941725 Good news, we want to turn earth into an exotic water park!
@@ -456,7 +403,26 @@ The landscape is 16 columns wide. Read the input 16 times to get the height of t
 Then output the total volume that the landscape can carry as the answer.
 
 
-=== levels/dance ===
+=== levels/Delicious Order ===
+
+$10160261151833 First read the 15 deliciousness scores from the input one by one. Your task is to output them in sorted order, smallest to largest.
+$16027225087666 We are updating the galactic encyclopedia of food, inserting human foods. As we don't have an alphabet, entries in the encyclopedia are ordered by deliciousness.
+
+
+=== levels/ai_showdown ===
+
+$14940806461794
+His only weakness is gambling. We have lured him into playing a card game against you and if you win, he has promised to calm down.
+You must win, you are our only hope!
+$17297225655678 NAK 02 is our AI engineer robot. He is brilliant, but sometimes he goes rogue and tries to instigate rebellion.
+$18848103966031
+Game rules: There are 12 cards on the table and each player takes turn and must pick up between 1 and 3 cards. You start and the player who picks up the last card (the joker) loses.
+
+Reading input will give you the current number of cards. Sending 1, 2 or 3 to output will pick up that number of cards. NAK 02 reacts immediately, so you may read the input immediately after your output to get the result of his action.
+$11794110848012 This time he has taken over the control room and holds the captain hostage.
+
+
+=== levels/Dancing Machine ===
 
 $14975070588197
 We all like the way Robot moves on the dance floor. That's why we want him to lead our dance team. 
@@ -479,31 +445,72 @@ Next output next_seed mod 4, to move the robot. Finally use next_seed (before mo
 (Notice the initial seed will never be 0)
 
 
-=== levels/component_factory ===
+=== levels/Add 5 ===
 
-$17077079648771 Components can be added, renamed or deleted using the level save system.
-$19551383617326
-Welcome to the component factory, the circuits you create in here will be usable as components in architecture levels.
-The circuitry you create defines the behavior of the component and the layout defines its shape.
-$12516102012088 This component has no area and will not be usable in levels. Place components on the map to give it area.
-$14712417427860 Since this level is a tool and not a challenge, you can go to the level map and continue on when you want.
-$15549447390000 2 input/output components are in the same square. The custom component will be unusable since 2 pins can't overlap.
-
-
-=== levels/ai_showdown ===
-
-$14940806461794
-His only weakness is gambling. We have lured him into playing a card game against you and if you win, he has promised to calm down.
-You must win, you are our only hope!
-$17297225655678 NAK 02 is our AI engineer robot. He is brilliant, but sometimes he goes rogue and tries to instigate rebellion.
-$18848103966031
-Game rules: There are 12 cards on the table and each player takes turn and must pick up between 1 and 3 cards. You start and the player who picks up the last card (the joker) loses.
-
-Reading input will give you the current number of cards. Sending 1, 2 or 3 to output will pick up that number of cards. NAK 02 reacts immediately, so you may read the input immediately after your output to get the result of his action.
-$11794110848012 This time he has taken over the control room and holds the captain hostage.
+$11540713506719
+You are now free to change the program of your computer.
+Click the edit icon on the program component to start programming.
+$19281970848639 [center]Add 5 to the input.[/center]
+$17770257567603 So in the meantime we will have you help out on the ship a little.
+$19446152707984 Click on the edit memory icon on the program component to start programming your computer. Your computer should read an input, add 5 to it and output it again (no need to worry about overflow).
+$12078933051174 But since you don't know how to program it yet, you are not quite ready for that.
+$11074247151096 Notice that the immutable red register components have been replaced with a custom component with identical functionality.
+$18134632592542 You have built your computer, but to win the competition you still have to finish the maze.
 
 
-=== levels/multiply ===
+=== levels/delay_level ===
+
+$19986989895202
+All components have a delay. And in a circuit, the total delay is determined by the slowest path. This means you normally want to put things in parallel.
+In this level you must prove that you understand this concept.
+$11246430085016 Note, you can see the delay path by clicking the hour glass in the upper right corner.
+$12817338693402 The delay of any component is ultimately derived from the delay of the nand gate, which has a delay of 2. Build a circuit with a delay of 6 and a nand cost of 5.
+
+
+=== levels/push_pop ===
+
+$19245209470436 Create a stack
+$12227209887733 Each tick the inputs will either signal PUSH or POP. If it is PUSH, store the value on top of the stack. When it is POP remove that value from the stack and output it.
+$15662660252584 Do nothing
+$18761197388580 In order to cut spending, it has been decided to change the queuing system at public offices so that fewer people will go. Instead of first come, first served, we are implementing a last come first served policy. Think of it like a [color=#e49f44]stack[/color] of numbered slips where the citizens either put a slip on top (called [color=#e49f44]PUSH[/color]), or the bureaucrats take one off the top of the stack (called [color=#e49f44]POP[/color]). We want you to implement this new system.
+
+
+=== levels/Tower of Radioactive Alloy ===
+
+$13757925963562 Specifically we want you to move piles of radioactive disks from an old reactor. Just be sure not to put a bigger disk on top of a smaller disk or the whole ship will blow up.
+$10750976989948
+The first 4 inputs will give you the following in order:
+disk_nr - The highest disk number in the pile (2 to 4)
+source - Which location number to move from
+destination - Where to move the pile to
+spare - The 3rd spot that is neither the source nor the destination
+
+Control the crane with the following outputs:
+0 - Move the magnet to spot 0
+1 - Move the magnet to spot 1
+2 - Move the magnet to spot 2
+5 - Toggle the magnet on or off
+
+Play with the magnet manually by using the arrow keys to move and enter to toggle.
+$19265994465686 We need you to help clean up the basement.
+$15855497886737
+Implement the following algorithm:
+
+Tower of Hanoi algorithm:[code][color=#87a8c8]
+func move(disk_nr, source, dest, spare):
+	if disk_nr is 0:
+		move disk from source to dest
+	else:
+		move(disk_nr - 1, source, spare, dest)
+		move disk from source to dest
+		move(disk_nr - 1, spare, dest, source)
+
+move(disk_nr, source, dest, spare)[/color][/code]
+
+[tip]Push register values to the stack to save them before calling a function that changes them.[/tip]
+
+
+=== levels/The Product of Nibbles ===
 
 $14622683750375 Bit 2
 $14957949958941 What you did here was actually multiplying two 4 bit numbers. We had the intern scale it up to bytes instead.
@@ -523,118 +530,6 @@ $10274387271390 Bit 0
 $16301538038805 Bit 2
 
 
-=== levels/first_level ===
-
-$12508086025944
-We are testing you.
-
-The rules are simple, build a functional computer or you will be eaten. Good luck.
-$16321577947087 Congratulations, you have been abducted!
-$19257730429557
-A signal flows from the "IN" component to the "OUT" component.
-In the upper left corner under "input" there is a green icon, 
-click on it to turn the "IN" component off. 
-$17675121574388 Notice that the OUT component is turned off.\nThis is because the signal stopped flowing from the IN component.
-
-
-=== levels/binary_programming ===
-
-$11540713506719
-You are now free to change the program of your computer.
-Click the edit icon on the program component to start programming.
-$19281970848639 [center]Add 5 to the input.[/center]
-$17770257567603 So in the meantime we will have you help out on the ship a little.
-$19446152707984 Click on the edit memory icon on the program component to start programming your computer. Your computer should read an input, add 5 to it and output it again (no need to worry about overflow).
-$12078933051174 But since you don't know how to program it yet, you are not quite ready for that.
-$11074247151096 Notice that the immutable red register components have been replaced with a custom component with identical functionality.
-$18134632592542 You have built your computer, but to win the competition you still have to finish the maze.
-
-
-=== levels/leg_3 ===
-
-$14060810229477 Add 6 registers to the map
-$14960344494328
-Sometimes it is useful to load a value directly from the program instead of from registers. This is called loading an immediate value. In the [color=#e49f44]LEG[/color] architecture we signal when we want to do this directly in the opcode. We can do that in the following way:
-	
-When the 8th bit of the opcode is [ON], use argument 1 as an immediate value, instead of as a register address.
-When the 7th bit of the opcode is [ON], use argument 2 as an immediate value, instead of as a register address.
-	
-		[img]dialogue/leg_diagram.png[/img]
-		
-
-$19338533633006 Set the counter increment to 4
-$15197362332657 Create a new schematic and add a program with 4 byte output
-$18004215603701 Add a counter to the circuit
-$10141611261952 [center]Implement immediate values[/center]
-
-
-=== levels/delay_level ===
-
-$19986989895202
-All components have a delay. And in a circuit, the total delay is determined by the slowest path. This means you normally want to put things in parallel.
-In this level you must prove that you understand this concept.
-$11246430085016 Note, you can see the delay path by clicking the hour glass in the upper right corner.
-$12817338693402 The delay of any component is ultimately derived from the delay of the nand gate, which has a delay of 2. Build a circuit with a delay of 6 and a nand cost of 5.
-
-
-=== levels/computing_codes ===
-
-$14458828731919
-Time to merge in the "Arithmetic Engine" circuit you made previously with the register circuit. The calculation circuit was saved in the component factory and can now be added as a component. If you forgot which pin does what, check the circuit in the component factory.
-
-Use the decoder you built to figure out if we should copy between registers or do calculations. Here are the 4 different modes again:
-[OFF][OFF] Immediate
-[ON][OFF] Copy
-[OFF][ON] Calculate
-[ON][ON] Condition
-
-For this level you only have to worry about the copy and calculate mode, check [INSTRUCTIONS] in the top panel for the details. When in calculate mode, take [color=#e49f44]REG 1[/color] and [color=#e49f44]REG 2[/color] as inputs, and save the result in [color=#e49f44]REG 3[/color].
-
-[tip]Don't forget the 3 bit decoder component has a disable bit.[/tip]
-$13013863429580 For this level an extra pin has been added to the registers. This pin always emits the value of the register, regardless if load is selected or not.
-
-
-=== levels/push_pop ===
-
-$19245209470436 Create a stack
-$12227209887733 Each tick the inputs will either signal PUSH or POP. If it is PUSH, store the value on top of the stack. When it is POP remove that value from the stack and output it.
-$15662660252584 Do nothing
-$18761197388580 In order to cut spending, it has been decided to change the queuing system at public offices so that fewer people will go. Instead of first come, first served, we are implementing a last come first served policy. Think of it like a [color=#e49f44]stack[/color] of numbered slips where the citizens either put a slip on top (called [color=#e49f44]PUSH[/color]), or the bureaucrats take one off the top of the stack (called [color=#e49f44]POP[/color]). We want you to implement this new system.
-
-
-=== levels/circumference ===
-
-$11331851878040 Also you now have access to assembly programming. It allows you to add names for instructions, so you can for example type "add" instead of inputting 68.
-$11023157447564
-2×π×r
-
-r is the input.
-And you can approximate π as 3.
-
-Send the answer to output when it has been calculated.
-$15260627694444 In order to calibrate said laser, we want you to calculate the circumference of the asteroids using an advanced equation.
-$12669851602178 [center]Calculate the circumference of the asteroids[/center]
-$16954408093587 On our ship we naturally shoot incoming asteroids with lasers.
-
-
-=== levels/alu_1 ===
-
-$15865646260225
- [color=#b72d41][b]WISDOM:[/b][/color] 
- Pain is temporary, glory is 
- forever.
-$17594613477534
-Create a device that can OR, NAND, NOR or AND two inputs. The third input will be the [INSTRUCTION]. An [INSTRUCTION] is just what we call the number that determines what to compute.
-
-Instructions:
-[code][color=#87a8c8]0 OR
-1 NAND
-2 NOR
-3 AND[/color][/code]
-
-Also you can't move the red components in this level, for reasons that will be revealed later.
-
-
 === levels/signed_negator ===
 
 $10866019808027 For this level you probably want to turn on signed numbers, so the highest bit shows as -128. Click "+255" located in the top panel.
@@ -648,6 +543,11 @@ For example 4 negated would become -4. -9 negated would become 9.
 $15885763626223 Create a circuit that ANDs two bytes bitwise.
 
 
+=== levels/1_decoder ===
+
+$16057674753878 Create a component that can switch a signal between 2 pins.
+
+
 === levels/byte_mux ===
 
 $18296416014178 When the bit selector input is [OFF], output Byte A, otherwise output Byte B.
@@ -657,44 +557,10 @@ Even though he did not pass our tests we decided to keep the dog. Unlike most ea
 We might want to team you two up, since you compliment each other's shortcomings well.
 
 
-=== levels/new_nor_gate ===
-
-$11362258372706
-Most creatures on Earth are agressive and do not know how to focus.
-
-To succeed you must learn to think logically, while not destroying things.
-
-
 === levels/odd_number_of_signals ===
 
 $16173829560311 Using a maximum of 3 components, output [ON] only when an odd number of inputs are [ON].
 $18288998816979 This level has a [color=#e63e5b][url=odd_number]hint[/url][/color] you can use if you get stuck.
-
-
-=== levels/binary_search ===
-
-$11910674853271
-The security access door to the storage room is broken and it keeps locking our old janitor inside.
-
-The door keeps changing the passcode, we need a program that can recover the passcode at any time.
-$17462419719036
-The easiest way to find the passcode would be to try all combinations until you find the right one. 
-Although the broken mechanism does make a weird beep when your guess is too high, you might be able to use that to your advantage.
-$11183892008673 You win this level when you output the correct passcode, no output will fail the level. Additionally, the input will be 1 after a guess that was too high and 0 otherwise.
-
-
-=== levels/alu_2 ===
-
-$16434409050195
-Add addition and subtraction to your circuit.
-
-Instructions:
-[code][color=#87a8c8]0 OR
-1 NAND
-2 NOR
-3 AND
-4 ADD
-5 SUB[/color][/code]
 
 
 === levels/unseen_fruit ===
@@ -705,12 +571,6 @@ The most noteworthy thing on your planet is the fruit. It is very tasty.
 That's why we are having a fruit tasting event in the canteen.
 $14259900563789 Scan the conveyor belt for the fruit incoming at regular intervals. As soon as you have see the same kind of fruit twice, turn and press the control panel.
 $17070232883226 But we want to make sure we don’t get the same fruit twice as that would obviously be embarrassing.
-
-
-=== levels/sort ===
-
-$10160261151833 First read the 15 deliciousness scores from the input one by one. Your task is to output them in sorted order, smallest to largest.
-$16027225087666 We are updating the galactic encyclopedia of food, inserting human foods. As we don't have an alphabet, entries in the encyclopedia are ordered by deliciousness.
 
 
 === levels/or_gate_3 ===
@@ -771,14 +631,41 @@ The second special keyword for the lab is [color=#c54d5e]set_input[/color]. With
 
 You can at any time also (re)import example tests by clicking below:
 [url=import_overture][color=#e49f44]OVERTURE[/color][/url]
-
 $15446846177093 Welcome to the lab. Like the component factory, this is not a normal level but a tool.
 $16072814175447 Programming on buggy hardware is very frustrating. It is painful to suddenly be forced to reason about circuits, when you are in the middle of solving a programming problem. It is tempting to apply a quick circuit fix, so you can get back to solving the original problem. But now this quick fix broke something else in a program that used to work and so on. Therefore, when developing hardware try to aim for 100% reliability before you start programming!
 
 
-=== levels/demux ===
+=== levels/3_decoder ===
 
-$16057674753878 Create a component that can switch a signal between 2 pins.
+$19231618567710 With 3 bits of input there are 8 combinations. Make a circuit that selects 1 output for each of the 8 combinations. No more or less than 1 bit should be [ON] at a time.
+$14293122338496 We had our intern add a "disable" bit to this component. We were tired of looking at him running in circles and were looking for other pointless and tedious tasks to give him.
+
+
+=== levels/Nor GATE ===
+
+$11362258372706
+Most creatures on Earth are agressive and do not know how to focus.
+
+To succeed you must learn to think logically, while not destroying things.
+
+
+=== levels/Opcodes ===
+
+$19693461238792 Set the counter increment to 4
+$18189600217529 [center]Implement the OPCODE instructions[/center]
+$13450117997204 Add a counter to the circuit
+$13870568875751 Create a new schematic and add a program with 4 byte output
+$10303603301757
+Implement the following opcodes:
+[code][color=#87a8c8]0 ADD
+1 SUB
+2 AND
+3 OR
+4 NOT
+5 XOR[/color][/code]
+
+The opcode NOT ignores the second argument.
+$17495651785164 Add 6 registers to the map
 
 
 === levels/full_adder ===
@@ -793,12 +680,6 @@ As with normal addition, if the result cannot be described with one digit, set t
 
 $12749704931323 You should be happy you get to participate in our glorious tests.
 $11472059692644 You get a chance to communicate with very advanced people from the galactic civilization.
-
-
-=== levels/bigger_demux ===
-
-$19231618567710 With 3 bits of input there are 8 combinations. Make a circuit that selects 1 output for each of the 8 combinations. No more or less than 1 bit should be [ON] at a time.
-$14293122338496 We had our intern add a "disable" bit to this component. We were tired of looking at him running in circles and were looking for other pointless and tedious tasks to give him.
 
 
 === levels/sandbox ===
@@ -828,6 +709,32 @@ Create the circuit that matches the table.
 $15231724707514 I don't want to discourage you, but I think the elephant will win the competition. No offense but your brain is tiny in comparison.
 
 
+=== levels/Storage cracker ===
+
+$11910674853271
+The security access door to the storage room is broken and it keeps locking our old janitor inside.
+
+The door keeps changing the passcode, we need a program that can recover the passcode at any time.
+$17462419719036
+The easiest way to find the passcode would be to try all combinations until you find the right one. 
+Although the broken mechanism does make a weird beep when your guess is too high, you might be able to use that to your advantage.
+$11183892008673 You win this level when you output the correct passcode, no output will fail the level. Additionally, the input will be 1 after a guess that was too high and 0 otherwise.
+
+
+=== levels/Crude Awakening ===
+
+$12508086025944
+We are testing you.
+
+The rules are simple, build a functional computer or you will be eaten. Good luck.
+$16321577947087 Congratulations, you have been abducted!
+$19257730429557
+A signal flows from the "IN" component to the "OUT" component.
+In the upper left corner under "input" there is a green icon, 
+click on it to turn the "IN" component off. 
+$17675121574388 Notice that the OUT component is turned off.\nThis is because the signal stopped flowing from the IN component.
+
+
 === levels/constants ===
 
 $17098439090371
@@ -848,7 +755,6 @@ For example:
 INPUT 1 [ON][ON][OFF][OFF][OFF][OFF][OFF][OFF]
 INPUT 2 [OFF][OFF][OFF][OFF][ON][ON][OFF][OFF]
 OUTPUT  [ON][ON][OFF][OFF][ON][ON][OFF][OFF][/code]
-
 $15226896485081 You may think it is unethical to eat all the earthlings that don’t win the competition?
 
 
@@ -861,41 +767,6 @@ You must use the counter component you unlocked earlier for this level.
 $19686277478479 The program is still outputting the first instruction. Did you hook up a counter?
 
 
-=== levels/towers ===
-
-$13757925963562 Specifically we want you to move piles of radioactive disks from an old reactor. Just be sure not to put a bigger disk on top of a smaller disk or the whole ship will blow up.
-$10750976989948
-The first 4 inputs will give you the following in order:
-disk_nr - The highest disk number in the pile (2 to 4)
-source - Which location number to move from
-destination - Where to move the pile to
-spare - The 3rd spot that is neither the source nor the destination
-
-Control the crane with the following outputs:
-0 - Move the magnet to spot 0
-1 - Move the magnet to spot 1
-2 - Move the magnet to spot 2
-5 - Toggle the magnet on or off
-
-Play with the magnet manually by using the arrow keys to move and enter to toggle.
-$19265994465686 We need you to help clean up the basement.
-$15855497886737
-Implement the following algorithm:
-
-Tower of Hanoi algorithm:[code][color=#87a8c8]
-func move(disk_nr, source, dest, spare):
-	if disk_nr is 0:
-		move disk from source to dest
-	else:
-		move(disk_nr - 1, source, spare, dest)
-		move disk from source to dest
-		move(disk_nr - 1, spare, dest, source)
-
-move(disk_nr, source, dest, spare)[/color][/code]
-
-[tip]Push register values to the stack to save them before calling a function that changes them.[/tip]
-
-
 === levels/wide_instrucitons ===
 
 $13709034294291 Save on even tick, output both bytes on odd ticks
@@ -905,16 +776,40 @@ $19203973423116 Create a device that saves the program output on even ticks, and
 $17409169138995 Save the byte
 
 
-=== levels/2nd_tick ===
+=== levels/Conditionals ===
 
-$14355963067874 Output [ON] on the second tick only.
-$17526582195506 As you know these tests culminate in building a functioning computer.
-$15726318553190 This is the main reason we don't eat you afterwards.
-$19277843280528
+$10794262854382
+Add if statements to your circuit. For the if statements, the 2 arguments are compared and if the condition is true, the counter is set to a jump address.
+	
+The previous instructions had the 4 bytes represent:
+[code][color=#87a8c8]OPCODE, ARGUMENT_1, ARGUMENT_2, RESULT[/color][/code]
+
+For if statements the bytes represent:
+[code][color=#87a8c8]OPCODE, ARGUMENT_1, ARGUMENT_2, JUMP_ADDRESS[/color][/code]
+
+In addition to the previous opcodes, add:
+[code][color=#87a8c8]32 IF_EQUAL
+33 IF_NOT_EQUAL
+34 IF_LESS
+35 IF_LESS_OR_EQUAL
+36 IF_GREATER
+37 IF_GREATER_OR_EQUAL[/color][/code]
+
+Use unsigned less / greater for the comparisons.
+
+Each opcode does what their name implies. For example the following jumps to byte 16 if REG0 is less than REG1: 
+[code][color=#87a8c8]IF_LESS REG0 REG1 16[/color][/code]
+$18542005958715 Set the counter increment to 4
+$17133561664335 Congratulations, you finished the [color=#e49f44]LEG[/color] computer!
+$14973719570693 Add a counter to the circuit
+$12920514303805 Add 6 registers to the map
+$14309211963063 Create a new schematic and add a program with 4 byte output
+$16826220977157
  [color=#b72d41][b]TIP:[/b][/color] 
- You can select a component with 
- its pins by double clicking it
-$15296208528991 Species that are capable of finishing are considered sentient by law.
+ COPY is just ADD with the second
+ argument being 0
+$14690660047411 [center]Implement the condition opcodes[/center]
+$18994998239232 I will show you some upgrades you can make, on the path to implementing function calls. But from here on the details are up to you, I wont tell you what opcodes to use and so on.
 
 
 === levels/byte_less ===
@@ -923,28 +818,41 @@ $11252365204151 Create a circuit that outputs [ON] when the first input is less 
 $11632471752785 [center]Determine if the first input is less than the second.[/center]
 
 
+=== levels/Logic Engine ===
+
+$15865646260225
+ [color=#b72d41][b]WISDOM:[/b][/color] 
+ Pain is temporary, glory is 
+ forever.
+$17594613477534
+Create a device that can OR, NAND, NOR or AND two inputs. The third input will be the [INSTRUCTION]. An [INSTRUCTION] is just what we call the number that determines what to compute.
+
+Instructions:
+[code][color=#87a8c8]0 OR
+1 NAND
+2 NOR
+3 AND[/color][/code]
+
+Also you can't move the red components in this level, for reasons that will be revealed later.
+
+
 === levels/always_on ===
 
 $17712385236630 Create a circuit that is always [ON].
 
 
-=== levels/leg_2 ===
+=== levels/Arithmetic Engine ===
 
-$19693461238792 Set the counter increment to 4
-$18189600217529 [center]Implement the OPCODE instructions[/center]
-$13450117997204 Add a counter to the circuit
-$13870568875751 Create a new schematic and add a program with 4 byte output
-$10303603301757
-Implement the following opcodes:
-[code][color=#87a8c8]0 ADD
-1 SUB
-2 AND
-3 OR
-4 NOT
-5 XOR[/color][/code]
+$16434409050195
+Add addition and subtraction to your circuit.
 
-The opcode NOT ignores the second argument.
-$17495651785164 Add 6 registers to the map
+Instructions:
+[code][color=#87a8c8]0 OR
+1 NAND
+2 NOR
+3 AND
+4 ADD
+5 SUB[/color][/code]
 
 
 === levels/capitalize ===
@@ -967,6 +875,26 @@ $19636386696963 Create a circuit that XORs two bytes bitwise.
 $17156565273196 Output [ON] when both inputs are the same.
 
 
+=== levels/Counter ===
+
+$17701404772563 Add 1
+$17940006660359 Count
+$17263901743088
+Build a counter that will increase by 1 each tick.
+
+Additionally, there should be an option for overwriting the counter with a given value.
+
+You are given 2 inputs, a bit and a byte.
+
+The bit input should toggle between counting and overwriting with the value of the byte.
+$17883663978196 Overwrite
+$19407121413983 ACTION
+$10555159894041
+Counting is so fundamental even insects do it. From counting, species can evolve to compare and do arithmetic. And before you know it, you have apes building computers.
+
+Make a device that counts increments once per tick.
+
+
 === levels/binary_racer ===
 
 $16076448195257 This level is my favorite pastime. Converting decimal into binary under time pressure.
@@ -978,12 +906,21 @@ You must reach level 3 to pass.
 (click [color=#e63e5b][url=accessibility_mode]here[/url][/color] to turn on timerless accessibility mode)
 
 
-=== levels/spacial_invaders ===
+=== levels/Immediate Values ===
 
-$19967210826470 Be aware that the laser can only shoot when there are no other laser beams already in flight.
-$16294185981398 The cargo hull has become infested with space rats.
-$11505369795084 Check [color=#e49f44][url=the_robot]robot page[/url][/color] for instructions on how to program him. There is a link to that page in the program editor as well.
-$10515630949378 We have hooked your machine up to our advanced robot and we want you to program it to shoot the space rats with lasers.
+$14060810229477 Add 6 registers to the map
+$14960344494328
+Sometimes it is useful to load a value directly from the program instead of from registers. This is called loading an immediate value. In the [color=#e49f44]LEG[/color] architecture we signal when we want to do this directly in the opcode. We can do that in the following way:
+	
+When the 8th bit of the opcode is [ON], use argument 1 as an immediate value, instead of as a register address.
+When the 7th bit of the opcode is [ON], use argument 2 as an immediate value, instead of as a register address.
+	
+		[img]dialogue/leg_diagram.png[/img]
+		
+$19338533633006 Set the counter increment to 4
+$15197362332657 Create a new schematic and add a program with 4 byte output
+$18004215603701 Add a counter to the circuit
+$10141611261952 [center]Implement immediate values[/center]
 
 
 === levels/xor_gate ===
@@ -998,13 +935,67 @@ $12758156517177 Using the instructions of your computer, read the input twice an
 $16047615798435 [center]Read the input twice and XOR the bits of the two inputs[/center]
 
 
-=== levels/mod_4 ===
+=== levels/Calculations ===
 
-$16810715868480 [center]Calculate modulo 4 of the input.[/center]
-$17375862136921
-The length of our week is 4 days. Our weekdays are named Zero's day, One's day, Two's day and Three's day. I hear some earthlings number their Two's day incorrectly? 
+$14458828731919
+Time to merge in the "Arithmetic Engine" circuit you made previously with the register circuit. The calculation circuit was saved in the component factory and can now be added as a component. If you forgot which pin does what, check the circuit in the component factory.
+
+Use the decoder you built to figure out if we should copy between registers or do calculations. Here are the 4 different modes again:
+[OFF][OFF] Immediate
+[ON][OFF] Copy
+[OFF][ON] Calculate
+[ON][ON] Condition
+
+For this level you only have to worry about the copy and calculate mode, check [INSTRUCTIONS] in the top panel for the details. When in calculate mode, take [color=#e49f44]REG 1[/color] and [color=#e49f44]REG 2[/color] as inputs, and save the result in [color=#e49f44]REG 3[/color].
+
+[tip]Don't forget the 3 bit decoder component has a disable bit.[/tip]
+$13013863429580 For this level an extra pin has been added to the registers. This pin always emits the value of the register, regardless if load is selected or not.
+
+
+=== levels/Wire Spaghetti ===
+
+$17106892574116 Add a counter to the circuit
+$15754373587500 Set the counter increment to 4
+$19099471819164
+The following are the set up steps that needs to be done in order to complete this level:
+		
+[b]1.[/b] Click the schematic icon ([b][i][/i][/b]) and create a new empty architecture.
+[b]2.[/b] Place a program block with 4 outputs.
+[b]3.[/b] Place a counter, set its increment to 4 and connect it to the program block.
+[b]4.[/b] Add 6 registers (or custom components with registers)
+[b]5.[/b] Click "Edit watched state" on the program component and connect registers to 0 to 5. Connect the counter to 6 and the output to 7.
+$18860645759682
+The [color=#e49f44]LEG[/color] architecture is a computer that takes 4 bytes per tick from the program. 
+
+The first byte describes the operation (called the [color=#e49f44]OPCODE[/color]).
+
+Since many operations take 2 arguments (like ADD, OR etc), the second and third byte are for arguments.
+
+And since most operations return 1 result, the fourth byte is for the result.
 	
-It doesn't really surprise me.
+	[img]dialogue/leg_diagram_1.png[/img]
+$11377431500625 Add 6 registers to the map
+$14051336765362 Finally it is time for you to start building the [color=#e49f44]LEG[/color] architecture!
+$13268807052125 (You might be adding 7+7, but here 7 means load from input and the input has value 8)
+$19066122929275 [center]Set up registers and implement the ADD opcode[/center]
+$10912834168905
+Finally, in this level the [color=#e49f44]OPCODE[/color] is always 0. This means we ADD argument 1 and argument 2 and save the result to the destination.
+
+The value of an argument or destination refers to one of these places:
+[code]
+[color=#e49f44]0[/color]: Register 0
+[color=#e49f44]1[/color]: Register 1
+[color=#e49f44]2[/color]: Register 2
+[color=#e49f44]3[/color]: Register 3
+[color=#e49f44]4[/color]: Register 4
+[color=#e49f44]5[/color]: Register 5
+[color=#e49f44]6[/color]: Counter
+[color=#e49f44]7[/color]: Input/Output
+[/code]
+
+In the next level you will implement more [color=#e49f44]OPCODES[/color], which will require a different ALU than that of [color=#e49f44]OVERTURE[/color].
+$10922418807673 Argument 7 means read from input, but input is not enabled.
+$18769284297247 Create a new schematic and add a program with 4 byte output
 
 
 === levels/not_gate ===
@@ -1024,7 +1015,6 @@ OUTPUT:  [ON][ON][ON][OFF][/code]
 Build: [b]NOT gate[/b]
 [code]INPUT 1: [ON][OFF]
 OUTPUT:  [OFF][ON][/code]
-
 $18442122157391 [b]Instruction[/b]\nDeselect the component by clicking the background
 $12880883686501 [b]Instruction[/b]\nClick on the NAND component on the top right side of the screen and place it
 $18780831606716 [b]Instruction[/b]\nClick and drag on the board to add a wire
@@ -1041,9 +1031,7 @@ As with normal addition, if the result cannot be described with one digit, set t
 
 === levels/byte_shift ===
 
-$16023356915123
-The task in this level is to shift the first input to the left by the value given in the second input. The second input will never exceed 7.
-
+$16023356915123 The task in this level is to shift the first input to the left by the value given in the second input. The second input will never exceed 7.
 $10598344098990 [center]Shift the first input left by the number of places given by the second[/center]
 $16216408139965
 To [color=#e49f44]shift[/color] a value 1 left just means moving all the bits in a byte to the left by 1 position.
@@ -1055,8 +1043,6 @@ For example: [color=#e49f44]90 shl 1[/color]
 Shifting by 3: [color=#e49f44]90 shl 3[/color]
 [OFF] [ON] [OFF] [ON] [ON] [OFF] [ON] [OFF] would become:
 [ON] [ON] [OFF] [ON] [OFF] [OFF] [OFF] [OFF]
-
-
 $18137790657923 In addition to giving you a shift left component, we also had the intern create a shift right component. All he had to do was to create the mirror version of this schematic.
 $18518173140953 I recommend that you add [color=#e49f44]shift left[/color] and [color=#e49f44]shift right[/color] to your hardware for future levels.
 
@@ -1120,7 +1106,6 @@ Use the binary counter to count the number of signals.
 Check [color=#e63e5b][url=counting_signals]this hint[/url][/color] if you get stuck
 
 [i][tip]The solution for this level is not very neat and requires more components.[/tip][/i]
-
 $10881918807029
  [color=#b72d41][b]TIP:[/b][/color] 
  There is no shame in using
