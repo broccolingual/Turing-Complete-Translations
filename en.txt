@@ -529,7 +529,7 @@ $16301538038805 Bit 2
 $12508086025944
 We are testing you.
 
-The rules are simple, build a functional computer or you will be eaten. Good luck.
+The rules are simple, build a functional computer or you will be eaten. Good luck. 
 $16321577947087 Congratulations, you have been abducted!
 $19257730429557
 A signal flows from the "IN" component to the "OUT" component.
