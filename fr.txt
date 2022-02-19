@@ -1010,25 +1010,25 @@ It doesn't really surprise me.
 
 === levels/not_gate ===
 
-$19085882338208 [b]Instruction[/b]\nRight click to deselect
-$10042327259531 Now that you unlocked the NAND gate, it is time for you to build a circuit.
-$14042842216181 Last level you made the table that described the circuit. In this level you build the circuit that matches table.
-$10604720087324 [b]Instruction[/b]\nBuild a circuit that makes the table correct.\nClick [i][/i] (Next tick) in the upper left corner to test each combination of inputs.\nYou win the level once both combinations have been tested correct.
+$19085882338208 [b]Consigne[/b]\nFaites un clique droit pour déselectionner
+$10042327259531 Maintenant que vous avez déverouillé la porte NAND, il est temps de créer votre propre circuit.
+$14042842216181 Dans le dernier niveau, vous avez construit le tableau à partir du circuit. Dans ce niveau vous devrez créer un circuit qui correspondra avec le tableau.
+$10604720087324 [b]Consigne[/b]\nConstruisez un circuit qui corresponde au tableau.\nCliquez [i][/i] (Prochain Tick) en haut à gauche pour tester chaque combinaison d'entrées.\nVous réuissirez le niveau une fois que les deux combinaisons seront justes.
 $19798729463813
-Using NAND gates, build the NOT gate
+En utilisant des portes NAND, construisez une porte NOT.
 
-Using: [b]NAND gate[/b]
-[code]INPUT 1: [OFF][ON][OFF][ON]
-INPUT 2: [OFF][OFF][ON][ON]
-OUTPUT:  [ON][ON][ON][OFF][/code]
+En utilisant: [b]porte NAND[/b]
+[code]Entrée 1: [OFF][ON][OFF][ON]
+Entrée 2: [OFF][OFF][ON][ON]
+Sortie:  [ON][ON][ON][OFF][/code]
 
-Build: [b]NOT gate[/b]
-[code]INPUT 1: [ON][OFF]
-OUTPUT:  [OFF][ON][/code]
+Construisez: [b]porte NOT[/b]
+[code]Entrée 1: [ON][OFF]
+Sortie:  [OFF][ON][/code]
 
-$18442122157391 [b]Instruction[/b]\nDeselect the component by clicking the background
-$12880883686501 [b]Instruction[/b]\nClick on the NAND component on the top right side of the screen and place it
-$18780831606716 [b]Instruction[/b]\nClick and drag on the board to add a wire
+$18442122157391 [b]Consigne[/b]\nDéselectionnez le composant en cliquant sur l'arrière-plan
+$12880883686501 [b]Consigne[/b]\nCliquez sur la porte NAND en haut à droite et placez là
+$18780831606716 [b]Consigne[/b]\nMaintenez le clique gauche pour ajouter un fil
 
 
 === levels/bit_adder ===
