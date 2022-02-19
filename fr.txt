@@ -11,7 +11,7 @@ $17994568832660 [b]Consigne[/b]\nLa porte NAND au milieu du circuit change son c
 
 === levels/xnor ===
 
-$11090938799865 Create the inverse XOR gate, known as XNOR.
+$11090938799865 Créez la porte XOR inverse, connue sous le nom de XNORC.
 
 
 === levels/decoder ===
