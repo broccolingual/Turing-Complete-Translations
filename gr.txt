@@ -40,8 +40,8 @@ $12532951884542 ΑΜΕΣΟΣ
 
 === levels/RAM ===
 
-$17967666262990 In this test, first copy from input 32 times and store these values. After you have loaded the 32 values, output them in the same order as you got them. Outputting before you have read all the inputs will fail the level.
-$13520918982355 Add a ram block, so the computer can address 256 additional bytes of memory. You need a way to decide which of the 256 bytes inside the ram we are addressing. Select a register and wire it up, so its value always selects the RAM address. When you later want to load or save to the RAM, you will have to first copy the RAM address to this register.
+$17967666262990 Σε αυτή τη δοκιμή, αντιγράψτε πρώτα από την είσοδο 32 φορές και αποθηκεύστε αυτές τις τιμές. Αφού φορτώσατε τις 32 τιμές, δώστε τις στην έξοδο με την ίδια σειρά που τις πήρατε. Η έξοδος πριν διαβάσετε όλες τις εισόδους θα αποτύχει στο επίπεδο.
+$13520918982355 Προσθέστε ένα μπλοκ ram, ώστε ο υπολογιστής να μπορεί να απευθύνεται σε 256 επιπλέον bytes μνήμης. Χρειάζεται ένας τρόπος για να αποφασίσουμε σε ποια από τα 256 bytes μέσα στην ram απευθυνόμαστε. Επιλέξτε έναν μητρώο και συνδέστε τον, ώστε η τιμή του να επιλέγει πάντα τη διεύθυνση RAM. Όταν αργότερα θελήσετε να φορτώσετε ή να αποθηκεύσετε στη RAM, θα πρέπει πρώτα να αντιγράψετε τη διεύθυνση της RAM σε αυτό το μητρώο.
 
 
 === levels/ram_block ===
