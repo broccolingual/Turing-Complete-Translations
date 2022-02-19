@@ -11,13 +11,13 @@ $17994568832660 [b]Инструкция:[/b]\nКомпонент NAND перек
 
 === levels/xnor ===
 
-$11090938799865 Создайте "инвертированый" XOR gate, назовём его XNOR. tests
+$11090938799865 Создайте "инвертированый" XOR gate, назовём его XNOR.
 
 
 === levels/decoder ===
 
 $16133643476631 The circuit you built in the 
-$18435544383511 CALCULATE pattern\n[OFF] [ON] [ANY] [ANY] [ANY] [ANY] [ANY] [ANY] hey
+$18435544383511 CALCULATE pattern\n[OFF] [ON] [ANY] [ANY] [ANY] [ANY] [ANY] [ANY]
 $18198768092383 COPY
 $18945946395447
 To distinguish between the [INSTRUCTIONS] of 4 different kinds, the two highest bits will be used to determine which MODE we are in as follows:
