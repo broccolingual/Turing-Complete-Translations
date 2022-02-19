@@ -3,10 +3,10 @@
 $17420270098223 Dans ce niveau, le but sera de comprendre comment fonctionne une porte NAND. Soyez [color=#dd6576]sur[/color] de savoir comment elle fonctionne avant de compléter le niveau, sinon vous pourriez être bloqué dans le prochain!
 $11034378482152 Correct! Vous avez débloqué la porte NAND. Avec ce composant vous pourrez construire tout le reste de votre ordinateur!
 $18270083417453 Vérifier
-$19208664264770 [b]Consigne[/b]\nClique sur un des bouttons de la dernière ligne du tableau.
+$19208664264770 [b]Consigne[/b]\nCliquez sur l'un des bouttons de la dernière ligne du tableau.
 $17923274216766 Nous en avons conclus que vous n'êtes probablement pas une plante.
 $14777350869870 Nous sommes impressionnés par votre capacité à avoir résolu le dernier test!
-$17994568832660 [b]Consigne[/b]\nLa porte NAND au milieu change le comportement du circuit.\nUtilisez la barre sur votre gauche pour experimenter l'effet qu'ont les entrées sur les sorties et complétez le tableau en conséquence.
+$17994568832660 [b]Consigne[/b]\nLa porte NAND au milieu du circuit change son comportement.\nUtilisez la barre sur votre gauche pour experimenter les effets qu'ont les entrées sur les sorties et complétez le tableau en conséquence.
 
 
 === levels/xnor ===
