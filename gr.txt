@@ -81,23 +81,23 @@ $12291627335021 ΑΠΟΘΗΚΕΥΣΕ
 
 === levels/byte_less_i ===
 
-$16755383054285 [center]Determine if the first input is less than the second.[/center]
-$19006843777401 Create a circuit that outputs [ON] when the first input is less than the second. Interpret the bytes as being [color=#dd6576]SIGNED[/color].
+$16755383054285 [center]Προσδιορίστε αν η πρώτη είσοδος είναι μικρότερη από τη δεύτερη.[/center]
+$19006843777401 Δημιουργήστε ένα κύκλωμα που να βγάζει [ON] όταν η πρώτη είσοδος είναι μικρότερη από τη δεύτερη. Ερμηνεύστε τα bytes ως [color=#dd6576]ΥΠΟΓΡΑΦΗ[/color].
 
 
 === levels/bit_inverter ===
 
-$15769391111364 When "Invert" is [ON], output the opposite of "Value". Otherwise, just output "Value" as is.
-$15272914096446 This level is exactly the same as the XOR one you solved before. Remember no matter what we tell you the goal of the level is, the real truth is in the truth table.
-$14944872827527 Despite the funny background you figured out this was just the XOR gate in disguise! Well done.
-$16125025706490 Hmm, perhaps you have studied momory a little bit too well...
-$12338758521470 This level is exactly the same as the XOR one you solved before. Remember no matter what we tell you the goal of the level is, the real truth is in the truth table.
-$13224963076378 We are experimenting with how backgrounds influence cognitive functions in earthlings.
+$15769391111364 Όταν η "Αντιστροφή" είναι [ON], η έξοδος είναι αντίθετη από την "Τιμή". Διαφορετικά, απλά εξάγετε την " Τιμή " ως έχει.
+$15272914096446 Αυτό το επίπεδο είναι ακριβώς το ίδιο με το επίπεδο XOR που λύσατε προηγουμένως. Θυμηθείτε ότι ανεξάρτητα από το τι σας λέμε ότι είναι ο στόχος του επιπέδου, η πραγματική αλήθεια βρίσκεται στον πίνακα αλήθειας.
+$14944872827527 Παρά το αστείο φόντο, καταλάβατε ότι αυτό ήταν απλώς η πύλη XOR μεταμφιεσμένη! Μπράβο σας.
+$16125025706490 Χμμ, ίσως έχετε διαβάσει τη μνήμη λίγο παραπάνω από καλά...
+$12338758521470 Αυτό το επίπεδο είναι ακριβώς το ίδιο με το επίπεδο XOR που λύσατε προηγουμένως. Θυμηθείτε ότι ανεξάρτητα από το τι σας λέμε ότι είναι ο στόχος του επιπέδου, η πραγματική αλήθεια βρίσκεται στον πίνακα αλήθειας.
+$13224963076378 Πειραματιζόμαστε με το πώς το υπόβαθρο επηρεάζει τις γνωστικές λειτουργίες των γήινων.
 
 
 === levels/and_gate_3 ===
 
-$14788981567936 Create an AND gate with 3 inputs.
+$14788981567936 Δημιουργήστε μια πύλη AND με 3 εισόδους.
 
 
 === levels/byte_toggle ===
