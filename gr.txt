@@ -46,37 +46,37 @@ $13520918982355 Προσθέστε ένα μπλοκ ram, ώστε ο υπολο
 
 === levels/ram_block ===
 
-$17142958857584 A OR B
-$12901484249817 Can you fit 4 bytes of memory in this limited space?
+$17142958857584 A ή B
+$12901484249817 Μπορείτε να χωρέσετε 4 bytes μνήμης σε αυτόν τον περιορισμένο χώρο;
 $14218335256117
-In our advanced civilization, forcing prisoners to do extremely menial tasks is slavery and is technically illegal.
-	  That is why we instead had our intern create the 256 byte version of your component.
+Στον προηγμένο πολιτισμό μας, ο εξαναγκασμός των κρατουμένων σε εξαιρετικά ταπεινές εργασίες είναι δουλεία και τεχνικά παράνομος.
+	  Αυτός είναι ο λόγος για τον οποίο βάλαμε τον εκπαιδευόμενό μας να δημιουργήσει την έκδοση των 256 byte του εξαρτήματός.
 $19282543476901 1
-$13765566466116 DON'T SAVE
-$15908016538045 VALUE
+$13765566466116 ΜΗΝ ΑΠΟΘΗΚΕΥΣΕΤΕ
+$15908016538045 ΤΙΜΗ
 $16196915566111 0
 $14259545926196 A
 $12306130287676
-In this level you have to build a circuit that 
-can [SAVE] or [LOAD] from 4 different bytes of memory.
+Σε αυτό το επίπεδο πρέπει να κατασκευάσετε ένα κύκλωμα που 
+να μπορεί να [ΑΠΟΘΗΚΕΥΣΕΙ] ή να [ΦΟΡΤΩΣΕΙ] από 4 διαφορετικά bytes μνήμης.
 
-You are given 1 bit that determines if you are to [LOAD]. Another bit determines if you are to [SAVE] and it comes with a corresponding value.
-Additionally, you have 2 address bits. 
+Σας δίνεται 1 bit που καθορίζει αν πρέπει να κάνετε [LOAD]. Ένα άλλο bit καθορίζει αν θα κάνετε [ΑΠΟΘΗΚΕΥΣΗ] και συνοδεύεται από μια αντίστοιχη τιμή.
+Επιπλέον, έχετε 2 bits διεύθυνσης. 
 
-With 2 bits, there are 4 combinations, one for each byte of memory in this level.
-[i][tip]Join wires in the middle and use right angles or this will be a mess.[/tip][/i]
-[i][tip]Spacebar rotates components.[/tip][/i]
+Με 2 bit, υπάρχουν 4 συνδυασμοί, ένας για κάθε byte μνήμης σε αυτό το επίπεδο.
+[i][tip]Ενώστε τα καλώδια στη μέση και χρησιμοποιήστε ορθές γωνίες, αλλιώς θα γίνει χαμός.[/tip][/i][/i]
+[i][tip]Το πλήκτρο διαστήματος περιστρέφει τα εξαρτήματα[/tip][/i][/i]
 $16217965518477 B
 $10891070331034 B
-$18084166025569 Nothing
-$13082830776248 DON'T LOAD
-$17473197268827 LOAD
-$13555908976270 0 OR 1
-$10311371309532 SAVE
-$16925432534232 LOAD
-$13644027370563 Load
+$18084166025569 Τίποτα
+$13082830776248 ΜΗ ΦΟΡΤΩΝΕΙΣ
+$17473197268827 ΦΌΡΤΩΣΕ
+$13555908976270 0 ή 1
+$10311371309532 ΑΠΟΘΗΚΕΥΣΗ
+$16925432534232 ΦΟΡΤΩΣΕ
+$13644027370563 Φόρτωσε
 $12933801309767 A
-$12291627335021 SAVE
+$12291627335021 ΑΠΟΘΗΚΕΥΣΕ
 
 
 === levels/byte_less_i ===
