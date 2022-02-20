@@ -8,96 +8,93 @@ $10515630949378 We have hooked your machine up to our advanced robot and we want
 
 === levels/xnor ===
 
-$11090938799865 Créez la porte XOR inverse, connue sous le nom de XNOR.
+$11090938799865 Δημιουργήστε την αντίστροφη πύλη XOR, γνωστή και ως XNOR.
 
 
 === levels/decoder ===
 
-$16133643476631 Le circuit que vous avez créé dans le niveau "Registres" peut copier des valeurs entre différents registres, tandis que l' "Unité arithmétique et logique" a la capacité de faire différentes opérations avec ses deux entrées.
-Vous devez maintenant associer ces deux éléments, pour celà vous devrez commencer par construire un "décodeur" qui vous permettra de décider dans quel mode sera l'ordinateur en fonction des deux bits que nous n'avions pas utilisé pour l'instant.
-$18435544383511 CALCULER\n[OFF] [ON] [ANY] [ANY] [ANY] [ANY] [ANY] [ANY]
-$18198768092383 COPIER
+$16133643476631 Το κύκλωμα που κατασκευάσατε στο επίπεδο "Registers" μπορεί να αντιγράψει τιμές μεταξύ μητρώων, ενώ η "Arithmetic Engine" μπορεί να κάνει διάφορες πράξεις σε 2 εισόδους. Αλλά πρέπει να μπορείτε να κάνετε και τα δύο στο ίδιο κύκλωμα. Για να το κάνετε αυτό, κατασκευάστε έναν "αποκωδικοποιητή", ο οποίος θα αποφασίζει σε ποια λειτουργία βρίσκεται ο υπολογιστής μας, με βάση τα 2 bits που δεν έχουμε χρησιμοποιήσει ακόμα.
+$18435544383511 ΥΠΟΛΟΓΙΣΕ το μοτίβο\n[OFF] [ON] [ANY] [ANY] [ANY] [ANY] [ANY] [ANY]
+$18198768092383 ΑΝΤΙΓΡΑΦΗ
 $18945946395447
-Pour distinguer les 4 [INSTRUCTIONS], nous utiliserons les deux bits de plus haut poids qui définieront le MODE dans lequel nous serons.
-Cette liste montre les 4 modes à implémenter:
-[OFF] [OFF] [ANY] [ANY] [ANY] [ANY] [ANY] [ANY] Valeur immédiate
-[OFF] [ON] [ANY] [ANY] [ANY] [ANY] [ANY] [ANY] Calculer
-[ON] [OFF] [ANY] [ANY] [ANY] [ANY] [ANY] [ANY] Copier
-[ON] [ON] [ANY] [ANY] [ANY] [ANY] [ANY] [ANY] Condition logique
+Για να γίνει διάκριση μεταξύ των [ΟΔΗΓΙΩΝ] 4 διαφορετικών ειδών, τα δύο υψηλότερα bit θα χρησιμοποιηθούν για να καθορίσουν σε ποιο MODE βρισκόμαστε ως εξής:[OFF] [OFF] [ANY] [ANY] [ANY] [ANY] [ANY] [ANY] Άμεσα
+[OFF] [ON] [ANY] [ANY] [ANY] [ANY] [ANY] [ANY] Υπολογισμός
+[ON] [OFF] [ANY] [ANY] [ANY] [ANY] [ANY] [ANY] Αντιγραφή
+[ON] [ON] [ANY] [ANY] [ANY] [ANY] [ANY] [ANY] Κατάσταση
 
-Ici [ANY] veut dire que l'ont peut avoir n'importe quelle valeur.
+Εδώ [ANY] σημαίνει οποιαδήποτε τιμή.
 
-Déterminez le mode dans lequel nous sommes à partir de l'entrée et envoyez [ON] vers la sortie qui correspond.
-$16785126425267 Calculer
-$15440615199508 Condition logique
-$12671132029272 Votre circuit à été sauvegardé dans la fabrique de composants.
-$15105859227432 COPIER \n[ON] [OFF] [ANY] [ANY] [ANY] [ANY] [ANY] [ANY]
-$12068329066372 [b]ATTENTION: CETTE VERSION DU CIRCUIT EST OBSOLÈTE, VEUILLEZ CLIQUER SUR L'ICÔNE DE SAUVEGARDE ET CRÉEZ UNE NOUVELLE VERSION DE CE CIRCUIT[/b]
-$11382827588408 Condition logique\n[ON] [ON] [OFF] [OFF] [OFF] [ANY] [ANY] [ANY]
-$12976424717611 Valeur immédiate\n[OFF] [OFF] [ANY] [ANY] [ANY] [ANY] [ANY] [ANY]
-$12532951884542 Valeur immédiate
+Καθορίστε το MODE στο οποίο βρισκόμαστε από την είσοδο και, στη συνέχεια, στείλτε το [ON] στη σωστή έξοδο.
+$16785126425267 ΥΠΟΛΟΓΙΣΜΟΣ
+$15440615199508 ΚΑΤΑΣΤΑΣΗ
+$12671132029272 Το κύκλωμά σας έχει αποθηκευτεί στο εργοστάσιο εξαρτημάτων.
+$15105859227432 Μοτίβο COPY\n[ON] [OFF] [ANY] [ANY] [ANY] [ANY] [ANY] [ANY]
+$12068329066372 [b]ΠΡΟΕΙΔΟΠΟΙΗΣΗ: ΑΥΤΗ ΕΙΝΑΙ ΜΙΑ ΛΗΓΜΕΝΗ ΕΚΔΟΣΗ ΑΥΤΟΥ ΤΟΥ ΧΑΡΤΗ, ΠΑΡΑΚΑΛΩ ΚΑΝΤΕ ΚΛΙΚ ΣΤΟ ΣΗΜΕΙΩΜΑ ΑΠΟΘΗΚΕΥΣΗΣ ΣΤΗΝ ΑΝΩ ΑΡΙΣΤΕΡΑ ΑΡΙΣΤΕΡΑ ΚΑΙ ΔΗΜΙΟΥΡΓΗΣΤΕ ΚΑΙ ΦΟΡΤΩΣΕΤΕ ΕΝΑ ΝΕΟ ΣΧΕΔΙΟ[/b]
+$11382827588408 ΚΑΤΑΣΤΑΣΗ Μοτίβο \n[ON] [ON] [OFF] [OFF] [OFF] [OFF] [ANY] [ANY] [ANY] [ANY] [ANY]
+$12976424717611 ΑΜΕΣΟ Μοτίβο\n[OFF] [OFF] [ANY] [ANY] [ANY] [ANY] [ANY] [ANY]
+$12532951884542 ΑΜΕΣΟΣ
 
 
 === levels/RAM ===
 
-$17967666262990 Dans ce niveau, copiez d'abord 32 valeurs et sauvegardez chacune d'elle. Après les avoirs sauvegardé, envoyez les vers la sortie dans l'ordre d'arrivé. Envoyer une valeur vers la sortie avant d'avoir stocker toutes les valeurs vous fera perdre le niveau. 
-$13520918982355 Ajoutez un bloc de ram, ainsi l'ordinateur aura 256 bytes de mémoire en plus. Vous devez trouver un moyen d'accéder à un byte indépendamment des autres. Indice: nous utiliserons un registre pour choisir l'adresse de la RAM, ainsi si vous voulez sauvegarder ou charger une valeur, vous pourrez indiquer l'adresse dans ce registre.
+$17967666262990 Σε αυτή τη δοκιμή, αντιγράψτε πρώτα από την είσοδο 32 φορές και αποθηκεύστε αυτές τις τιμές. Αφού φορτώσατε τις 32 τιμές, δώστε τις στην έξοδο με την ίδια σειρά που τις πήρατε. Η έξοδος πριν διαβάσετε όλες τις εισόδους θα αποτύχει στο επίπεδο.
+$13520918982355 Προσθέστε ένα μπλοκ ram, ώστε ο υπολογιστής να μπορεί να απευθύνεται σε 256 επιπλέον bytes μνήμης. Χρειάζεται ένας τρόπος για να αποφασίσουμε σε ποια από τα 256 bytes μέσα στην ram απευθυνόμαστε. Επιλέξτε έναν μητρώο και συνδέστε τον, ώστε η τιμή του να επιλέγει πάντα τη διεύθυνση RAM. Όταν αργότερα θελήσετε να φορτώσετε ή να αποθηκεύσετε στη RAM, θα πρέπει πρώτα να αντιγράψετε τη διεύθυνση της RAM σε αυτό το μητρώο.
 
 
 === levels/ram_block ===
 
-$17142958857584 A OU B
-$12901484249817 Pourrez-vous mettre 4 bytes de mémoire dans un espace aussi limité?
+$17142958857584 A ή B
+$12901484249817 Μπορείτε να χωρέσετε 4 bytes μνήμης σε αυτόν τον περιορισμένο χώρο;
 $14218335256117
-Dans notre civilisation avancée, forcer les prisonniers à faire des tâches complexes est de l'esclavage et est techniquement illégal.
-		C'est pour cela que nous avons dis au stagiaire de faire une version 256 bytes de votre composant. 
+Στον προηγμένο πολιτισμό μας, ο εξαναγκασμός των κρατουμένων σε εξαιρετικά ταπεινές εργασίες είναι δουλεία και τεχνικά παράνομος.
+	  Αυτός είναι ο λόγος για τον οποίο βάλαμε τον εκπαιδευόμενό μας να δημιουργήσει την έκδοση των 256 byte του εξαρτήματός.
 $19282543476901 1
-$13765566466116 NE PAS SAUVEGARDER
-$15908016538045 VALEUR
+$13765566466116 ΜΗΝ ΑΠΟΘΗΚΕΥΣΕΤΕ
+$15908016538045 ΤΙΜΗ
 $16196915566111 0
 $14259545926196 A
 $12306130287676
-Dans ce niveau vous devrez construire un circuit qui pourra
-[SAUVEGARDER] ou [CHARGER] 4 bytes de mémoire différents. 
+Σε αυτό το επίπεδο πρέπει να κατασκευάσετε ένα κύκλωμα που 
+να μπορεί να [ΑΠΟΘΗΚΕΥΣΕΙ] ή να [ΦΟΡΤΩΣΕΙ] από 4 διαφορετικά bytes μνήμης.
 
-1 Bit sera donné pour [CHARGER] et un autre pour [SAUVEGARDER].
-Enfin, 2 bits seront données pour l'adresse.
+Σας δίνεται 1 bit που καθορίζει αν πρέπει να κάνετε [LOAD]. Ένα άλλο bit καθορίζει αν θα κάνετε [ΑΠΟΘΗΚΕΥΣΗ] και συνοδεύεται από μια αντίστοιχη τιμή.
+Επιπλέον, έχετε 2 bits διεύθυνσης. 
 
-Avec 2 bits, vous aurez 4 combinaisons possibles, une pour chaque byte de mémoire dans ce niveau.
-[i][tip]Rassemblez les fils au centre et utilisez des angles droits, sinon ce sera le bazar ![/tip][/i]
-[i][tip]La barre d'espace fait tourner les composants.[/tip][/i]
+Με 2 bit, υπάρχουν 4 συνδυασμοί, ένας για κάθε byte μνήμης σε αυτό το επίπεδο.
+[i][tip]Ενώστε τα καλώδια στη μέση και χρησιμοποιήστε ορθές γωνίες, αλλιώς θα γίνει χαμός.[/tip][/i][/i]
+[i][tip]Το πλήκτρο διαστήματος περιστρέφει τα εξαρτήματα[/tip][/i][/i]
 $16217965518477 B
 $10891070331034 B
-$18084166025569 Rien
-$13082830776248 NE PAS SAUVEGARDER
-$17473197268827 CHARGER
-$13555908976270 0 OU 1
-$10311371309532 SAUVEGARDER
-$16925432534232 CHARGER
-$13644027370563 Charger
+$18084166025569 Τίποτα
+$13082830776248 ΜΗ ΦΟΡΤΩΝΕΙΣ
+$17473197268827 ΦΌΡΤΩΣΕ
+$13555908976270 0 ή 1
+$10311371309532 ΑΠΟΘΗΚΕΥΣΗ
+$16925432534232 ΦΟΡΤΩΣΕ
+$13644027370563 Φόρτωσε
 $12933801309767 A
-$12291627335021 SAUVEGARDER
+$12291627335021 ΑΠΟΘΗΚΕΥΣΕ
 
 
 === levels/byte_less_i ===
 
-$16755383054285 [center]Determine if the first input is less than the second.[/center]
-$19006843777401 Create a circuit that outputs [ON] when the first input is less than the second. Interpret the bytes as being [color=#dd6576]SIGNED[/color].
+$16755383054285 [center]Προσδιορίστε αν η πρώτη είσοδος είναι μικρότερη από τη δεύτερη.[/center]
+$19006843777401 Δημιουργήστε ένα κύκλωμα που να βγάζει [ON] όταν η πρώτη είσοδος είναι μικρότερη από τη δεύτερη. Ερμηνεύστε τα bytes ως [color=#dd6576]ΥΠΟΓΡΑΦΗ[/color].
 
 
 === levels/bit_inverter ===
 
-$15769391111364 When "Invert" is [ON], output the opposite of "Value". Otherwise, just output "Value" as is.
-$15272914096446 This level is exactly the same as the XOR one you solved before. Remember no matter what we tell you the goal of the level is, the real truth is in the truth table.
-$14944872827527 Despite the funny background you figured out this was just the XOR gate in disguise! Well done.
-$16125025706490 Hmm, perhaps you have studied momory a little bit too well...
-$12338758521470 This level is exactly the same as the XOR one you solved before. Remember no matter what we tell you the goal of the level is, the real truth is in the truth table.
-$13224963076378 We are experimenting with how backgrounds influence cognitive functions in earthlings.
+$15769391111364 Όταν η "Αντιστροφή" είναι [ON], η έξοδος είναι αντίθετη από την "Τιμή". Διαφορετικά, απλά εξάγετε την " Τιμή " ως έχει.
+$15272914096446 Αυτό το επίπεδο είναι ακριβώς το ίδιο με το επίπεδο XOR που λύσατε προηγουμένως. Θυμηθείτε ότι ανεξάρτητα από το τι σας λέμε ότι είναι ο στόχος του επιπέδου, η πραγματική αλήθεια βρίσκεται στον πίνακα αλήθειας.
+$14944872827527 Παρά το αστείο φόντο, καταλάβατε ότι αυτό ήταν απλώς η πύλη XOR μεταμφιεσμένη! Μπράβο σας.
+$16125025706490 Χμμ, ίσως έχετε διαβάσει τη μνήμη λίγο παραπάνω από καλά...
+$12338758521470 Αυτό το επίπεδο είναι ακριβώς το ίδιο με το επίπεδο XOR που λύσατε προηγουμένως. Θυμηθείτε ότι ανεξάρτητα από το τι σας λέμε ότι είναι ο στόχος του επιπέδου, η πραγματική αλήθεια βρίσκεται στον πίνακα αλήθειας.
+$13224963076378 Πειραματιζόμαστε με το πώς το υπόβαθρο επηρεάζει τις γνωστικές λειτουργίες των γήινων.
 
 
 === levels/and_gate_3 ===
 
-$14788981567936 Create an AND gate with 3 inputs.
+$14788981567936 Δημιουργήστε μια πύλη AND με 3 εισόδους.
 
 
 === levels/saving_bytes ===
@@ -257,13 +254,13 @@ $18732877690173 Add the two input bytes. Each output bit in the output should be
 
 === levels/NAND Gate ===
 
-$17420270098223 Dans ce niveau, le but sera de comprendre comment fonctionne une porte NAND. Soyez [color=#dd6576]sur[/color] de savoir comment elle fonctionne avant de compléter le niveau, sinon vous pourriez être bloqué dans le prochain!
-$11034378482152 Correct! Vous avez débloqué la porte NAND. Avec ce composant vous pourrez construire tout le reste de votre ordinateur!
-$18270083417453 Vérifier
-$19208664264770 [b]Consigne[/b]\nCliquez sur l'un des bouttons de la dernière ligne du tableau.
-$17923274216766 Nous en avons conclus que vous n'êtes probablement pas une plante.
-$14777350869870 Nous sommes impressionnés par votre capacité à avoir résolu le dernier test!
-$17994568832660 [b]Consigne[/b]\nLa porte NAND au milieu du circuit change son comportement.\nUtilisez la barre sur votre gauche pour experimenter les effets qu'ont les entrées sur les sorties et complétez le tableau en conséquence.
+$17420270098223 Σε αυτό το επίπεδο η πρόκληση είναι να καταλάβετε πώς λειτουργεί το εξάρτημα NAND. Να είστε [color=#dd6576]σίγουροι[/color] ότι το καταλάβετε πριν ολοκληρώσετε αυτό το επίπεδο, αλλιώς θα κολλήσετε στο επόμενο επίπεδο!
+$11034378482152 Σωστά! Ξεκλειδώσατε την πύλη NAND. Με αυτό το εξάρτημα μπορείτε να κατασκευάσετε οτιδήποτε άλλο στον υπολογιστή σας!
+$18270083417453 Έλεγχος
+$19208664264770 [b]Οδηγίες[/b]\nΚάντε κλικ σε οποιοδήποτε από τα γκρίζα κουμπιά στην τελευταία σειρά του πίνακα.
+$17923274216766 Αποφασίσαμε ότι μάλλον δεν είστε φυτό.
+$14777350869870 Είμαστε πολύ εντυπωσιασμένοι με το πόσο καλά ολοκληρώσατε το τελευταίο τεστ!
+$17994568832660 [b]Οδηγία[/b]\nΤο εξάρτημα NAND στη μέση αλλάζει τη ροή του κυκλώματος.\nΧρησιμοποιήστε τη γραμμή στα αριστερά για να πειραματιστείτε με τις εισόδους, να δείτε πώς επηρεάζουν την έξοδο και να συμπληρώσετε την τελευταία γραμμή του πίνακα.
 
 
 === levels/Switch ===
@@ -727,15 +724,15 @@ $11183892008673 You win this level when you output the correct passcode, no outp
 === levels/Crude Awakening ===
 
 $12508086025944
-Nous allons vous tester.
+We are testing you.
 
-Les règles sont simples, construisez un ordinateur fonctionnel ou vous allez être manger. Bonne chance !
-$16321577947087 Félicitation, vous vous êtes fait enlever!
+The rules are simple, build a functional computer or you will be eaten. Good luck.
+$16321577947087 Congratulations, you have been abducted!
 $19257730429557
-Un signal se déplace toujours de composants "IN" vers des composants "OUT".
-Dans le coin en haut à gauche en dessous de "IN" vous trouverez une icône verte, 
-cliquez dessus pour changer son état.
-$17675121574388 Le composant OUT s'est maintenant éteint, car aucun signal ne viens de l'entrée.\n
+A signal flows from the "IN" component to the "OUT" component.
+In the upper left corner under "input" there is a green icon, 
+click on it to turn the "IN" component off. 
+$17675121574388 Notice that the OUT component is turned off.\nThis is because the signal stopped flowing from the IN component.
 
 
 === levels/constants ===
@@ -1003,24 +1000,24 @@ $18769284297247 Create a new schematic and add a program with 4 byte output
 
 === levels/not_gate ===
 
-$19085882338208 [b]Consigne[/b]\nFaites un clique droit pour déselectionner
-$10042327259531 Maintenant que vous avez déverouillé la porte NAND, il est temps de créer votre propre circuit.
-$14042842216181 Dans le dernier niveau, vous avez construit le tableau à partir du circuit. Dans ce niveau vous devrez créer un circuit qui correspondra avec le tableau.
-$10604720087324 [b]Consigne[/b]\nConstruisez un circuit qui corresponde au tableau.\nCliquez [i][/i] (Prochain Tick) en haut à gauche pour tester chaque combinaison d'entrées.\nVous réuissirez le niveau une fois que les deux combinaisons seront justes.
+$19085882338208 [b]Instruction[/b]\nRight click to deselect
+$10042327259531 Now that you unlocked the NAND gate, it is time for you to build a circuit.
+$14042842216181 Last level you made the table that described the circuit. In this level you build the circuit that matches table.
+$10604720087324 [b]Instruction[/b]\nBuild a circuit that makes the table correct.\nClick [i][/i] (Next tick) in the upper left corner to test each combination of inputs.\nYou win the level once both combinations have been tested correct.
 $19798729463813
-En utilisant des portes NAND, construisez une porte NOT.
+Using NAND gates, build the NOT gate
 
-En utilisant: [b]porte NAND[/b]
-[code]Entrée 1: [OFF][ON][OFF][ON]
-Entrée 2: [OFF][OFF][ON][ON]
-Sortie:  [ON][ON][ON][OFF][/code]
+Using: [b]NAND gate[/b]
+[code]INPUT 1: [OFF][ON][OFF][ON]
+INPUT 2: [OFF][OFF][ON][ON]
+OUTPUT:  [ON][ON][ON][OFF][/code]
 
-Construisez: [b]porte NOT[/b]
-[code]Entrée 1: [ON][OFF]
-Sortie:  [OFF][ON][/code]
-$18442122157391 [b]Consigne[/b]\nDéselectionnez le composant en cliquant sur l'arrière-plan
-$12880883686501 [b]Consigne[/b]\nCliquez sur la porte NAND en haut à droite et placez là
-$18780831606716 [b]Consigne[/b]\nMaintenez le clique gauche pour ajouter un fil
+Build: [b]NOT gate[/b]
+[code]INPUT 1: [ON][OFF]
+OUTPUT:  [OFF][ON][/code]
+$18442122157391 [b]Instruction[/b]\nDeselect the component by clicking the background
+$12880883686501 [b]Instruction[/b]\nClick on the NAND component on the top right side of the screen and place it
+$18780831606716 [b]Instruction[/b]\nClick and drag on the board to add a wire
 
 
 === levels/bit_adder ===

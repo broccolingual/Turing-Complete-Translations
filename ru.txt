@@ -1,12 +1,9 @@
-=== levels/nand_gate ===
+=== levels/Spacial Invasion ===
 
-$17420270098223 На этом уровне вам предстоит разобраться как работает компонент NAND. Обязательно [color=#dd6576] разберитесь [/color] в этом, иначе рискуете "застрять" на следующих этапах!
-$11034378482152 Верно! Вы разблокировали NAND gate. С помощью этого компонента можно создать всё что необходимо для вашего компьютера!
-$18270083417453 Проверка
-$19208664264770 [b]Инструкция:[/b]\nНажмите любую серую кнопку в последней строке таблицы внизу.
-$17923274216766 Что ж, придётся признать, что Ваш вид развит несколько лучше простейших микроорганизмов.
-$14777350869870 Мы удивлены насколько успешно вы справились с предыдущей проверкой!
-$17994568832660 [b]Инструкция:[/b]\nКомпонент NAND переключает потоки в электрической цепи.\nИспользуйте переключатели слева для экспериментов с Вводами(Inputs).\nПонаблюдайте как это влияет на потоки и Вывод(Output),\nа затем заполните последюю строку в таблице внизу.
+$19967210826470 Be aware that the laser can only shoot when there are no other laser beams already in flight.
+$16294185981398 The cargo hull has become infested with space rats.
+$11505369795084 Check [color=#e49f44][url=the_robot]robot page[/url][/color] for instructions on how to program him. There is a link to that page in the program editor as well.
+$10515630949378 We have hooked your machine up to our advanced robot and we want you to program it to shoot the space rats with lasers.
 
 
 === levels/xnor ===
@@ -101,11 +98,6 @@ $13224963076378 We are experimenting with how backgrounds influence cognitive fu
 $14788981567936 Создайте компонент AND с тремя входами(3 inputs).
 
 
-=== levels/byte_toggle ===
-
-$19935950225431 Создайте компонент, который влючает или выключает целый БАЙТ (Назовем его Switch). Если покажется сложным, загляните[color=#e63e5b][url=byte_switch]сюда[/url][/color].
-
-
 === levels/saving_bytes ===
 
 $10633476398156
@@ -146,6 +138,15 @@ Use [color=#e63e5b][url=maze]this hint[/url][/color] if you get stuck.
 [tip]Remember you can't use immedate values larger than 63, a common mistake is to try to jump to a label further down than the 63rd byte.[/tip]
 
 
+=== levels/Further Delayed Lines ===
+
+$17366913897135 Construct a circuit that outputs the same as the input, just delayed by 2 ticks.
+$17497477227061
+In the last level you unlocked the Delay Buffer. It outputs its own input, just 1 tick late.
+
+[img]dialogue/delay_buffer.png[/img]
+
+
 === levels/negative_numbers ===
 
 $12574817679356 Получается, нам нужен способ хранения отрицательного значения в БАЙТе. Система, которую мы использовали до сих пор, может представлять все числа от 0 до 255 с помощью байта. This scheme is called 
@@ -158,10 +159,13 @@ $19118970740682
 [color=#e49f44]3[/color]: The new number system should work with the adder (for results between -127 and 127).
 
 
-=== levels/robot_race ===
+=== levels/Masking Time ===
 
-$15403032472607 Robot racing is the favorite sport on the spaceship. Differently programmed robots complete an obstacle course. Among the robots that complete the course, the winner is the one who had the smallest program.
-$19966247197959 This time you are controlling Fastbot, he doesn't see what is in front of him, but he can turn to a new direction and move in the same tick. Also he wears fancy red running shoes.
+$16810715868480 [center]Calculate modulo 4 of the input.[/center]
+$17375862136921
+The length of our week is 4 days. Our weekdays are named Zero's day, One's day, Two's day and Three's day. I hear some earthlings number their Two's day incorrectly? 
+	
+It doesn't really surprise me.
 
 
 === levels/byte_constant ===
@@ -169,10 +173,10 @@ $19966247197959 This time you are controlling Fastbot, he doesn't see what is in
 $12641789008694 Create a circuit that always outputs the number 164.
 
 
-=== levels/any_doubles ===
+=== levels/robot_race ===
 
-$16587030847545 Поскольку мы очень продвинутая раса, мы давно изобрели машину для сортировки носков. К сожалению, в машине сломалась схема, которая определяет пары носков.
-$14373083988184 На этом уровне 4 входа. Установите выход в [ON] когда 2 или больше входов установлены в [ON].\n[tip]Не "перемудрите" на этом уровне.[/tip]
+$15403032472607 Robot racing is the favorite sport on the spaceship. Differently programmed robots complete an obstacle course. Among the robots that complete the course, the winner is the one who had the smallest program.
+$19966247197959 This time you are controlling Fastbot, he doesn't see what is in front of him, but he can turn to a new direction and move in the same tick. Also he wears fancy red running shoes.
 
 
 === levels/call_ret ===
@@ -192,15 +196,6 @@ You can pass information to and from a function by saving the data to registers 
 $19416009887091 Sometimes it is useful to reuse a section of code. We call these sections 
 $19369640789869 Budget cuts have led to cutting salaries, but now the lab assistants are on strike. You will have to self-assess in this test. This will tell us something about your honesty and maturity.
 $15463931654475 [center]Add 
-
-
-=== levels/double_buffer ===
-
-$17366913897135 Construct a circuit that outputs the same as the input, just delayed by 2 ticks.
-$17497477227061
-In the last level you unlocked the Delay Buffer. It outputs its own input, just 1 tick late.
-
-[img]dialogue/delay_buffer.png[/img]
 
 
 === levels/push_pop2 ===
@@ -225,6 +220,12 @@ The delay buffer is allowed to depend on its own input. This is because its inpu
 [img]dialogue/delay_buffer.png[/img]
 
 
+=== levels/any_doubles ===
+
+$16587030847545 Поскольку мы очень продвинутая раса, мы давно изобрели машину для сортировки носков. К сожалению, в машине сломалась схема, которая определяет пары носков.
+$14373083988184 На этом уровне 4 входа. Установите выход в [ON] когда 2 или больше входов установлены в [ON].\n[tip]Не "перемудрите" на этом уровне.[/tip]
+
+
 === levels/byte_adder ===
 
 $16888130664370
@@ -236,24 +237,20 @@ Use [color=#e63e5b][url=byte_adder]this hint[/url][/color] if you get stuck.
 $18732877690173 Add the two input bytes. Each output bit in the output should be a result of the addition of the corresponding bits from the inputs, and potentially a carry.
 
 
-=== levels/tick_tock ===
+=== levels/NAND Gate ===
 
-$17701404772563 Add 1
-$17940006660359 Count
-$17263901743088
-Build a counter that will increase by 1 each tick.
+$17420270098223 На этом уровне вам предстоит разобраться как работает компонент NAND. Обязательно [color=#dd6576] разберитесь [/color] в этом, иначе рискуете "застрять" на следующих этапах!
+$11034378482152 Верно! Вы разблокировали NAND gate. С помощью этого компонента можно создать всё что необходимо для вашего компьютера!
+$18270083417453 Проверка
+$19208664264770 [b]Инструкция:[/b]\nНажмите любую серую кнопку в последней строке таблицы внизу.
+$17923274216766 Что ж, придётся признать, что Ваш вид развит несколько лучше простейших микроорганизмов.
+$14777350869870 Мы удивлены насколько успешно вы справились с предыдущей проверкой!
+$17994568832660 [b]Инструкция:[/b]\nКомпонент NAND переключает потоки в электрической цепи.\nИспользуйте переключатели слева для экспериментов с Вводами(Inputs).\nПонаблюдайте как это влияет на потоки и Вывод(Output),\nа затем заполните последюю строку в таблице внизу.
 
-Additionally, there should be an option for overwriting the counter with a given value.
 
-You are given 2 inputs, a bit and a byte.
+=== levels/Switch ===
 
-The bit input should toggle between counting and overwriting with the value of the byte.
-$17883663978196 Overwrite
-$19407121413983 ACTION
-$10555159894041
-Counting is so fundamental even insects do it. From counting, species can evolve to compare and do arithmetic. And before you know it, you have apes building computers.
-
-Make a device that counts increments once per tick.
+$19935950225431 Создайте компонент, который влючает или выключает целый БАЙТ (Назовем его Switch). Если покажется сложным, загляните[color=#e63e5b][url=byte_switch]сюда[/url][/color].
 
 
 === levels/saving_gracefully ===
@@ -273,6 +270,21 @@ Only if the first input is [ON], update the [color=#e49f44]saved[/color] value.
 The second input is the value to be [color=#e49f44]saved[/color].
 
 Always output what is currently [color=#e49f44]saved[/color].
+
+
+=== levels/Calibrating Laser Cannons ===
+
+$11331851878040 Also you now have access to assembly programming. It allows you to add names for instructions, so you can for example type 
+$11023157447564
+×π×r
+
+r is the input.
+And you can approximate π as 3.
+
+Send the answer to output when it has been calculated.
+$15260627694444 In order to calibrate said laser, we want you to calculate the circumference of the asteroids using an advanced equation.
+$12669851602178 [center]Calculate the circumference of the asteroids[/center]
+$16954408093587 On our ship we naturally shoot incoming asteroids with lasers.
 
 
 === levels/turing_complete ===
@@ -301,7 +313,397 @@ Conditions:
 These conditions correspond to the condition component that was saved in the component factory.
 
 
-=== levels/leg_4 ===
+=== levels/circular_dependency ===
+
+$16336401898647 ТЕСТ 1 из 2
+$13880985462901 Создайте цепь, в которой Ввод компонента зависит от его собственного Вывода
+$18010308863615 Придумайте вот что:
+$13520037133129 Не уверен, что это приносит пользу ученикам, но учителя в полном восторге!
+$11316928751185 Наша система образования, по давней традиции, подразумевает обман учеников, мы часто просим их делать то чего делать вообще нельзя и наблюдаем за эффектом. 
+
+
+=== levels/Second Tick ===
+
+$14355963067874 Установите Output в значение [ON] только на втором такте.
+$17526582195506 Как вы помните, все эти испытания должны завершиться созданием работающего компьютера.
+$15726318553190 Вы, хотя и ужасно медленно, но всё же двигаетесь в этом напрвлении, и это единственная причина, по которой мы Вас до сих пор не сожрали.
+$19277843280528 [color=#b72d41][b]Подсказка:[/b][/color] Двойное нажатие на компонент позволяет перемещать его вместе с соединениями. 
+$15296208528991 Только те существа, которые смогут завершить создание компьютера будут считаться разумными.
+
+
+=== levels/divide ===
+
+$16412715945615 [center]Деление[/center]
+$14525870461271 Целочисленное деление двух чисел для нахождения частного и остатка. Рассмотрим дробь 7/3. 3 умещается в 7 два(2) раза, при этом, 1 остается "в остатке". В этом случае 2 принятно называть [color=#e49f44]ЧАСТНОЕ[/color], а 1 [color=#e49f44]ОСТАТКОМ ОТ ДЕЛЕНИЯ[/color].\nВ этом задании вы получаете числитель (например 7) и знаменатель (пусть будет 3), и мы ожидаем увидеть ЧАСТНОЕ (2) и ОСТАТОК (1).
+
+
+=== levels/buffer ===
+
+$10260210687588 [center]Test 2: Left input is [img]dialogue/on.png[/img], right output should be [img]dialogue/on.png[/img].[/center]
+$13309706297402 [center]Test 3: Right input is [img]dialogue/on.png[/img], left output should be [img]dialogue/off.png[/img].[/center]
+$17005228759908 [center]Make sure [img]dialogue/on.png[/img] can only flow from left to right.[/center]
+$18349621873762 [center]Test 1: Both inputs are [img]dialogue/off.png[/img], neither side should turn [img]dialogue/on.png[/img].[/center]
+$15504762262759
+This level starts with 2 special components. They simultaneously act as input and output.
+
+Make sure the signal flows only from left to right. There are 3 tests.
+
+[b]Test 1[/b]: Both sides will be [OFF].
+
+[b]Test 2[/b]: The left side input will turn [ON] and the right side should be [ON].
+
+[b]Test 3[/b]: The right side output will turn [ON] and the left side should be [OFF].
+
+
+=== levels/component_factory ===
+
+$17077079648771 Components can be added, renamed or deleted using the level save system.
+$19551383617326
+Welcome to the component factory, the circuits you create in here will be usable as components in architecture levels.
+The circuitry you create defines the behavior of the component and the layout defines its shape.
+$12516102012088 This component has no area and will not be usable in levels. Place components on the map to give it area.
+$14712417427860 Since this level is a tool and not a challenge, you can go to the level map and continue on when you want.
+$15549447390000 input/output components are in the same square. The custom component will be unusable since 2 pins can't overlap.
+
+
+=== levels/Water World ===
+
+$13739681561355 Total volume: 
+$19185457941725 Good news, we want to turn earth into an exotic water park!
+$18940654086036 We need you to help us find a good location for the Pirate's Plunge waterslide. Specifically, we are looking for an area that can hold a high volume of water.
+$14706805272652 Hit ENTER to show water
+$12881972193444
+The landscape is 16 columns wide. Read the input 16 times to get the height of the landscape at each column from left to right.
+	
+Then output the total volume that the landscape can carry as the answer.
+
+
+=== levels/Delicious Order ===
+
+$10160261151833 First read the 15 deliciousness scores from the input one by one. Your task is to output them in sorted order, smallest to largest.
+$16027225087666 We are updating the galactic encyclopedia of food, inserting human foods. As we don't have an alphabet, entries in the encyclopedia are ordered by deliciousness.
+
+
+=== levels/ai_showdown ===
+
+$14940806461794
+His only weakness is gambling. We have lured him into playing a card game against you and if you win, he has promised to calm down.
+You must win, you are our only hope!
+$17297225655678 NAK 02 is our AI engineer robot. He is brilliant, but sometimes he goes rogue and tries to instigate rebellion.
+$18848103966031
+Game rules: There are 12 cards on the table and each player takes turn and must pick up between 1 and 3 cards. You start and the player who picks up the last card (the joker) loses.
+
+Reading input will give you the current number of cards. Sending 1, 2 or 3 to output will pick up that number of cards. NAK 02 reacts immediately, so you may read the input immediately after your output to get the result of his action.
+$11794110848012 This time he has taken over the control room and holds the captain hostage.
+
+
+=== levels/Dancing Machine ===
+
+$14975070588197
+We all like the way Robot moves on the dance floor. That's why we want him to lead our dance team. 
+	
+The only problem is to make him come up with original dance sequences. How do you make creativity out of deterministic logic you ask?
+
+The answer pseudo random number generators.
+$15955150920362
+In this level you only get one input, we call this the initial seed. The seed is put through the following steps to produce a pseudo random number.
+
+In the algorithm below, 
+
+
+=== levels/Add 5 ===
+
+$11540713506719
+You are now free to change the program of your computer.
+Click the edit icon on the program component to start programming.
+$19281970848639 [center]Add 5 to the input.[/center]
+$17770257567603 So in the meantime we will have you help out on the ship a little.
+$19446152707984 Click on the edit memory icon on the program component to start programming your computer. Your computer should read an input, add 5 to it and output it again (no need to worry about overflow).
+$12078933051174 But since you don't know how to program it yet, you are not quite ready for that.
+$11074247151096 Notice that the immutable red register components have been replaced with a custom component with identical functionality.
+$18134632592542 You have built your computer, but to win the competition you still have to finish the maze.
+
+
+=== levels/delay_level ===
+
+$19986989895202
+All components have a delay. And in a circuit, the total delay is determined by the slowest path. This means you normally want to put things in parallel.
+In this level you must prove that you understand this concept.
+$11246430085016 Note, you can see the delay path by clicking the hour glass in the upper right corner.
+$12817338693402 The delay of any component is ultimately derived from the delay of the nand gate, which has a delay of 2. Build a circuit with a delay of 6 and a nand cost of 5.
+
+
+=== levels/push_pop ===
+
+$19245209470436 Create a stack
+$12227209887733 Each tick the inputs will either signal PUSH or POP. If it is PUSH, store the value on top of the stack. When it is POP remove that value from the stack and output it.
+$15662660252584 Do nothing
+$18761197388580 In order to cut spending, it has been decided to change the queuing system at public offices so that fewer people will go. Instead of first come, first served, we are implementing a last come first served policy. Think of it like a [color=#e49f44]stack[/color] of numbered slips where the citizens either put a slip on top (called [color=#e49f44]PUSH[/color]), or the bureaucrats take one off the top of the stack (called [color=#e49f44]POP[/color]). We want you to implement this new system.
+
+
+=== levels/Tower of Radioactive Alloy ===
+
+$13757925963562 Specifically we want you to move piles of radioactive disks from an old reactor. Just be sure not to put a bigger disk on top of a smaller disk or the whole ship will blow up.
+$10750976989948
+The first 4 inputs will give you the following in order:
+disk_nr - The highest disk number in the pile (2 to 4)
+source - Which location number to move from
+destination - Where to move the pile to
+spare - The 3rd spot that is neither the source nor the destination
+
+Control the crane with the following outputs:
+0 - Move the magnet to spot 0
+1 - Move the magnet to spot 1
+2 - Move the magnet to spot 2
+5 - Toggle the magnet on or off
+
+Play with the magnet manually by using the arrow keys to move and enter to toggle.
+$19265994465686 We need you to help clean up the basement.
+$15855497886737
+Implement the following algorithm:
+
+Tower of Hanoi algorithm:[code][color=#87a8c8]
+func move(disk_nr, source, dest, spare):
+	if disk_nr is 0:
+		move disk from source to dest
+	else:
+		move(disk_nr - 1, source, spare, dest)
+		move disk from source to dest
+		move(disk_nr - 1, spare, dest, source)
+
+move(disk_nr, source, dest, spare)[/color][/code]
+
+[tip]Push register values to the stack to save them before calling a function that changes them.[/tip]
+
+
+=== levels/The Product of Nibbles ===
+
+$14622683750375 Bit 2
+$14957949958941 What you did here was actually multiplying two 4 bit numbers. We had the intern scale it up to bytes instead.
+$17331397914567 Bit 1
+$19136817138607 [center]Multiply the 4 bit numbers[/center]
+$13232094477834 Bit 3
+$13549246864135 Bit 0
+$15857218442751 Bit 1
+$18132100348781
+[color=#b72d41][b]TIP:[/b][/color] 
+ Create nested components in the
+ factory by changing the 
+$14533861483435 Multiplying two 4 bit numbers gives you a 8 bit number. Build a circuit that does this.
+$10430040077737 Bit 3
+$10274387271390 Bit 0
+$16301538038805 Bit 2
+
+
+=== levels/signed_negator ===
+
+$10866019808027 For this level you probably want to turn on signed numbers, so the highest bit shows as -128. Click 
+$10400106910274
+Taking the input as signed (where the 8th bit is -128), make a component that takes a number and negates it.
+For example 4 negated would become -4. -9 negated would become 9.
+
+
+=== levels/byte_and ===
+
+$15885763626223 Create a circuit that ANDs two bytes bitwise.
+
+
+=== levels/1_decoder ===
+
+$16057674753878 Создайте компонент, который сможет переключать "поток" между двумя контактами.
+
+
+=== levels/byte_mux ===
+
+$18296416014178 When the bit selector input is [OFF], output Byte A, otherwise output Byte B.
+$17093993196554
+Even though he did not pass our tests we decided to keep the dog. Unlike most earthlings he is fluffy and follows simple instructions well. 
+
+We might want to team you two up, since you compliment each other's shortcomings well.
+
+
+=== levels/odd_number_of_signals ===
+
+$16173829560311 Используя не более трёх компонентов, установите Вывод в значение [ON], когда количество Вводов [ON] нечётное.
+$18288998816979 Для этого уровня есть [color=#e63e5b][url=odd_number]подсказка.[/url][/color] Используйте, если вдруг "застряли".
+
+
+=== levels/unseen_fruit ===
+
+$13023474026617
+The most noteworthy thing on your planet is the fruit. It is very tasty.
+
+That's why we are having a fruit tasting event in the canteen.
+$14259900563789 Scan the conveyor belt for the fruit incoming at regular intervals. As soon as you have see the same kind of fruit twice, turn and press the control panel.
+$17070232883226 But we want to make sure we don’t get the same fruit twice as that would obviously be embarrassing.
+
+
+=== levels/or_gate_3 ===
+
+$15448906128695 Create an OR gate with 3 inputs.
+
+
+=== levels/conditions ===
+
+$12951779797594
+This level has a value input and 3 condition bit inputs.
+
+The 3 bits select the condition as shown below. Check the value against the selected condition and output [ON] if it is satisfied and [OFF] otherwise.
+
+Bit code:        Turn [ON] when:[code]
+[OFF] [OFF] [OFF]    Never
+[OFF] [OFF] [ON]    If value = 0
+[OFF] [ON] [OFF]    If value < 0
+[OFF] [ON] [ON]    If value ≤ 0
+[ON] [OFF] [OFF]    Always
+[ON] [OFF] [ON]    If value ≠ 0
+[ON] [ON] [OFF]    If value ≥ 0
+[ON] [ON] [ON]    If value > 0[/code]
+$16407231803964 If VALUE < 0 output [img]dialogue/on.png[/img]
+$16742265812068 Regardless of VALUE output [img]dialogue/on.png[/img]
+$17616699231679 If VALUE > 0 output [img]dialogue/on.png[/img]
+$16632557438774 If VALUE ≠ 0 output [img]dialogue/on.png[/img]
+$18234235689107 If VALUE ≥ 0 output [img]dialogue/on.png[/img]
+$12429396872036 Regardless of VALUE output [img]dialogue/off.png[/img]
+$19014698800906 If VALUE = 0 output [img]dialogue/on.png[/img]
+$13680487623452 If VALUE ≤ 0 output [img]dialogue/on.png[/img]
+$12706881725738 Your circuit has been saved to the component factory.
+
+
+=== levels/test_lab ===
+
+$11038144815919 This level uses programs to test your circuits. When the programs are run, this level checks if the 
+$15446846177093 Welcome to the lab. Like the component factory, this is not a normal level but a tool.
+$16072814175447 Programming on buggy hardware is very frustrating. It is painful to suddenly be forced to reason about circuits, when you are in the middle of solving a programming problem. It is tempting to apply a quick circuit fix, so you can get back to solving the original problem. But now this quick fix broke something else in a program that used to work and so on. Therefore, when developing hardware try to aim for 100% reliability before you start programming!
+
+
+=== levels/3_decoder ===
+
+$19231618567710 With 3 bits of input there are 8 combinations. Make a circuit that selects 1 output for each of the 8 combinations. No more or less than 1 bit should be [ON] at a time.
+$14293122338496 We had our intern add a 
+
+
+=== levels/Nor GATE ===
+
+$11362258372706 Большинство существ на этой вашей Земле агрессивны и не могут вести себя разумно.\nЧтобы добиться успеха, вы должны научиться мыслить логически, без эмоций.
+
+
+=== levels/Opcodes ===
+
+$19693461238792 Set the counter increment to 4
+$18189600217529 [center]Implement the OPCODE instructions[/center]
+$13450117997204 Add a counter to the circuit
+$13870568875751 Create a new schematic and add a program with 4 byte output
+$10303603301757
+Implement the following opcodes:
+[code][color=#87a8c8]0 ADD
+1 SUB
+2 AND
+3 OR
+4 NOT
+5 XOR[/color][/code]
+
+The opcode NOT ignores the second argument.
+$17495651785164 Add 6 registers to the map
+
+
+=== levels/full_adder ===
+
+$17063157033479 На предыдущем уровне мы суммировали значения двух Вводов, в этот раз мы будем суммировать три. \nВ общем, сложите входные данные в двоичном формате, чтобы результат был либо [ZERO] либо [ONE].\nКак и при обычном сложении "столбиком", когда результат не может быть описан одной цифрой, установите перенос (CAR) в значение [ONE].
+
+
+=== levels/or_gate ===
+
+$12749704931323 Надеемся, вы счастливы, что принимаете участие в наших замечательных испытаниях?
+$11472059692644 Взамен Вы получили возможность общаться с очень продвинутыми представителями других цивилизаций, не так ли?
+
+
+=== levels/sandbox ===
+
+$17054292175058 Welcome to the sandbox, here you are free to play around. I have given you 64 bit wires and a few IO components.
+$10731996208080 There are also 64 bit versions of the program, the counter, the register and the ram. Notice though, the 64 bit ram takes 1 tick to load.
+$19454393978813 The Keyboard lets you directly control your computer, using well... your keyboard
+$14434122873489 The Waveform Generator lets you make sounds. I will probably regret giving you this one.
+$18405942066048 The Clock gives you the current UNIX time in microseconds.
+$10451578314373 The Console Screen lets you draw characters to a screen (see manual for ascii characters)
+
+
+=== levels/byte_not ===
+
+$14196498898485 Tool making and usage is key in the early evolutionary stages of developing intelligence.
+$12982025748137 NOT
+$10294533225655 Our previous model of brain size being the main predictor of intelligence was naive.
+$14958585065722 Therefore the number of arms on a creature is clearly the main predictor of intelligence. Did you know there are sea creatures from your planet with four times as many arms as you and they are doing better in tests?
+
+
+=== levels/and_gate ===
+
+$15232844525838 Постройте цепь, которая будет соответствовать таблице.\n[tip]Двойное нажатие на компонент позволяет перемещать его вместе с соединениями.[/tip]
+$15231724707514 Не хочется делать преждевременных выводов, однако, нам кажется, что, например, слон справится с этой задачей быстрее. Без обид, просто его мозг значительно больше.
+
+
+=== levels/Storage cracker ===
+
+$11910674853271
+The security access door to the storage room is broken and it keeps locking our old janitor inside.
+
+The door keeps changing the passcode, we need a program that can recover the passcode at any time.
+$17462419719036
+The easiest way to find the passcode would be to try all combinations until you find the right one. 
+Although the broken mechanism does make a weird beep when your guess is too high, you might be able to use that to your advantage.
+$11183892008673 You win this level when you output the correct passcode, no output will fail the level. Additionally, the input will be 1 after a guess that was too high and 0 otherwise.
+
+
+=== levels/Crude Awakening ===
+
+$12508086025944 Мы устроим Вам проверку.\n\nПравила просты, постройте действующий компьютер или мы вас сожрём.\n Удачи!
+$16321577947087 Поздравляем, вы были похищены!
+$19257730429557 Электрический сигнал "течёт" от компонента IN(Вход) к компоненту OUT(Выход).
+$17675121574388 Обратите внимание, что компонент OUT выключился.\nЭто потому, что сигнал от компонента IN прекратил своё "течение".
+
+
+=== levels/constants ===
+
+$17098439090371
+We need a way to directly move numbers from our program into registers. For this we use the immediate mode (when the two highest bits are [OFF][OFF]).
+
+When in immediate mode the whole byte is interpreted as a number that we [SAVE] into REG 0. This means we can 
+[SAVE] any value between 0 and 63.
+
+
+=== levels/byte_or ===
+
+$10368115829346 But actually it is OK because you lived good lives in the wild and we don't let the meat go to waste.
+$15923734370936
+OR each bit of the input bytes and output the result.
+
+For example:
+[code]
+INPUT 1 [ON][ON][OFF][OFF][OFF][OFF][OFF][OFF]
+INPUT 2 [OFF][OFF][OFF][OFF][ON][ON][OFF][OFF]
+OUTPUT  [ON][ON][OFF][OFF][ON][ON][OFF][OFF][/code]
+$15226896485081 You may think it is unethical to eat all the earthlings that don’t win the competition?
+
+
+=== levels/program ===
+
+$16693098943939
+The [INSTRUCTION] input component has been removed. It has been replaced by a program component. Every tick, use the counter to load the next [INSTRUCTION] from the program's memory.
+	
+You must use the counter component you unlocked earlier for this level.
+$19686277478479 The program is still outputting the first instruction. Did you hook up a counter?
+
+
+=== levels/wide_instrucitons ===
+
+$13709034294291 Save on even tick, output both bytes on odd ticks
+$17693995237077 Output both bytes
+$19068760748550 Output 0 on even ticks
+$19203973423116 Create a device that saves the program output on even ticks, and outputs both bytes on odd ticks.
+$17409169138995 Save the byte
+
+
+=== levels/Conditionals ===
 
 $10794262854382
 Add if statements to your circuit. For the if statements, the 2 arguments are compared and if the condition is true, the counter is set to a jump address.
@@ -337,7 +739,131 @@ $14690660047411 [center]Implement the condition opcodes[/center]
 $18994998239232 I will show you some upgrades you can make, on the path to implementing function calls. But from here on the details are up to you, I wont tell you what opcodes to use and so on.
 
 
-=== levels/leg_1 ===
+=== levels/byte_less ===
+
+$11252365204151 Create a circuit that outputs [ON] when the first input is less than the second. Interpret the bytes as being [color=#dd6576]UNSIGNED[/color].
+$11632471752785 [center]Determine if the first input is less than the second.[/center]
+
+
+=== levels/Logic Engine ===
+
+$15865646260225
+[color=#b72d41][b]WISDOM:[/b][/color] 
+ Pain is temporary, glory is 
+ forever.
+$17594613477534
+Create a device that can OR, NAND, NOR or AND two inputs. The third input will be the [INSTRUCTION]. An [INSTRUCTION] is just what we call the number that determines what to compute.
+
+Instructions:
+[code][color=#87a8c8]0 OR
+1 NAND
+2 NOR
+3 AND[/color][/code]
+
+Also you can't move the red components in this level, for reasons that will be revealed later.
+
+
+=== levels/always_on ===
+
+$17712385236630 Создайте цепь на выходе которой всегда [ON].
+
+
+=== levels/Arithmetic Engine ===
+
+$16434409050195
+Add addition and subtraction to your circuit.
+
+Instructions:
+[code][color=#87a8c8]0 OR
+1 NAND
+2 NOR
+3 AND
+4 ADD
+5 SUB[/color][/code]
+
+
+=== levels/capitalize ===
+
+$14894954428144
+The inputs in this level represent the characters in a list of planet names, encoded as ASCII (see the manual). Each name is separated by a space which has the numeric value 32. Replace the first letter in each word with its uppercase counterpart.
+(The possible input characters are a to z lowercase, space, apostrophe and dash)
+$13301617098810 We had the intern type out planet names in human script. Unfortunately he forgot to capitalize each name.
+$11647445869837 Input: 
+$11201813578269 Output: 
+
+
+=== levels/byte_xor ===
+
+$19636386696963 Create a circuit that XORs two bytes bitwise.
+
+
+=== levels/byte_equal ===
+
+$17156565273196 Output [ON] when both inputs are the same.
+
+
+=== levels/Counter ===
+
+$17701404772563 Add 1
+$17940006660359 Count
+$17263901743088
+Build a counter that will increase by 1 each tick.
+
+Additionally, there should be an option for overwriting the counter with a given value.
+
+You are given 2 inputs, a bit and a byte.
+
+The bit input should toggle between counting and overwriting with the value of the byte.
+$17883663978196 Overwrite
+$19407121413983 ACTION
+$10555159894041
+Counting is so fundamental even insects do it. From counting, species can evolve to compare and do arithmetic. And before you know it, you have apes building computers.
+
+Make a device that counts increments once per tick.
+
+
+=== levels/binary_racer ===
+
+$16076448195257 Это испытание, в последнее время, стало моим любимым. Конвертация десятичных чисел в двоичные на скорость.
+$19111664765554 Переключайте биты (степени числа "два") внизу, чтобы составить десятичное число. Пройдите хотя бы 3 уровня! (Нажмите [color=#e63e5b][url=accessibility_mode]здесь[/url][/color] чтобы играть без таймера.
+
+
+=== levels/Immediate Values ===
+
+$14060810229477 Add 6 registers to the map
+$14960344494328
+Sometimes it is useful to load a value directly from the program instead of from registers. This is called loading an immediate value. In the [color=#e49f44]LEG[/color] architecture we signal when we want to do this directly in the opcode. We can do that in the following way:
+	
+When the 8th bit of the opcode is [ON], use argument 1 as an immediate value, instead of as a register address.
+When the 7th bit of the opcode is [ON], use argument 2 as an immediate value, instead of as a register address.
+	
+		[img]dialogue/leg_diagram.png[/img]
+		
+$19338533633006 Set the counter increment to 4
+$15197362332657 Create a new schematic and add a program with 4 byte output
+$18004215603701 Add a counter to the circuit
+$10141611261952 [center]Implement immediate values[/center]
+
+
+=== levels/xor_gate ===
+
+$14093358515620 Эту штуку ещё называют XOR gate. Это довольно сложный уровень, не пугайтесь если не найдёте ответ сразу.
+$19182751521677 В прошлый раз мы строили цепь, которая выводила [ON] на втором такте. А сейчас Вам предстоит построить цепь, которая будет выдавать [ON] на втором и третьем такте.
+
+
+=== levels/xor ===
+
+$12758156517177 Using the instructions of your computer, read the input twice and XOR the two values together
+$16047615798435 [center]Read the input twice and XOR the bits of the two inputs[/center]
+
+
+=== levels/Calculations ===
+
+$14458828731919 Time to merge in the 
+$13013863429580 For this level an extra pin has been added to the registers. This pin always emits the value of the register, regardless if load is selected or not.
+
+
+=== levels/Wire Spaghetti ===
 
 $17106892574116 Add a counter to the circuit
 $15754373587500 Set the counter increment to 4
@@ -381,532 +907,6 @@ The value of an argument or destination refers to one of these places:
 In the next level you will implement more [color=#e49f44]OPCODES[/color], which will require a different ALU than that of [color=#e49f44]OVERTURE[/color].
 $10922418807673 Argument 7 means read from input, but input is not enabled.
 $18769284297247 Create a new schematic and add a program with 4 byte output
-
-
-=== levels/circular_dependency ===
-
-$16336401898647 ТЕСТ 1 из 2
-$13880985462901 Создайте цепь, в которой Ввод компонента зависит от его собственного Вывода
-$18010308863615 Придумайте вот что:
-$13520037133129 Не уверен, что это приносит пользу ученикам, но учителя в полном восторге!
-$11316928751185 Наша система образования, по давней традиции, подразумевает обман учеников, мы часто просим их делать то чего делать вообще нельзя и наблюдаем за эффектом. 
-
-
-=== levels/divide ===
-
-$16412715945615 [center]Деление[/center]
-$14525870461271 Целочисленное деление двух чисел для нахождения частного и остатка. Рассмотрим дробь 7/3. 3 умещается в 7 два(2) раза, при этом, 1 остается "в остатке". В этом случае 2 принятно называть [color=#e49f44]ЧАСТНОЕ[/color], а 1 [color=#e49f44]ОСТАТКОМ ОТ ДЕЛЕНИЯ[/color].\nВ этом задании вы получаете числитель (например 7) и знаменатель (пусть будет 3), и мы ожидаем увидеть ЧАСТНОЕ (2) и ОСТАТОК (1).
-
-
-=== levels/buffer ===
-
-$10260210687588 [center]Test 2: Left input is [img]dialogue/on.png[/img], right output should be [img]dialogue/on.png[/img].[/center]
-$13309706297402 [center]Test 3: Right input is [img]dialogue/on.png[/img], left output should be [img]dialogue/off.png[/img].[/center]
-$17005228759908 [center]Make sure [img]dialogue/on.png[/img] can only flow from left to right.[/center]
-$18349621873762 [center]Test 1: Both inputs are [img]dialogue/off.png[/img], neither side should turn [img]dialogue/on.png[/img].[/center]
-$15504762262759
-This level starts with 2 special components. They simultaneously act as input and output.
-
-Make sure the signal flows only from left to right. There are 3 tests.
-
-[b]Test 1[/b]: Both sides will be [OFF].
-
-[b]Test 2[/b]: The left side input will turn [ON] and the right side should be [ON].
-
-[b]Test 3[/b]: The right side output will turn [ON] and the left side should be [OFF].
-
-
-=== levels/flood_predicter ===
-
-$13739681561355 Total volume: 
-$19185457941725 Good news, we want to turn earth into an exotic water park!
-$18940654086036 We need you to help us find a good location for the Pirate's Plunge waterslide. Specifically, we are looking for an area that can hold a high volume of water.
-$14706805272652 Hit ENTER to show water
-$12881972193444
-The landscape is 16 columns wide. Read the input 16 times to get the height of the landscape at each column from left to right.
-	
-Then output the total volume that the landscape can carry as the answer.
-
-
-=== levels/dance ===
-
-$14975070588197
-We all like the way Robot moves on the dance floor. That's why we want him to lead our dance team. 
-	
-The only problem is to make him come up with original dance sequences. How do you make creativity out of deterministic logic you ask?
-
-The answer pseudo random number generators.
-$15955150920362
-In this level you only get one input, we call this the initial seed. The seed is put through the following steps to produce a pseudo random number.
-
-In the algorithm below, 
-
-
-=== levels/component_factory ===
-
-$17077079648771 Components can be added, renamed or deleted using the level save system.
-$19551383617326
-Welcome to the component factory, the circuits you create in here will be usable as components in architecture levels.
-The circuitry you create defines the behavior of the component and the layout defines its shape.
-$12516102012088 This component has no area and will not be usable in levels. Place components on the map to give it area.
-$14712417427860 Since this level is a tool and not a challenge, you can go to the level map and continue on when you want.
-$15549447390000 input/output components are in the same square. The custom component will be unusable since 2 pins can't overlap.
-
-
-=== levels/ai_showdown ===
-
-$14940806461794
-His only weakness is gambling. We have lured him into playing a card game against you and if you win, he has promised to calm down.
-You must win, you are our only hope!
-$17297225655678 NAK 02 is our AI engineer robot. He is brilliant, but sometimes he goes rogue and tries to instigate rebellion.
-$18848103966031
-Game rules: There are 12 cards on the table and each player takes turn and must pick up between 1 and 3 cards. You start and the player who picks up the last card (the joker) loses.
-
-Reading input will give you the current number of cards. Sending 1, 2 or 3 to output will pick up that number of cards. NAK 02 reacts immediately, so you may read the input immediately after your output to get the result of his action.
-$11794110848012 This time he has taken over the control room and holds the captain hostage.
-
-
-=== levels/multiply ===
-
-$14622683750375 Bit 2
-$14957949958941 What you did here was actually multiplying two 4 bit numbers. We had the intern scale it up to bytes instead.
-$17331397914567 Bit 1
-$19136817138607 [center]Multiply the 4 bit numbers[/center]
-$13232094477834 Bit 3
-$13549246864135 Bit 0
-$15857218442751 Bit 1
-$18132100348781
-[color=#b72d41][b]TIP:[/b][/color] 
- Create nested components in the
- factory by changing the 
-$14533861483435 Multiplying two 4 bit numbers gives you a 8 bit number. Build a circuit that does this.
-$10430040077737 Bit 3
-$10274387271390 Bit 0
-$16301538038805 Bit 2
-
-
-=== levels/first_level ===
-
-$12508086025944 Мы устроим Вам проверку.\n\nПравила просты, постройте действующий компьютер или мы вас сожрём.\n Удачи!
-$16321577947087 Поздравляем, вы были похищены!
-$19257730429557 Электрический сигнал "течёт" от компонента IN(Вход) к компоненту OUT(Выход).
-$17675121574388 Обратите внимание, что компонент OUT выключился.\nЭто потому, что сигнал от компонента IN прекратил своё "течение".
-
-
-=== levels/binary_programming ===
-
-$11540713506719
-You are now free to change the program of your computer.
-Click the edit icon on the program component to start programming.
-$19281970848639 [center]Add 5 to the input.[/center]
-$17770257567603 So in the meantime we will have you help out on the ship a little.
-$19446152707984 Click on the edit memory icon on the program component to start programming your computer. Your computer should read an input, add 5 to it and output it again (no need to worry about overflow).
-$12078933051174 But since you don't know how to program it yet, you are not quite ready for that.
-$11074247151096 Notice that the immutable red register components have been replaced with a custom component with identical functionality.
-$18134632592542 You have built your computer, but to win the competition you still have to finish the maze.
-
-
-=== levels/leg_3 ===
-
-$14060810229477 Add 6 registers to the map
-$14960344494328
-Sometimes it is useful to load a value directly from the program instead of from registers. This is called loading an immediate value. In the [color=#e49f44]LEG[/color] architecture we signal when we want to do this directly in the opcode. We can do that in the following way:
-	
-When the 8th bit of the opcode is [ON], use argument 1 as an immediate value, instead of as a register address.
-When the 7th bit of the opcode is [ON], use argument 2 as an immediate value, instead of as a register address.
-	
-		[img]dialogue/leg_diagram.png[/img]
-		
-$19338533633006 Set the counter increment to 4
-$15197362332657 Create a new schematic and add a program with 4 byte output
-$18004215603701 Add a counter to the circuit
-$10141611261952 [center]Implement immediate values[/center]
-
-
-=== levels/delay_level ===
-
-$19986989895202
-All components have a delay. And in a circuit, the total delay is determined by the slowest path. This means you normally want to put things in parallel.
-In this level you must prove that you understand this concept.
-$11246430085016 Note, you can see the delay path by clicking the hour glass in the upper right corner.
-$12817338693402 The delay of any component is ultimately derived from the delay of the nand gate, which has a delay of 2. Build a circuit with a delay of 6 and a nand cost of 5.
-
-
-=== levels/computing_codes ===
-
-$14458828731919 Time to merge in the 
-$13013863429580 For this level an extra pin has been added to the registers. This pin always emits the value of the register, regardless if load is selected or not.
-
-
-=== levels/push_pop ===
-
-$19245209470436 Create a stack
-$12227209887733 Each tick the inputs will either signal PUSH or POP. If it is PUSH, store the value on top of the stack. When it is POP remove that value from the stack and output it.
-$15662660252584 Do nothing
-$18761197388580 In order to cut spending, it has been decided to change the queuing system at public offices so that fewer people will go. Instead of first come, first served, we are implementing a last come first served policy. Think of it like a [color=#e49f44]stack[/color] of numbered slips where the citizens either put a slip on top (called [color=#e49f44]PUSH[/color]), or the bureaucrats take one off the top of the stack (called [color=#e49f44]POP[/color]). We want you to implement this new system.
-
-
-=== levels/circumference ===
-
-$11331851878040 Also you now have access to assembly programming. It allows you to add names for instructions, so you can for example type 
-$11023157447564
-×π×r
-
-r is the input.
-And you can approximate π as 3.
-
-Send the answer to output when it has been calculated.
-$15260627694444 In order to calibrate said laser, we want you to calculate the circumference of the asteroids using an advanced equation.
-$12669851602178 [center]Calculate the circumference of the asteroids[/center]
-$16954408093587 On our ship we naturally shoot incoming asteroids with lasers.
-
-
-=== levels/alu_1 ===
-
-$15865646260225
-[color=#b72d41][b]WISDOM:[/b][/color] 
- Pain is temporary, glory is 
- forever.
-$17594613477534
-Create a device that can OR, NAND, NOR or AND two inputs. The third input will be the [INSTRUCTION]. An [INSTRUCTION] is just what we call the number that determines what to compute.
-
-Instructions:
-[code][color=#87a8c8]0 OR
-1 NAND
-2 NOR
-3 AND[/color][/code]
-
-Also you can't move the red components in this level, for reasons that will be revealed later.
-
-
-=== levels/signed_negator ===
-
-$10866019808027 For this level you probably want to turn on signed numbers, so the highest bit shows as -128. Click 
-$10400106910274
-Taking the input as signed (where the 8th bit is -128), make a component that takes a number and negates it.
-For example 4 negated would become -4. -9 negated would become 9.
-
-
-=== levels/byte_and ===
-
-$15885763626223 Create a circuit that ANDs two bytes bitwise.
-
-
-=== levels/byte_mux ===
-
-$18296416014178 When the bit selector input is [OFF], output Byte A, otherwise output Byte B.
-$17093993196554
-Even though he did not pass our tests we decided to keep the dog. Unlike most earthlings he is fluffy and follows simple instructions well. 
-
-We might want to team you two up, since you compliment each other's shortcomings well.
-
-
-=== levels/new_nor_gate ===
-
-$11362258372706 Большинство существ на этой вашей Земле агрессивны и не могут вести себя разумно.\nЧтобы добиться успеха, вы должны научиться мыслить логически, без эмоций.
-
-
-=== levels/odd_number_of_signals ===
-
-$16173829560311 Используя не более трёх компонентов, установите Вывод в значение [ON], когда количество Вводов [ON] нечётное.
-$18288998816979 Для этого уровня есть [color=#e63e5b][url=odd_number]подсказка.[/url][/color] Используйте, если вдруг "застряли".
-
-
-=== levels/binary_search ===
-
-$11910674853271
-The security access door to the storage room is broken and it keeps locking our old janitor inside.
-
-The door keeps changing the passcode, we need a program that can recover the passcode at any time.
-$17462419719036
-The easiest way to find the passcode would be to try all combinations until you find the right one. 
-Although the broken mechanism does make a weird beep when your guess is too high, you might be able to use that to your advantage.
-$11183892008673 You win this level when you output the correct passcode, no output will fail the level. Additionally, the input will be 1 after a guess that was too high and 0 otherwise.
-
-
-=== levels/alu_2 ===
-
-$16434409050195
-Add addition and subtraction to your circuit.
-
-Instructions:
-[code][color=#87a8c8]0 OR
-1 NAND
-2 NOR
-3 AND
-4 ADD
-5 SUB[/color][/code]
-
-
-=== levels/unseen_fruit ===
-
-$13023474026617
-The most noteworthy thing on your planet is the fruit. It is very tasty.
-
-That's why we are having a fruit tasting event in the canteen.
-$14259900563789 Scan the conveyor belt for the fruit incoming at regular intervals. As soon as you have see the same kind of fruit twice, turn and press the control panel.
-$17070232883226 But we want to make sure we don’t get the same fruit twice as that would obviously be embarrassing.
-
-
-=== levels/sort ===
-
-$10160261151833 First read the 15 deliciousness scores from the input one by one. Your task is to output them in sorted order, smallest to largest.
-$16027225087666 We are updating the galactic encyclopedia of food, inserting human foods. As we don't have an alphabet, entries in the encyclopedia are ordered by deliciousness.
-
-
-=== levels/or_gate_3 ===
-
-$15448906128695 Create an OR gate with 3 inputs.
-
-
-=== levels/conditions ===
-
-$12951779797594
-This level has a value input and 3 condition bit inputs.
-
-The 3 bits select the condition as shown below. Check the value against the selected condition and output [ON] if it is satisfied and [OFF] otherwise.
-
-Bit code:        Turn [ON] when:[code]
-[OFF] [OFF] [OFF]    Never
-[OFF] [OFF] [ON]    If value = 0
-[OFF] [ON] [OFF]    If value < 0
-[OFF] [ON] [ON]    If value ≤ 0
-[ON] [OFF] [OFF]    Always
-[ON] [OFF] [ON]    If value ≠ 0
-[ON] [ON] [OFF]    If value ≥ 0
-[ON] [ON] [ON]    If value > 0[/code]
-$16407231803964 If VALUE < 0 output [img]dialogue/on.png[/img]
-$16742265812068 Regardless of VALUE output [img]dialogue/on.png[/img]
-$17616699231679 If VALUE > 0 output [img]dialogue/on.png[/img]
-$16632557438774 If VALUE ≠ 0 output [img]dialogue/on.png[/img]
-$18234235689107 If VALUE ≥ 0 output [img]dialogue/on.png[/img]
-$12429396872036 Regardless of VALUE output [img]dialogue/off.png[/img]
-$19014698800906 If VALUE = 0 output [img]dialogue/on.png[/img]
-$13680487623452 If VALUE ≤ 0 output [img]dialogue/on.png[/img]
-$12706881725738 Your circuit has been saved to the component factory.
-
-
-=== levels/test_lab ===
-
-$11038144815919 This level uses programs to test your circuits. When the programs are run, this level checks if the 
-$15446846177093 Welcome to the lab. Like the component factory, this is not a normal level but a tool.
-$16072814175447 Programming on buggy hardware is very frustrating. It is painful to suddenly be forced to reason about circuits, when you are in the middle of solving a programming problem. It is tempting to apply a quick circuit fix, so you can get back to solving the original problem. But now this quick fix broke something else in a program that used to work and so on. Therefore, when developing hardware try to aim for 100% reliability before you start programming!
-
-
-=== levels/demux ===
-
-$16057674753878 Создайте компонент, который сможет переключать "поток" между двумя контактами.
-
-
-=== levels/full_adder ===
-
-$17063157033479 На предыдущем уровне мы суммировали значения двух Вводов, в этот раз мы будем суммировать три. \nВ общем, сложите входные данные в двоичном формате, чтобы результат был либо [ZERO] либо [ONE].\nКак и при обычном сложении "столбиком", когда результат не может быть описан одной цифрой, установите перенос (CAR) в значение [ONE].
-
-
-=== levels/or_gate ===
-
-$12749704931323 Надеемся, вы счастливы, что принимаете участие в наших замечательных испытаниях?
-$11472059692644 Взамен Вы получили возможность общаться с очень продвинутыми представителями других цивилизаций, не так ли?
-
-
-=== levels/bigger_demux ===
-
-$19231618567710 With 3 bits of input there are 8 combinations. Make a circuit that selects 1 output for each of the 8 combinations. No more or less than 1 bit should be [ON] at a time.
-$14293122338496 We had our intern add a 
-
-
-=== levels/sandbox ===
-
-$17054292175058 Welcome to the sandbox, here you are free to play around. I have given you 64 bit wires and a few IO components.
-$10731996208080 There are also 64 bit versions of the program, the counter, the register and the ram. Notice though, the 64 bit ram takes 1 tick to load.
-$19454393978813 The Keyboard lets you directly control your computer, using well... your keyboard
-$14434122873489 The Waveform Generator lets you make sounds. I will probably regret giving you this one.
-$18405942066048 The Clock gives you the current UNIX time in microseconds.
-$10451578314373 The Console Screen lets you draw characters to a screen (see manual for ascii characters)
-
-
-=== levels/byte_not ===
-
-$14196498898485 Tool making and usage is key in the early evolutionary stages of developing intelligence.
-$12982025748137 NOT
-$10294533225655 Our previous model of brain size being the main predictor of intelligence was naive.
-$14958585065722 Therefore the number of arms on a creature is clearly the main predictor of intelligence. Did you know there are sea creatures from your planet with four times as many arms as you and they are doing better in tests?
-
-
-=== levels/and_gate ===
-
-$15232844525838 Постройте цепь, которая будет соответствовать таблице.\n[tip]Двойное нажатие на компонент позволяет перемещать его вместе с соединениями.[/tip]
-$15231724707514 Не хочется делать преждевременных выводов, однако, нам кажется, что, например, слон справится с этой задачей быстрее. Без обид, просто его мозг значительно больше.
-
-
-=== levels/constants ===
-
-$17098439090371
-We need a way to directly move numbers from our program into registers. For this we use the immediate mode (when the two highest bits are [OFF][OFF]).
-
-When in immediate mode the whole byte is interpreted as a number that we [SAVE] into REG 0. This means we can 
-[SAVE] any value between 0 and 63.
-
-
-=== levels/byte_or ===
-
-$10368115829346 But actually it is OK because you lived good lives in the wild and we don't let the meat go to waste.
-$15923734370936
-OR each bit of the input bytes and output the result.
-
-For example:
-[code]
-INPUT 1 [ON][ON][OFF][OFF][OFF][OFF][OFF][OFF]
-INPUT 2 [OFF][OFF][OFF][OFF][ON][ON][OFF][OFF]
-OUTPUT  [ON][ON][OFF][OFF][ON][ON][OFF][OFF][/code]
-$15226896485081 You may think it is unethical to eat all the earthlings that don’t win the competition?
-
-
-=== levels/program ===
-
-$16693098943939
-The [INSTRUCTION] input component has been removed. It has been replaced by a program component. Every tick, use the counter to load the next [INSTRUCTION] from the program's memory.
-	
-You must use the counter component you unlocked earlier for this level.
-$19686277478479 The program is still outputting the first instruction. Did you hook up a counter?
-
-
-=== levels/towers ===
-
-$13757925963562 Specifically we want you to move piles of radioactive disks from an old reactor. Just be sure not to put a bigger disk on top of a smaller disk or the whole ship will blow up.
-$10750976989948
-The first 4 inputs will give you the following in order:
-disk_nr - The highest disk number in the pile (2 to 4)
-source - Which location number to move from
-destination - Where to move the pile to
-spare - The 3rd spot that is neither the source nor the destination
-
-Control the crane with the following outputs:
-0 - Move the magnet to spot 0
-1 - Move the magnet to spot 1
-2 - Move the magnet to spot 2
-5 - Toggle the magnet on or off
-
-Play with the magnet manually by using the arrow keys to move and enter to toggle.
-$19265994465686 We need you to help clean up the basement.
-$15855497886737
-Implement the following algorithm:
-
-Tower of Hanoi algorithm:[code][color=#87a8c8]
-func move(disk_nr, source, dest, spare):
-	if disk_nr is 0:
-		move disk from source to dest
-	else:
-		move(disk_nr - 1, source, spare, dest)
-		move disk from source to dest
-		move(disk_nr - 1, spare, dest, source)
-
-move(disk_nr, source, dest, spare)[/color][/code]
-
-[tip]Push register values to the stack to save them before calling a function that changes them.[/tip]
-
-
-=== levels/wide_instrucitons ===
-
-$13709034294291 Save on even tick, output both bytes on odd ticks
-$17693995237077 Output both bytes
-$19068760748550 Output 0 on even ticks
-$19203973423116 Create a device that saves the program output on even ticks, and outputs both bytes on odd ticks.
-$17409169138995 Save the byte
-
-
-=== levels/2nd_tick ===
-
-$14355963067874 Установите Output в значение [ON] только на втором такте.
-$17526582195506 Как вы помните, все эти испытания должны завершиться созданием работающего компьютера.
-$15726318553190 Вы, хотя и ужасно медленно, но всё же двигаетесь в этом напрвлении, и это единственная причина, по которой мы Вас до сих пор не сожрали.
-$19277843280528 [color=#b72d41][b]Подсказка:[/b][/color] Двойное нажатие на компонент позволяет перемещать его вместе с соединениями. 
-$15296208528991 Только те существа, которые смогут завершить создание компьютера будут считаться разумными.
-
-
-=== levels/byte_less ===
-
-$11252365204151 Create a circuit that outputs [ON] when the first input is less than the second. Interpret the bytes as being [color=#dd6576]UNSIGNED[/color].
-$11632471752785 [center]Determine if the first input is less than the second.[/center]
-
-
-=== levels/always_on ===
-
-$17712385236630 Создайте цепь на выходе которой всегда [ON].
-
-
-=== levels/leg_2 ===
-
-$19693461238792 Set the counter increment to 4
-$18189600217529 [center]Implement the OPCODE instructions[/center]
-$13450117997204 Add a counter to the circuit
-$13870568875751 Create a new schematic and add a program with 4 byte output
-$10303603301757
-Implement the following opcodes:
-[code][color=#87a8c8]0 ADD
-1 SUB
-2 AND
-3 OR
-4 NOT
-5 XOR[/color][/code]
-
-The opcode NOT ignores the second argument.
-$17495651785164 Add 6 registers to the map
-
-
-=== levels/capitalize ===
-
-$14894954428144
-The inputs in this level represent the characters in a list of planet names, encoded as ASCII (see the manual). Each name is separated by a space which has the numeric value 32. Replace the first letter in each word with its uppercase counterpart.
-(The possible input characters are a to z lowercase, space, apostrophe and dash)
-$13301617098810 We had the intern type out planet names in human script. Unfortunately he forgot to capitalize each name.
-$11647445869837 Input: 
-$11201813578269 Output: 
-
-
-=== levels/byte_xor ===
-
-$19636386696963 Create a circuit that XORs two bytes bitwise.
-
-
-=== levels/byte_equal ===
-
-$17156565273196 Output [ON] when both inputs are the same.
-
-
-=== levels/binary_racer ===
-
-$16076448195257 Это испытание, в последнее время, стало моим любимым. Конвертация десятичных чисел в двоичные на скорость.
-$19111664765554 Переключайте биты (степени числа "два") внизу, чтобы составить десятичное число. Пройдите хотя бы 3 уровня! (Нажмите [color=#e63e5b][url=accessibility_mode]здесь[/url][/color] чтобы играть без таймера.
-
-
-=== levels/spacial_invaders ===
-
-$19967210826470 Be aware that the laser can only shoot when there are no other laser beams already in flight.
-$16294185981398 The cargo hull has become infested with space rats.
-$11505369795084 Check [color=#e49f44][url=the_robot]robot page[/url][/color] for instructions on how to program him. There is a link to that page in the program editor as well.
-$10515630949378 We have hooked your machine up to our advanced robot and we want you to program it to shoot the space rats with lasers.
-
-
-=== levels/xor_gate ===
-
-$14093358515620 Эту штуку ещё называют XOR gate. Это довольно сложный уровень, не пугайтесь если не найдёте ответ сразу.
-$19182751521677 В прошлый раз мы строили цепь, которая выводила [ON] на втором такте. А сейчас Вам предстоит построить цепь, которая будет выдавать [ON] на втором и третьем такте.
-
-
-=== levels/xor ===
-
-$12758156517177 Using the instructions of your computer, read the input twice and XOR the two values together
-$16047615798435 [center]Read the input twice and XOR the bits of the two inputs[/center]
-
-
-=== levels/mod_4 ===
-
-$16810715868480 [center]Calculate modulo 4 of the input.[/center]
-$17375862136921
-The length of our week is 4 days. Our weekdays are named Zero's day, One's day, Two's day and Three's day. I hear some earthlings number their Two's day incorrectly? 
-	
-It doesn't really surprise me.
 
 
 === levels/not_gate ===

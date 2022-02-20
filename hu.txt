@@ -8,75 +8,73 @@ $10515630949378 We have hooked your machine up to our advanced robot and we want
 
 === levels/xnor ===
 
-$11090938799865 Créez la porte XOR inverse, connue sous le nom de XNOR.
+$11090938799865 Csináld meg a XOR kapu fordítottját, vagyis a XNOR-t.
 
 
 === levels/decoder ===
 
-$16133643476631 Le circuit que vous avez créé dans le niveau "Registres" peut copier des valeurs entre différents registres, tandis que l' "Unité arithmétique et logique" a la capacité de faire différentes opérations avec ses deux entrées.
-Vous devez maintenant associer ces deux éléments, pour celà vous devrez commencer par construire un "décodeur" qui vous permettra de décider dans quel mode sera l'ordinateur en fonction des deux bits que nous n'avions pas utilisé pour l'instant.
-$18435544383511 CALCULER\n[OFF] [ON] [ANY] [ANY] [ANY] [ANY] [ANY] [ANY]
-$18198768092383 COPIER
+$16133643476631 The circuit you built in the "Registers" level can copy values between registers, while the "Arithmetic Engine" can do different operations on 2 inputs. But you need to be able to do both in the same circuit. To do this, build a "decoder", which will decide which mode our computer is in, based on the 2 bits we haven't used yet.
+$18435544383511 CALCULATE pattern\n[OFF] [ON] [ANY] [ANY] [ANY] [ANY] [ANY] [ANY]
+$18198768092383 COPY
 $18945946395447
-Pour distinguer les 4 [INSTRUCTIONS], nous utiliserons les deux bits de plus haut poids qui définieront le MODE dans lequel nous serons.
-Cette liste montre les 4 modes à implémenter:
-[OFF] [OFF] [ANY] [ANY] [ANY] [ANY] [ANY] [ANY] Valeur immédiate
-[OFF] [ON] [ANY] [ANY] [ANY] [ANY] [ANY] [ANY] Calculer
-[ON] [OFF] [ANY] [ANY] [ANY] [ANY] [ANY] [ANY] Copier
-[ON] [ON] [ANY] [ANY] [ANY] [ANY] [ANY] [ANY] Condition logique
+To distinguish between the [INSTRUCTIONS] of 4 different kinds, the two highest bits will be used to determine which MODE we are in as follows:
+[OFF] [OFF] [ANY] [ANY] [ANY] [ANY] [ANY] [ANY] Immediate
+[OFF] [ON] [ANY] [ANY] [ANY] [ANY] [ANY] [ANY] Calculate
+[ON] [OFF] [ANY] [ANY] [ANY] [ANY] [ANY] [ANY] Copy
+[ON] [ON] [ANY] [ANY] [ANY] [ANY] [ANY] [ANY] Condition
 
-Ici [ANY] veut dire que l'ont peut avoir n'importe quelle valeur.
+Here [ANY] means any value.
 
-Déterminez le mode dans lequel nous sommes à partir de l'entrée et envoyez [ON] vers la sortie qui correspond.
-$16785126425267 Calculer
-$15440615199508 Condition logique
-$12671132029272 Votre circuit à été sauvegardé dans la fabrique de composants.
-$15105859227432 COPIER \n[ON] [OFF] [ANY] [ANY] [ANY] [ANY] [ANY] [ANY]
-$12068329066372 [b]ATTENTION: CETTE VERSION DU CIRCUIT EST OBSOLÈTE, VEUILLEZ CLIQUER SUR L'ICÔNE DE SAUVEGARDE ET CRÉEZ UNE NOUVELLE VERSION DE CE CIRCUIT[/b]
-$11382827588408 Condition logique\n[ON] [ON] [OFF] [OFF] [OFF] [ANY] [ANY] [ANY]
-$12976424717611 Valeur immédiate\n[OFF] [OFF] [ANY] [ANY] [ANY] [ANY] [ANY] [ANY]
-$12532951884542 Valeur immédiate
+Determine the MODE we are in from the input, then send [ON] to the correct output.
+$16785126425267 CALCULATION
+$15440615199508 CONDITION
+$12671132029272 Your circuit has been saved to the component factory.
+$15105859227432 COPY pattern\n[ON] [OFF] [ANY] [ANY] [ANY] [ANY] [ANY] [ANY]
+$12068329066372 [b]ALERT: THIS IS AN OUTDATED VERSION OF THIS MAP, PLEASE CLICK THE SAVE ICON IN THE TOP LEFT AND CREATE AND LOAD A NEW SCHEMATIC[/b]
+$11382827588408 CONDITION pattern\n[ON] [ON] [OFF] [OFF] [OFF] [ANY] [ANY] [ANY]
+$12976424717611 IMMEDIATE pattern\n[OFF] [OFF] [ANY] [ANY] [ANY] [ANY] [ANY] [ANY]
+$12532951884542 IMMEDIATE
 
 
 === levels/RAM ===
 
-$17967666262990 Dans ce niveau, copiez d'abord 32 valeurs et sauvegardez chacune d'elle. Après les avoirs sauvegardé, envoyez les vers la sortie dans l'ordre d'arrivé. Envoyer une valeur vers la sortie avant d'avoir stocker toutes les valeurs vous fera perdre le niveau. 
-$13520918982355 Ajoutez un bloc de ram, ainsi l'ordinateur aura 256 bytes de mémoire en plus. Vous devez trouver un moyen d'accéder à un byte indépendamment des autres. Indice: nous utiliserons un registre pour choisir l'adresse de la RAM, ainsi si vous voulez sauvegarder ou charger une valeur, vous pourrez indiquer l'adresse dans ce registre.
+$17967666262990 In this test, first copy from input 32 times and store these values. After you have loaded the 32 values, output them in the same order as you got them. Outputting before you have read all the inputs will fail the level.
+$13520918982355 Add a ram block, so the computer can address 256 additional bytes of memory. You need a way to decide which of the 256 bytes inside the ram we are addressing. Select a register and wire it up, so its value always selects the RAM address. When you later want to load or save to the RAM, you will have to first copy the RAM address to this register.
 
 
 === levels/ram_block ===
 
-$17142958857584 A OU B
-$12901484249817 Pourrez-vous mettre 4 bytes de mémoire dans un espace aussi limité?
+$17142958857584 A OR B
+$12901484249817 Can you fit 4 bytes of memory in this limited space?
 $14218335256117
-Dans notre civilisation avancée, forcer les prisonniers à faire des tâches complexes est de l'esclavage et est techniquement illégal.
-		C'est pour cela que nous avons dis au stagiaire de faire une version 256 bytes de votre composant. 
+In our advanced civilization, forcing prisoners to do extremely menial tasks is slavery and is technically illegal.
+	  That is why we instead had our intern create the 256 byte version of your component.
 $19282543476901 1
-$13765566466116 NE PAS SAUVEGARDER
-$15908016538045 VALEUR
+$13765566466116 DON'T SAVE
+$15908016538045 VALUE
 $16196915566111 0
 $14259545926196 A
 $12306130287676
-Dans ce niveau vous devrez construire un circuit qui pourra
-[SAUVEGARDER] ou [CHARGER] 4 bytes de mémoire différents. 
+In this level you have to build a circuit that 
+can [SAVE] or [LOAD] from 4 different bytes of memory.
 
-1 Bit sera donné pour [CHARGER] et un autre pour [SAUVEGARDER].
-Enfin, 2 bits seront données pour l'adresse.
+You are given 1 bit that determines if you are to [LOAD]. Another bit determines if you are to [SAVE] and it comes with a corresponding value.
+Additionally, you have 2 address bits. 
 
-Avec 2 bits, vous aurez 4 combinaisons possibles, une pour chaque byte de mémoire dans ce niveau.
-[i][tip]Rassemblez les fils au centre et utilisez des angles droits, sinon ce sera le bazar ![/tip][/i]
-[i][tip]La barre d'espace fait tourner les composants.[/tip][/i]
+With 2 bits, there are 4 combinations, one for each byte of memory in this level.
+[i][tip]Join wires in the middle and use right angles or this will be a mess.[/tip][/i]
+[i][tip]Spacebar rotates components.[/tip][/i]
 $16217965518477 B
 $10891070331034 B
-$18084166025569 Rien
-$13082830776248 NE PAS SAUVEGARDER
-$17473197268827 CHARGER
-$13555908976270 0 OU 1
-$10311371309532 SAUVEGARDER
-$16925432534232 CHARGER
-$13644027370563 Charger
+$18084166025569 Nothing
+$13082830776248 DON'T LOAD
+$17473197268827 LOAD
+$13555908976270 0 OR 1
+$10311371309532 SAVE
+$16925432534232 LOAD
+$13644027370563 Load
 $12933801309767 A
-$12291627335021 SAUVEGARDER
+$12291627335021 SAVE
 
 
 === levels/byte_less_i ===
@@ -97,7 +95,7 @@ $13224963076378 We are experimenting with how backgrounds influence cognitive fu
 
 === levels/and_gate_3 ===
 
-$14788981567936 Create an AND gate with 3 inputs.
+$14788981567936 Készyíts egy AND kaput 3 bemenettel.
 
 
 === levels/saving_bytes ===
@@ -257,13 +255,13 @@ $18732877690173 Add the two input bytes. Each output bit in the output should be
 
 === levels/NAND Gate ===
 
-$17420270098223 Dans ce niveau, le but sera de comprendre comment fonctionne une porte NAND. Soyez [color=#dd6576]sur[/color] de savoir comment elle fonctionne avant de compléter le niveau, sinon vous pourriez être bloqué dans le prochain!
-$11034378482152 Correct! Vous avez débloqué la porte NAND. Avec ce composant vous pourrez construire tout le reste de votre ordinateur!
-$18270083417453 Vérifier
-$19208664264770 [b]Consigne[/b]\nCliquez sur l'un des bouttons de la dernière ligne du tableau.
-$17923274216766 Nous en avons conclus que vous n'êtes probablement pas une plante.
-$14777350869870 Nous sommes impressionnés par votre capacité à avoir résolu le dernier test!
-$17994568832660 [b]Consigne[/b]\nLa porte NAND au milieu du circuit change son comportement.\nUtilisez la barre sur votre gauche pour experimenter les effets qu'ont les entrées sur les sorties et complétez le tableau en conséquence.
+$17420270098223 Ezen a szinten a feladatod az, hogy kitaláld a NAND komponens működését. Légy benne [color=#dd6576]biztos[/color], hogy érted a működését, különben elakadhadsz a következő szinteken!
+$11034378482152 Helyes! Feloldottad a NAND kaput. Ezzel a komponensel mindent meg tudsz építeni a számítógépedben!
+$18270083417453 Ellenőriz
+$19208664264770 [b]Instrukció[/b]\nNyomj rá akármelyik szörke gombra az utolsó sorában a táblázatnak.
+$17923274216766 Úgy döntöttünk, hogy valószínűleg nem egy növény vagy.
+$14777350869870 Nagyon lenyűgözött minket ahogy megoldottad az előző tesztet!
+$17994568832660 [b]Instrukció[/b]\nA középen lévő NAND komponens változtatja a jelek irányát.\nHasználd a bal oldalt lévő menüt, ott tudod vátoztatni a bemeneteket, nézd meg, hogy hogyan vátozik a kimenet és töltsd ki a táblázatot.
 
 
 === levels/Switch ===
@@ -347,14 +345,14 @@ $11316928751185 In our education system we traditionally teach by tricking stude
 
 === levels/Second Tick ===
 
-$14355963067874 Output [ON] on the second tick only.
-$17526582195506 As you know these tests culminate in building a functioning computer.
-$15726318553190 This is the main reason we don't eat you afterwards.
+$14355963067874 A kimenet legyen bekapcsolva [ON] csak a második tikken.
+$17526582195506 Ahogy már tudod, ezek a tesztek egy működő számítógép készítéséig fokozódnak.
+$15726318553190 Ez a fő ok, amiért nem eszünk meg utánna.
 $19277843280528
- [color=#b72d41][b]TIP:[/b][/color] 
- You can select a component with 
- its pins by double clicking it
-$15296208528991 Species that are capable of finishing are considered sentient by law.
+ [color=#b72d41][b]TIPP:[/b][/color] 
+ Kiválaszthat egy komponenst a 
+ pinek dupla kattintással
+$15296208528991 A befejezésre képes fajokat a törvény érzőnek tekinti.
 
 
 === levels/divide ===
@@ -578,7 +576,7 @@ $17070232883226 But we want to make sure we don’t get the same fruit twice as 
 
 === levels/or_gate_3 ===
 
-$15448906128695 Create an OR gate with 3 inputs.
+$15448906128695 Csinálj egy OR kaput 3 bemenettel.
 
 
 === levels/conditions ===
@@ -647,9 +645,9 @@ $14293122338496 We had our intern add a "disable" bit to this component. We were
 === levels/Nor GATE ===
 
 $11362258372706
-Most creatures on Earth are agressive and do not know how to focus.
+A földi lények agresszívak és nem tudnak koncentrálni.
 
-To succeed you must learn to think logically, while not destroying things.
+Ahoz hogy sikeres lenyél, logikusan kell gondolkoznod, miközben nem rontassz el semmit.
 
 
 === levels/Opcodes ===
@@ -681,8 +679,8 @@ As with normal addition, if the result cannot be described with one digit, set t
 
 === levels/or_gate ===
 
-$12749704931323 You should be happy you get to participate in our glorious tests.
-$11472059692644 You get a chance to communicate with very advanced people from the galactic civilization.
+$12749704931323 Örülnöd kéne, hogy részt vehetsz dicsőséges tesztjeinken.
+$11472059692644 Lehetőséget kapsz arra, hogy kommunikálj a galaktikus civilizáció nagyon fejlett tagjaival.
 
 
 === levels/sandbox ===
@@ -706,10 +704,10 @@ $14958585065722 Therefore the number of arms on a creature is clearly the main p
 === levels/and_gate ===
 
 $15232844525838
-Create the circuit that matches the table.
+Készíts egy áramkört ami megfelel a táblázatnak.
 	
-[tip]Double click on a component to move it together with connected wires.[/tip]
-$15231724707514 I don't want to discourage you, but I think the elephant will win the competition. No offense but your brain is tiny in comparison.
+[tip]Kattints duplán egy komponensre, hogy a csatlakoztatott kábelekkel együtt mozogjon.[/tip]
+$15231724707514 Nem szeretnélek demotiválni, de szerintem az elefánt fog nyerni. Ne vedd sértésnek, de az agyad kicsi az elefántéhoz képest.
 
 
 === levels/Storage cracker ===
@@ -727,15 +725,15 @@ $11183892008673 You win this level when you output the correct passcode, no outp
 === levels/Crude Awakening ===
 
 $12508086025944
-Nous allons vous tester.
+Mi téged tesztelünk.
 
-Les règles sont simples, construisez un ordinateur fonctionnel ou vous allez être manger. Bonne chance !
-$16321577947087 Félicitation, vous vous êtes fait enlever!
+A szabályok egyszerűek, építs egy működő számítógépet vagy megeszünk téged. Sok Szerencsét.
+$16321577947087 Gratulálok, el lettél rabolva!
 $19257730429557
-Un signal se déplace toujours de composants "IN" vers des composants "OUT".
-Dans le coin en haut à gauche en dessous de "IN" vous trouverez une icône verte, 
-cliquez dessus pour changer son état.
-$17675121574388 Le composant OUT s'est maintenant éteint, car aucun signal ne viens de l'entrée.\n
+Egy jel fut az "IN" komponensből az "OUT" komponensbe.
+A bal felső sarokban, az "input" alatt van egy zöld ikon, 
+nyomd meg, hogy kapcsold ki as "IN" komponenst. 
+$17675121574388 Figyeld meg, hogy az OUT komponens kikapcsolt.\nEz azért van, mert a jel már nem jön az IN komponensből.
 
 
 === levels/constants ===
@@ -841,7 +839,7 @@ Also you can't move the red components in this level, for reasons that will be r
 
 === levels/always_on ===
 
-$17712385236630 Create a circuit that is always [ON].
+$17712385236630 Csinálj egy áramkört aminek a kimenete mindig be van kapcsolva [ON].
 
 
 === levels/Arithmetic Engine ===
@@ -928,8 +926,8 @@ $10141611261952 [center]Implement immediate values[/center]
 
 === levels/xor_gate ===
 
-$14093358515620 This is also known as an XOR gate. This level is difficult, so don't be discouraged if you don't get the answer right away.
-$19182751521677 Last level you built a circuit that was [ON] when we were at the second tick. This level build a circuit that is [ON] when we are at the second OR third tick.
+$14093358515620 Ezt a XOR kapunak is hívják. Ez a szint nehéz, szóval ne veszítsd el a remény ha nem sikerül elsőre.
+$19182751521677 Az előző szinten készítettél egy komponenst aminek a kimenete csak akkor van bekapcsoval [ON] , ha a második tikken járunk. Ezen a szinten egy áramkört építesz aminek csak akkor van a kimenete bekapcsolva [ON] , ha a második VAGY harmadik tikken járunk.
 
 
 === levels/xor ===
@@ -1003,24 +1001,24 @@ $18769284297247 Create a new schematic and add a program with 4 byte output
 
 === levels/not_gate ===
 
-$19085882338208 [b]Consigne[/b]\nFaites un clique droit pour déselectionner
-$10042327259531 Maintenant que vous avez déverouillé la porte NAND, il est temps de créer votre propre circuit.
-$14042842216181 Dans le dernier niveau, vous avez construit le tableau à partir du circuit. Dans ce niveau vous devrez créer un circuit qui correspondra avec le tableau.
-$10604720087324 [b]Consigne[/b]\nConstruisez un circuit qui corresponde au tableau.\nCliquez [i][/i] (Prochain Tick) en haut à gauche pour tester chaque combinaison d'entrées.\nVous réuissirez le niveau une fois que les deux combinaisons seront justes.
+$19085882338208 [b]Instrukció[/b]\nJobb klikk a jelölés törléséhez
+$10042327259531 Miután feloldottad a NAND kaput, itt az ideje, hogy készíts egy áramkört.
+$14042842216181 Az előző szinten az áramkür alapján készítetted a táblázatot. Ezen a szinten az áramkört készited ami megfelel a táblázatnak.
+$10604720087324 [b]Instrukció[/b]\nKészíts egy áramkört ami megfelel a táblázatnak.\nNyomd meg a [i][/i] -t (Next tick) a bal felső sarokban, hogy ellerőrizd az összes kombinációt.\nAkkor nyered meg ezt a szintet, amikor minden kombináció megfelel.
 $19798729463813
-En utilisant des portes NAND, construisez une porte NOT.
+NAND kapuk használásával, Készítsd el a NOT kaput
 
-En utilisant: [b]porte NAND[/b]
-[code]Entrée 1: [OFF][ON][OFF][ON]
-Entrée 2: [OFF][OFF][ON][ON]
-Sortie:  [ON][ON][ON][OFF][/code]
+Használd: [b]NAND kapu[/b]
+[code]BEMENET 1: [OFF][ON][OFF][ON]
+BEMENET 2: [OFF][OFF][ON][ON]
+KIMENET:  [ON][ON][ON][OFF][/code]
 
-Construisez: [b]porte NOT[/b]
-[code]Entrée 1: [ON][OFF]
-Sortie:  [OFF][ON][/code]
-$18442122157391 [b]Consigne[/b]\nDéselectionnez le composant en cliquant sur l'arrière-plan
-$12880883686501 [b]Consigne[/b]\nCliquez sur la porte NAND en haut à droite et placez là
-$18780831606716 [b]Consigne[/b]\nMaintenez le clique gauche pour ajouter un fil
+Készítsd: [b]NOT kapu[/b]
+[code]BEMENET 1: [ON][OFF]
+KIMENET:  [OFF][ON][/code]
+$18442122157391 [b]Instrukció[/b]\nTöröld a kijelölést a háttérre kattintással
+$12880883686501 [b]Instrukció[/b]\nNyomj a NAND komponensre a képernyő bal felső sarkában és tedd le
+$18780831606716 [b]Instrukció[/b]\nA kébel hozzáadásához kattintson a táblára, és húzza az egérmutatót
 
 
 === levels/bit_adder ===
