@@ -44,37 +44,37 @@ $13520918982355 Add a ram block, so the computer can address 256 additional byte
 
 === levels/ram_block ===
 
-$17142958857584 A OR B
-$12901484249817 Can you fit 4 bytes of memory in this limited space?
+$17142958857584 A VAGY B
+$12901484249817 Tudsz 4 bájt memóriát beépíteni ebbe a korlátozott térbe?
 $14218335256117
-In our advanced civilization, forcing prisoners to do extremely menial tasks is slavery and is technically illegal.
-	  That is why we instead had our intern create the 256 byte version of your component.
+A mi fejlett civilizációnkban a foglyok kényszerítése rendkívül repetitív feladatok elvégzésére rabszolgaság, és technikailag illegális.
+	  Ezért kértük meg a gyakornokunkat, hogy hozza létre az alkatrész 256 bájtos változatát.
 $19282543476901 1
-$13765566466116 DON'T SAVE
-$15908016538045 VALUE
+$13765566466116 NE MENTS
+$15908016538045 ÉRTÉK
 $16196915566111 0
 $14259545926196 A
 $12306130287676
-In this level you have to build a circuit that 
-can [SAVE] or [LOAD] from 4 different bytes of memory.
+Ezen a szinten olyan áramkört kell építeni, amely 
+[SAVE] or [LOAD] from 4 different bytes of memory.
 
-You are given 1 bit that determines if you are to [LOAD]. Another bit determines if you are to [SAVE] and it comes with a corresponding value.
-Additionally, you have 2 address bits. 
+1 bitet kap, amely meghatározza, hogy [LOAD]-olj-e. Egy másik bit határozza meg, hogy [SAVE]-elsz-e egy értéket.
+Ezenkívül 2 "address" bited van. 
 
-With 2 bits, there are 4 combinations, one for each byte of memory in this level.
-[i][tip]Join wires in the middle and use right angles or this will be a mess.[/tip][/i]
-[i][tip]Spacebar rotates components.[/tip][/i]
+2 bittel 4 kombináció van, ez választja ki, hogy melyik byte-tat dolgozol.
+[i][tip]Csatlakoztasd a vezetékeket középen, és használj derékszögeket, különben ez rendetlenség lesz.[/tip][/i]
+[i][tip]A szóköz elforgatja az alkatrészeket.[/tip][/i]
 $16217965518477 B
 $10891070331034 B
-$18084166025569 Nothing
-$13082830776248 DON'T LOAD
-$17473197268827 LOAD
+$18084166025569 Semmi
+$13082830776248 NE ÍRD KI
+$17473197268827 ÍRD KI
 $13555908976270 0 OR 1
-$10311371309532 SAVE
-$16925432534232 LOAD
-$13644027370563 Load
+$10311371309532 MENTSD EL
+$16925432534232 ÍRD KI
+$13644027370563 Írd ki
 $12933801309767 A
-$12291627335021 SAVE
+$12291627335021 MENTSD EL
 
 
 === levels/byte_less_i ===
@@ -105,18 +105,18 @@ Készíts egy áramkört ami tud [SAVE]-elni vagy [LOAD]-olni egy byte-ot.
 
 Ha az első "bit input" [ON], akkor a kimenet legyen az elmentett byte.
 Ha az második "bit input" [ON], mentsd el a byte-ot.
-$15510981129613 ÍRD FELÜL
+$15510981129613 ÍRD KI
 $13502950630653
 [color=#ff9800]Semmi
 0
 0[/color]
-$19109563882664 NE ÍRJ FELÜL
+$19109563882664 NE ÍRJ KI
 $16372198430230 MENTS
 $11467279617581 MENTS
 $15498440508450 Ne csinálj semmit
 $10080722944246 NE MENTS
-$18873598212433 ÍRD FELÜL
-$15582618410991 ÍRJ FELÜL ÉS MENTS
+$18873598212433 ÍRD KI
+$15582618410991 ÍRJ KI ÉS MENTS
 
 
 === levels/maze ===
@@ -365,20 +365,20 @@ In this exercise, you are first given the numerator (7 in the example) and then 
 
 === levels/buffer ===
 
-$10260210687588 [center]Test 2: Left input is [img]dialogue/on.png[/img], right output should be [img]dialogue/on.png[/img].[/center]
-$13309706297402 [center]Test 3: Right input is [img]dialogue/on.png[/img], left output should be [img]dialogue/off.png[/img].[/center]
-$17005228759908 [center]Make sure [img]dialogue/on.png[/img] can only flow from left to right.[/center]
-$18349621873762 [center]Test 1: Both inputs are [img]dialogue/off.png[/img], neither side should turn [img]dialogue/on.png[/img].[/center]
+$10260210687588 [center]Teszt 2: Bal bemenet [img]dialogue/on.png[/img] lesz, jobb kimenetnek [img]dialogue/on.png[/img] kell lennie.[/center]
+$13309706297402 [center]Teszt 3: Jobb bemenet [img]dialogue/on.png[/img] lesz, bal kimenetnek [img]dialogue/off.png[/img] kell lennie.[/center]
+$17005228759908 [center]Győződj meg róla, hogy [img]dialogue/on.png[/img] csak balról jobbra áramlik.[/center]
+$18349621873762 [center]Teszt 1: Mind a két bemenet [img]dialogue/off.png[/img], Egyik se legyen [img]dialogue/on.png[/img].[/center]
 $15504762262759
-This level starts with 2 special components. They simultaneously act as input and output.
+Ezen a szinten két pin van. Ezek a pinek egyszerre bemenetek és kimenetek.
 
-Make sure the signal flows only from left to right. There are 3 tests.
+Győződj meg róla, hogy a jel csak balról jobbra áramlik. Három teszt van.
 
-[b]Test 1[/b]: Both sides will be [OFF].
+[b]Teszt 1[/b]: Mind a két oldal [OFF] lesz.
 
-[b]Test 2[/b]: The left side input will turn [ON] and the right side should be [ON].
+[b]Teszt 2[/b]: A bal oldal [ON] lesz, a jobbnak pedig [ON]-nak kell lennie.
 
-[b]Test 3[/b]: The right side output will turn [ON] and the left side should be [OFF].
+[b]Teszt 3[/b]: A jobb oldal [ON] a balnak pedig [OFF]-nak kell lennie..
 
 
 === levels/component_factory ===
@@ -546,7 +546,7 @@ $15885763626223 Create a circuit that ANDs two bytes bitwise.
 
 === levels/1_decoder ===
 
-$16057674753878 Create a component that can switch a signal between 2 pins.
+$16057674753878 Készíts egy komponenst ami tud váltani 2 kimenet között.
 
 
 === levels/byte_mux ===
@@ -638,8 +638,8 @@ $16072814175447 Programming on buggy hardware is very frustrating. It is painful
 
 === levels/3_decoder ===
 
-$19231618567710 With 3 bits of input there are 8 combinations. Make a circuit that selects 1 output for each of the 8 combinations. No more or less than 1 bit should be [ON] at a time.
-$14293122338496 We had our intern add a "disable" bit to this component. We were tired of looking at him running in circles and were looking for other pointless and tedious tasks to give him.
+$19231618567710 3 bit bemenettel 8 kombináció van. Készíts egy komponenst, amely mind a 8 kombinációhoz 1 kimenetet választ ki. Csak 1 bit legyen [ON] egyidőben.
+$14293122338496 A gyakornokunk hozzátadott egy "disable" bemenetet ehhez a komponenshez. Belefáradtunk abba, hogy körbe-körbe fut, és más értelmetlen és unalmas feladatot kerestünk, amelyet neki adhatunk.
 
 
 === levels/Nor GATE ===
@@ -878,23 +878,22 @@ $17156565273196 Output [ON] when both inputs are the same.
 
 === levels/Counter ===
 
-$17701404772563 Add 1
-$17940006660359 Count
+$17701404772563 Adjon hozzá 1-et
+$17940006660359 Számláljon
 $17263901743088
-Build a counter that will increase by 1 each tick.
+Építsen egy számlálót, amely minden tikkenként 1-el növekszik.
 
-Additionally, there should be an option for overwriting the counter with a given value.
+Ezenkívül lehetőséget kell biztosítani a számláló egy adott értékkel történő felülírására.
 
-You are given 2 inputs, a bit and a byte.
+2 bemenetet kapsz, egy bitet és egy byte-ot.
 
-The bit input should toggle between counting and overwriting with the value of the byte.
-$17883663978196 Overwrite
+A bit bemenet váltson a számlálás és a felülírás között,a byte a felülírás értékét adja meg.
+$17883663978196 Felülír
 $19407121413983 ACTION
 $10555159894041
-Counting is so fundamental even insects do it. From counting, species can evolve to compare and do arithmetic. And before you know it, you have apes building computers.
+A számolás annyira alapvető, hogy még a rovarok is ezt teszik. A számolásból a fajok fejlődhetnek, hogy összehasonlítsanak és műveleteket végezzenek. És mielőtt észrevennéd, a majmok számítógépeket építenek.
 
-Make a device that counts increments once per tick.
-
+Készítsen olyan komonenst, amely tikkenként növeli az értékét.
 
 === levels/binary_racer ===
 
