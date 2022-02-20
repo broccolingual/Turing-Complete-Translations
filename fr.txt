@@ -96,7 +96,7 @@ $13224963076378 Nous étudions comment les expériences passés influent les fon
 
 === levels/and_gate_3 ===
 
-$14788981567936 Create an AND gate with 3 inputs.
+$14788981567936 Créez une porte NAND avec 3 entrées.
 
 
 === levels/saving_bytes ===
