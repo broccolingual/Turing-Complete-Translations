@@ -87,13 +87,12 @@ $19006843777401 Créez un circuit qui sortira [ON] quand la première entrée es
 
 === levels/bit_inverter ===
 
-$15769391111364 When "Invert" is [ON], output the opposite of "Value". Otherwise, just output "Value" as is.
-$15272914096446 This level is exactly the same as the XOR one you solved before. Remember no matter what we tell you the goal of the level is, the real truth is in the truth table.
-$14944872827527 Despite the funny background you figured out this was just the XOR gate in disguise! Well done.
-$16125025706490 Hmm, perhaps you have studied momory a little bit too well...
-$12338758521470 This level is exactly the same as the XOR one you solved before. Remember no matter what we tell you the goal of the level is, the real truth is in the truth table.
-$13224963076378 We are experimenting with how backgrounds influence cognitive functions in earthlings.
-
+$15769391111364 Quand "Inverser" est [ON], veuillez sortir l'inverse de la valeur d'entrée. Sinon, copiez l'entrée sur la sortie.
+$15272914096446 Ce niveau est exactement comme le XOR que vous avez résolu avant. N'oubliez pas: la seule véritée se trouve dans la table de véritée.
+$14944872827527 Malgré le drôle de context que nous vous avons donné, vous avez réussi à voir qu'il ne s'agissait en réallité que d'une porte XOR déguisée. Bien joué!
+$16125025706490 Hmm, peut-être que vous avez étudié un peu trop les mémoires...
+$12338758521470 Ce niveau est exactement comme le XOR que vous avez résolu avant. N'oubliez pas: la seule véritée se trouve dans la table de véritée.
+$13224963076378 Nous étudions comment les expériences passés influent les fonctions cognitives des humains.
 
 === levels/and_gate_3 ===
 
