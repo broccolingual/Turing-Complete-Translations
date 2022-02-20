@@ -81,8 +81,8 @@ $12291627335021 SAUVEGARDER
 
 === levels/byte_less_i ===
 
-$16755383054285 [center]Determine if the first input is less than the second.[/center]
-$19006843777401 Create a circuit that outputs [ON] when the first input is less than the second. Interpret the bytes as being [color=#dd6576]SIGNED[/color].
+$16755383054285 [center]Déterminez si la première entrée est plus petite que la seconde.[/center]
+$19006843777401 Créez un circuit qui sortira [ON] quand la première entrée est plus petite que la seconde. Interprêtez les bytes comme étant [color=#dd6576]SIGNÉS[/color].
 
 
 === levels/bit_inverter ===
