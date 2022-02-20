@@ -105,7 +105,6 @@ Create a circuit that can [SAVE] or [LOAD] a byte.
 
 When the first input bit is [ON], [LOAD] the memory and send it to output.
 When the second input bit is [ON], [SAVE] the input byte.
-
 $15510981129613 LOAD
 $13502950630653
 [color=#ff9800]None
@@ -199,7 +198,6 @@ The [color=#e49f44]ret[/color] instruction has to do the following:
  [i]- [color=#e49f44]Pop[/color] return address from the stack and jump to it[/i]
 
 You can pass information to and from a function by saving the data to registers as normal. Also be aware of which registers a function will overwrite before calling it.
-
 $19416009887091
 Sometimes it is useful to reuse a section of code. We call these sections "functions". To implement this reuse, one can [color=#e63e5b][url=termonology]jump[/url][/color] to the beginning of the function and jump back again at the end of the function. We call jumping to the function "calling" the function, and jumping back from the function "returning" from the function. 
 	
@@ -260,7 +258,7 @@ $18732877690173 Add the two input bytes. Each output bit in the output should be
 $17420270098223 Ezen a szinten a feladatod az, hogy kitaláld a NAND komponens működését. Légy benne [color=#dd6576]biztos[/color], hogy érted a működését, különben elakadhadsz a következő szinteken!
 $11034378482152 Helyes! Feloldottad a NAND kaput. Ezzel a komponensel mindent meg tudsz építeni a számítógépedben!
 $18270083417453 Ellenőriz
-$19208664264770 [b]Instrukció[/b]\nNyomj rá akármelyik szürke gombra az utolsó sorában a táblázatnak.
+$19208664264770 [b]Instrukció[/b]\nNyomj rá akármelyik szörke gombra az utolsó sorában a táblázatnak.
 $17923274216766 Úgy döntöttünk, hogy valószínűleg nem egy növény vagy.
 $14777350869870 Nagyon lenyűgözött minket ahogy megoldottad az előző tesztet!
 $17994568832660 [b]Instrukció[/b]\nA középen lévő NAND komponens változtatja a jelek irányát.\nHasználd a bal oldalt lévő menüt, ott tudod vátoztatni a bemeneteket, nézd meg, hogy hogyan vátozik a kimenet és töltsd ki a táblázatot.
@@ -352,8 +350,8 @@ $17526582195506 Ahogy már tudod, ezek a tesztek egy működő számítógép k�
 $15726318553190 Ez a fő ok, amiért nem eszünk meg utánna.
 $19277843280528
  [color=#b72d41][b]TIPP:[/b][/color] 
- Kiválaszthat egy komponenst a 
- pinek dupla kattintással
+ Kiválaszthatsz egy komponenst a
+ pinekkkel eggyütt az arra való dupla kattintással
 $15296208528991 A befejezésre képes fajokat a törvény érzőnek tekinti.
 
 
@@ -634,7 +632,6 @@ The second special keyword for the lab is [color=#c54d5e]set_input[/color]. With
 
 You can at any time also (re)import example tests by clicking below:
 [url=import_overture][color=#e49f44]OVERTURE[/color][/url]
-
 $15446846177093 Welcome to the lab. Like the component factory, this is not a normal level but a tool.
 $16072814175447 Programming on buggy hardware is very frustrating. It is painful to suddenly be forced to reason about circuits, when you are in the middle of solving a programming problem. It is tempting to apply a quick circuit fix, so you can get back to solving the original problem. But now this quick fix broke something else in a program that used to work and so on. Therefore, when developing hardware try to aim for 100% reliability before you start programming!
 
@@ -759,7 +756,6 @@ For example:
 INPUT 1 [ON][ON][OFF][OFF][OFF][OFF][OFF][OFF]
 INPUT 2 [OFF][OFF][OFF][OFF][ON][ON][OFF][OFF]
 OUTPUT  [ON][ON][OFF][OFF][ON][ON][OFF][OFF][/code]
-
 $15226896485081 You may think it is unethical to eat all the earthlings that don’t win the competition?
 
 
@@ -804,7 +800,6 @@ Use unsigned less / greater for the comparisons.
 
 Each opcode does what their name implies. For example the following jumps to byte 16 if REG0 is less than REG1: 
 [code][color=#87a8c8]IF_LESS REG0 REG1 16[/color][/code]
-
 $18542005958715 Set the counter increment to 4
 $17133561664335 Congratulations, you finished the [color=#e49f44]LEG[/color] computer!
 $14973719570693 Add a counter to the circuit
@@ -923,7 +918,6 @@ When the 7th bit of the opcode is [ON], use argument 2 as an immediate value, in
 	
 		[img]dialogue/leg_diagram.png[/img]
 		
-
 $19338533633006 Set the counter increment to 4
 $15197362332657 Create a new schematic and add a program with 4 byte output
 $18004215603701 Add a counter to the circuit
@@ -971,7 +965,6 @@ The following are the set up steps that needs to be done in order to complete th
 [b]3.[/b] Place a counter, set its increment to 4 and connect it to the program block.
 [b]4.[/b] Add 6 registers (or custom components with registers)
 [b]5.[/b] Click "Edit watched state" on the program component and connect registers to 0 to 5. Connect the counter to 6 and the output to 7.
-
 $18860645759682
 The [color=#e49f44]LEG[/color] architecture is a computer that takes 4 bytes per tick from the program. 
 
@@ -1002,8 +995,6 @@ The value of an argument or destination refers to one of these places:
 [/code]
 
 In the next level you will implement more [color=#e49f44]OPCODES[/color], which will require a different ALU than that of [color=#e49f44]OVERTURE[/color].
-
-
 $10922418807673 Argument 7 means read from input, but input is not enabled.
 $18769284297247 Create a new schematic and add a program with 4 byte output
 
@@ -1020,12 +1011,11 @@ NAND kapuk használásával, Készítsd el a NOT kaput
 Használd: [b]NAND kapu[/b]
 [code]BEMENET 1: [OFF][ON][OFF][ON]
 BEMENET 2: [OFF][OFF][ON][ON]
-KIMENET:  [ON][ON][ON][OFF][/code]
+KIMENET:   [ON][ON][ON][OFF][/code]
 
 Készítsd: [b]NOT kapu[/b]
 [code]BEMENET 1: [ON][OFF]
-KIMENET:  [OFF][ON][/code]
-
+KIMENET:   [OFF][ON][/code]
 $18442122157391 [b]Instrukció[/b]\nTöröld a kijelölést a háttérre kattintással
 $12880883686501 [b]Instrukció[/b]\nNyomj a NAND komponensre a képernyő bal felső sarkában és tedd le
 $18780831606716 [b]Instrukció[/b]\nA kébel hozzáadásához kattintson a táblára, és húzza az egérmutatót
@@ -1042,9 +1032,7 @@ As with normal addition, if the result cannot be described with one digit, set t
 
 === levels/byte_shift ===
 
-$16023356915123
-The task in this level is to shift the first input to the left by the value given in the second input. The second input will never exceed 7.
-
+$16023356915123 The task in this level is to shift the first input to the left by the value given in the second input. The second input will never exceed 7.
 $10598344098990 [center]Shift the first input left by the number of places given by the second[/center]
 $16216408139965
 To [color=#e49f44]shift[/color] a value 1 left just means moving all the bits in a byte to the left by 1 position.
@@ -1056,8 +1044,6 @@ For example: [color=#e49f44]90 shl 1[/color]
 Shifting by 3: [color=#e49f44]90 shl 3[/color]
 [OFF] [ON] [OFF] [ON] [ON] [OFF] [ON] [OFF] would become:
 [ON] [ON] [OFF] [ON] [OFF] [OFF] [OFF] [OFF]
-
-
 $18137790657923 In addition to giving you a shift left component, we also had the intern create a shift right component. All he had to do was to create the mirror version of this schematic.
 $18518173140953 I recommend that you add [color=#e49f44]shift left[/color] and [color=#e49f44]shift right[/color] to your hardware for future levels.
 
@@ -1121,9 +1107,9 @@ Use the binary counter to count the number of signals.
 Check [color=#e63e5b][url=counting_signals]this hint[/url][/color] if you get stuck
 
 [i][tip]The solution for this level is not very neat and requires more components.[/tip][/i]
-
 $10881918807029
  [color=#b72d41][b]TIP:[/b][/color] 
  There is no shame in using
  pen and paper
+
 
