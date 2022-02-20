@@ -234,12 +234,12 @@ A delay line-nak megengedett a saját kimenetén való függés. Ez azért van, 
 
 === levels/any_doubles ===
 
-$16587030847545 Because we are so technologically advanced we have machines fold our socks. Unfortunately the circuit that detects sock pairs broke on the machine.
+$16587030847545 Mivel annyira technológiailag fejlettek vagyunk, vannak gépeink amik összehajtják a zokninkat. Sajnos az áramkör, amely érzékeli a zokni párokat, elromlott a gépben.
 $14373083988184
-This level has 4 inputs. 
-Output [ON] when 2 or more of them are [ON].
+Ennek a szintnek 4 bemenete van. 
+A kimenet legyen [ON] csak akkor ha a bemenetből 2 vagy több állapota [ON].
 
-[tip]Don't overthink this level.[/tip]
+[tip]Ne gondold túl ezt a szintet.[/tip]
 
 
 === levels/byte_adder ===
@@ -560,8 +560,8 @@ We might want to team you two up, since you compliment each other's shortcomings
 
 === levels/odd_number_of_signals ===
 
-$16173829560311 Using a maximum of 3 components, output [ON] only when an odd number of inputs are [ON].
-$18288998816979 This level has a [color=#e63e5b][url=odd_number]hint[/url][/color] you can use if you get stuck.
+$16173829560311 Maximum 3 komponens használatával készíts egy áramkört,  ahol a kimenet csak akkor legyen [ON], páratlan számú bemenet van [ON] állapotban.
+$18288998816979 Ennek a szintnek van egy [color=#e63e5b][url=odd_number]segítsége[/url][/color], amit használhatsz akkor ha elakadnál.
 
 
 === levels/unseen_fruit ===
@@ -672,9 +672,9 @@ $17495651785164 Add 6 registers to the map
 === levels/full_adder ===
 
 $17063157033479
-In the previous level we added together 2 inputs, this time we add 3. Once again, add the inputs together in binary, such that the result is either [ZERO] or [ONE].
+Az előző szinten 2 bemenetet adtunk össze, most pedig 3-at. Megint add össze őket binárisan, hogy az eredmény [ZERO] vagy [ONE] legyen.
 
-As with normal addition, if the result cannot be described with one digit, set the carry to [ONE].
+Mint a normális összeadásban, ha a kimenetet nem lehet egy számjeggyel kiírni, akkor legyen a carry [ONE].
 
 
 === levels/or_gate ===
@@ -898,13 +898,13 @@ Make a device that counts increments once per tick.
 
 === levels/binary_racer ===
 
-$16076448195257 This level is my favorite pastime. Converting decimal into binary under time pressure.
+$16076448195257 Ez a szint a kedvenc időtöltésem. Decimális számok konvertálása binárissá időnyomás alatt.
 $19111664765554
-Toggle the bits in the level panel so they add up to the decimal number in the question.
+Kapcsold a biteket az alábbi panelen, hogy azok összeadódjanak a kérdésben szereplő decimális számra.
 
-You must reach level 3 to pass.
+El kell érned a 3. szintet, hogy továbbhaladj.
 
-(click [color=#e63e5b][url=accessibility_mode]here[/url][/color] to turn on timerless accessibility mode)
+(kattints [color=#e63e5b][url=accessibility_mode]ide[/url][/color] az időzítő nélküli elérhetőségi mód bekapcsolásához)
 
 
 === levels/Immediate Values ===
@@ -1023,11 +1023,11 @@ $18780831606716 [b]Instrukció[/b]\nA kébel hozzáadásához kattintson a tábl
 
 === levels/bit_adder ===
 
-$13109388951000 We measure the universe with numbers. So your machine must learn to count.
+$13109388951000 Az univerzumot számokkal mérjük meg. Ezért a te gépednek meg kell tanulnia számolni.
 $16564356062672
-Treat the inputs as [ZERO] or [ONE] depending if they are [OFF] or [ON]. Add them together in binary, such that the result is either [ZERO] or [ONE].
+Kezelje a bemeneteket [ZERO] vagy [ONE]-ként attól függően, hogy [OFF] vagy [ON] van-e. Add össze őket binárisan, hogy az eredmény [ZERO] vagy [ONE] legyen.
 
-As with normal addition, if the result cannot be described with one digit, set the carry to [ONE].
+Mint a normális összeadásban, ha a kimenetet nem lehet egy számjeggyel kiírni, akkor legyen a carry [ONE].
 
 
 === levels/byte_shift ===
@@ -1093,18 +1093,18 @@ Additionally, this map has a dedicated input component, which can be the [color=
 === levels/double_number ===
 
 $19766257822639
-The input and output of this level are using bytes instead of bits. One of the two new components you are given takes a byte and splits it into bits and the other does the opposite.
+Ennek a szintnek a kimenete és bemenete nem biteket, hanem byte-okat használ. Az egyik új komponens amit adtál befogad egy byte-ot és szétosztja 8 bitre, a másik a ellentkezőjét csinálja.
 
-Using those components, figure out how to double the input number (up to 127).
+Ezek a komponensek használatával találd ki, hogy hogyan lehet megduplázni a számok értékét (max 127-ig).
 
 
 === levels/counting_signals ===
 
 $10724914203078
-The output component of this level is a binary counter where the first 3 pins correspond to 1, 2 and 4.
-Use the binary counter to count the number of signals.
+Ennek a szintnek a kimenete egy bináris számláló ahol az első 3 pin az 1-et, 2-t és 4-et jelenti.
+Használd a bináris számlálót arra hogy, megszámold azt, hogy mennyi bemenet státusza [ON].
 
-Check [color=#e63e5b][url=counting_signals]this hint[/url][/color] if you get stuck
+Nézd meg [color=#e63e5b][url=counting_signals]ezt a segytséget[/url][/color] ha elakadnál
 
 [i][tip]The solution for this level is not very neat and requires more components.[/tip][/i]
 $10881918807029
