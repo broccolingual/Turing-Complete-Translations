@@ -101,22 +101,22 @@ $14788981567936 Készyíts egy AND kaput 3 bemenettel.
 === levels/saving_bytes ===
 
 $10633476398156
-Create a circuit that can [SAVE] or [LOAD] a byte.
+Készíts egy áramkört ami tud [SAVE]-elni vagy [LOAD]-olni egy byte-ot.
 
-When the first input bit is [ON], [LOAD] the memory and send it to output.
-When the second input bit is [ON], [SAVE] the input byte.
-$15510981129613 LOAD
+Ha az első "bit input" [ON], akkor a kimenet legyen az elmentett byte.
+Ha az második "bit input" [ON], mentsd el a byte-ot.
+$15510981129613 ÍRD FELÜL
 $13502950630653
-[color=#ff9800]None
+[color=#ff9800]Semmi
 0
 0[/color]
-$19109563882664 DON'T LOAD
-$16372198430230 SAVE
-$11467279617581 SAVE
-$15498440508450 Do nothing
-$10080722944246 DON'T SAVE
-$18873598212433 LOAD
-$15582618410991 LOAD and SAVE
+$19109563882664 NE ÍRJ FELÜL
+$16372198430230 MENTS
+$11467279617581 MENTS
+$15498440508450 Ne csinálj semmit
+$10080722944246 NE MENTS
+$18873598212433 ÍRD FELÜL
+$15582618410991 ÍRJ FELÜL ÉS MENTS
 
 
 === levels/maze ===
@@ -150,18 +150,18 @@ Az előző szinten feloldottad a "delay line"-t. A delay line azt csinálja, hog
 === levels/negative_numbers ===
 
 $12574817679356
-We need a way to have negative values in bytes. The scheme we have been using so far can represent all numbers from 0 to 255 using a byte. This scheme is called "unsigned", since it only deals with positive numbers.
+Kell egy út ahogy tudunk tárolni negatív számokat egy byte-ban. A mostani rendszerben 0-tól 255-ig tudunk számokat vinni egy byte-ban. Ezt a rendszert "unsigned"-nak hívják (előjeltelen), mivel ez csak pozitív számokat tud kimutatni.
 
-We need a scheme that allows negative numbers, normally referred to as a "signed" representation. 
+Kell egy rendszer ami lehetővé teszi a negatív számokat, ezt a rendszert úgy hívják, hogy "signed" (előjeles).
 
-Additionally, it would greatly simplify future circuits if the representation works with the adder you already made. 
-$17231048881956 To know the difference between things, you need subtraction. To get subtraction, first you need negative numbers.
+Ennek a rendszernek működnie kell a byte adderrel amit már elkészítettél. 
+$17231048881956 Ahoz, hogy tudd a különbségeg két szám között, kell a kivonás. Ahhoz hogy legyen kivonás, először kellenek negatív számok.
 $19118970740682
-[color=#dd6576]Edit the numbers[/color] for each bit so that the following is true:
+[color=#dd6576]Változtasd a számokat[/color] a biteknél ameddig az összes alábbi állítás igaz lesz:
 
-[color=#e49f44]1[/color]: All numbers from -127 to 127 should also be representable
-[color=#e49f44]2[/color]: Bytes representing anything from 0 to 127 should be the same as unsigned
-[color=#e49f44]3[/color]: The new number system should work with the adder (for results between -127 and 127).
+[color=#e49f44]1[/color]: -127-től 127-ig minden szám kijelezhető
+[color=#e49f44]2[/color]: A 0-tól 127-ig ugynúgy működjön mint az "unsigned" rendszerben
+[color=#e49f44]3[/color]: Az új számrendszer működjön a byte adderrel (-127-től 127-ig).
 
 
 === levels/Masking Time ===
@@ -245,12 +245,12 @@ A kimenet legyen [ON] csak akkor ha a bemenetből 2 vagy több állapota [ON].
 === levels/byte_adder ===
 
 $16888130664370
-If the result does not fit in 8 bits, turn the output carry [ON] (you can think of it as the 9th bit)
-	
-Finally, there is an input carry as well. This is useful for chaining together byte adders to add larger numbers. You can think of this carry as adding either 0 [OFF] or 1 [ON].
+Ha a kimenet nem fér bele a 8 bitbe akkor legyen a "carry out" [ON] (ezt tekintheted a 9. bitnek)
 
-Use [color=#e63e5b][url=byte_adder]this hint[/url][/color] if you get stuck.
-$18732877690173 Add the two input bytes. Each output bit in the output should be a result of the addition of the corresponding bits from the inputs, and potentially a carry.
+Végül van egy bemeneti carry is. Ez akkor hasznos, ha "byte adder"-eket láncosz össze, ha nagyobb számokat szeretnél összeadni. Ez a "carry" lehet 0 [OFF] vagy 1 [ON].
+
+Használd [color=#e63e5b][url=byte_adder]Ezt a segítséget[/url][/color] ha elakadnál.
+$18732877690173 Add össze a 2 bemeneti byte-ot. A kimenet legyen a bemenetek bitenkénti összeadása és ahhoz hozzáadva a carry, ha van.
 
 
 === levels/NAND Gate ===
@@ -267,8 +267,8 @@ $17994568832660 [b]Instrukció[/b]\nA középen lévő NAND komponens változtat
 === levels/Switch ===
 
 $19935950225431
-Create a component that switches an input byte on or off.
-If you get stuck, try [color=#e63e5b][url=byte_switch]this hint[/url][/color].
+Készíts egy komponenst ami kapcsolni tudja a bemeneti byte-ot.
+Ha elakadsz próbáld meg [color=#e63e5b][url=byte_switch]ezt a segítséget[/url][/color].
 
 
 === levels/saving_gracefully ===
@@ -533,10 +533,10 @@ $16301538038805 Bit 2
 
 === levels/signed_negator ===
 
-$10866019808027 For this level you probably want to turn on signed numbers, so the highest bit shows as -128. Click "+255" located in the top panel.
+$10866019808027 Ehhez a szinthez kapcsold be az előjeles számokat, szóval a legutolsó bit -128-at mutat. Kattints a "+255"-re a felső panelen.
 $10400106910274
-Taking the input as signed (where the 8th bit is -128), make a component that takes a number and negates it.
-For example 4 negated would become -4. -9 negated would become 9.
+A bemenetet előjeles formában kapod meg (Ahol a 8. bit az a -128), észíts egy komponenst ami az ellentétjét veszi a számnak(ugynaz mint ha megszoroznád -1-gyel).
+Példáué 4 átfuttatva ezen a komonensen -4 lenne, -9-ből pedig 9.
 
 
 === levels/byte_and ===
@@ -551,11 +551,11 @@ $16057674753878 Create a component that can switch a signal between 2 pins.
 
 === levels/byte_mux ===
 
-$18296416014178 When the bit selector input is [OFF], output Byte A, otherwise output Byte B.
+$18296416014178 Ha a "bit selector" bemenet [OFF], a kimenet legyen Byte A, különben Byte B.
 $17093993196554
-Even though he did not pass our tests we decided to keep the dog. Unlike most earthlings he is fluffy and follows simple instructions well. 
+Annak ellenére, hogy nem ment át a teszten, úgy döntöttünk, hogy megtartjuk a kutyát. A legtöbb földlakótól eltérően bolyhos és jól követi az egyszerű utasításokat.  
 
-We might want to team you two up, since you compliment each other's shortcomings well.
+Lehet, hogy egy csapatok alkotunk belőletek, mivel jól dicséritek egymás hiányosságait.
 
 
 === levels/odd_number_of_signals ===
@@ -695,10 +695,10 @@ $10451578314373 The Console Screen lets you draw characters to a screen (see man
 
 === levels/byte_not ===
 
-$14196498898485 Tool making and usage is key in the early evolutionary stages of developing intelligence.
-$12982025748137 "NOT" each bit of the byte input.
-$10294533225655 Our previous model of brain size being the main predictor of intelligence was naive.
-$14958585065722 Therefore the number of arms on a creature is clearly the main predictor of intelligence. Did you know there are sea creatures from your planet with four times as many arms as you and they are doing better in tests?
+$14196498898485 A szerszámkészítés és -használat kulcsfontosságú az intelligencia fejlesztésének a korai evolúciós szakaszban.
+$12982025748137 A kimenet legyen a bemenet bitenként átfuttatva egy NOT kapun.
+$10294533225655 Az eddigi modellünk szerint az agy mérete döntötte el az intelligencia mértékét, most már tudjuk hogy ez egy naív feltételezés.
+$14958585065722 Ezért világos, hogy az intelligencia mértékét a kezek száma dönti el. Tudtad, hogy vannak vízi lények a bolygódról akiknek 4-szer annyi kezük van mint neked és sokkal jobban teljesítenek a teszteken?
 
 
 === levels/and_gate ===
@@ -747,16 +747,16 @@ When in immediate mode the whole byte is interpreted as a number that we [SAVE] 
 
 === levels/byte_or ===
 
-$10368115829346 But actually it is OK because you lived good lives in the wild and we don't let the meat go to waste.
+$10368115829346 De igazábol ez teljesen oké, mert jó életet éltél a szabadban és mi nem hagyjuk kárba menni a húst.
 $15923734370936
-OR each bit of the input bytes and output the result.
+A kimenet legyen a bemenetek bitenkénti átfuttatása az OR kapun.
 
-For example:
+Például:
 [code]
-INPUT 1 [ON][ON][OFF][OFF][OFF][OFF][OFF][OFF]
-INPUT 2 [OFF][OFF][OFF][OFF][ON][ON][OFF][OFF]
-OUTPUT  [ON][ON][OFF][OFF][ON][ON][OFF][OFF][/code]
-$15226896485081 You may think it is unethical to eat all the earthlings that don’t win the competition?
+BEMENET 1 [ON][ON][OFF][OFF][OFF][OFF][OFF][OFF]
+BEMENET 2 [OFF][OFF][OFF][OFF][ON][ON][OFF][OFF]
+KIMENET   [ON][ON][OFF][OFF][ON][ON][OFF][OFF][/code]
+$15226896485081 Lehet hogy azt gondolod, hogy etikátlan megenni az összes földlakót aki nem nyeri meg a versenyt?
 
 
 === levels/program ===
