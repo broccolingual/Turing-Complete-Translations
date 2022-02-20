@@ -85,12 +85,12 @@ $19006843777401 Create a circuit that outputs [ON] when the first input is less 
 
 === levels/bit_inverter ===
 
-$15769391111364 When "Invert" is [ON], output the opposite of "Value". Otherwise, just output "Value" as is.
-$15272914096446 This level is exactly the same as the XOR one you solved before. Remember no matter what we tell you the goal of the level is, the real truth is in the truth table.
-$14944872827527 Despite the funny background you figured out this was just the XOR gate in disguise! Well done.
-$16125025706490 Hmm, perhaps you have studied momory a little bit too well...
-$12338758521470 This level is exactly the same as the XOR one you solved before. Remember no matter what we tell you the goal of the level is, the real truth is in the truth table.
-$13224963076378 We are experimenting with how backgrounds influence cognitive functions in earthlings.
+$15769391111364 Ha az "Invert" értéke [ON], a kimenet legyen a "Value" fordítottja. Különben a kimenet legyen a "Value" úgy, ahogy van.
+$15272914096446 Ez a szint ugyanaz mint a XOR, amit régebben oldottál meg. Ne feledd el, nem számít, mit mondunk neked, a szint célja mindig az, ami az igazságtáblázatban van.
+$14944872827527 A vicces háttér ellenére rájöttél, hogy ez csak a XOR kapu álruhában! Szép munka.
+$16125025706490 Hmm, lehet hogy egy kicsit túl jól érted a delay line-t...
+$12338758521470 Ez a szint ugyanaz mint a XOR, amit régebben oldottál meg. Ne feledd el, nem számít, mit mondunk neked, a szint célja mindig az, ami az igazságtáblázatban van.
+$13224963076378 Kísérletezünk azzal, hogy a háttér hogyan befolyásolja a földlakók kognitív funkcióit.
 
 
 === levels/and_gate_3 ===
@@ -140,9 +140,9 @@ Use [color=#e63e5b][url=maze]this hint[/url][/color] if you get stuck.
 
 === levels/Further Delayed Lines ===
 
-$17366913897135 Construct a circuit that outputs the same as the input, just delayed by 2 ticks.
+$17366913897135 Csinálj egy áramkört ami késlelteti a bemeneti jelet 2 tikkel.
 $17497477227061
-In the last level you unlocked the Delay Line. It outputs its own input, just 1 tick late.
+Az előző szinten feloldottad a "delay line"-t. A delay line azt csinálja, hogy késlelteti a jelet amit beadsz neki egy tikkel.
 
 [img]dialogue/delay_buffer.png[/img]
 
@@ -220,14 +220,14 @@ When the input is 0, you should [color=#e49f44]pop[/color] a value off the stack
 
 === levels/odd_ticks ===
 
-$18510295620397 Output [OFF] on the even ticks and [ON] on the odd ticks.
-$16987046679863 In a previous level you learned how we don't allow circular dependencies. Now you must learn the one exception.
+$18510295620397 A kimenet legyen [OFF] a páros számú tikkeken és legyen [ON] a páratlan tikkeken.
+$16987046679863 Az előző szinten megtanultad, hogy nem engedélyezzük a körkörös függőséget. Most megtanulod az egyetlen kivételt.
 $16037516781370
-Square pins in the game never affect the output in the same tick. They therefore never cause circular dependencies.
+Ebben a játékben a szögletes pin-ek nem befolyásolják a kimenetet ugyanabban a tikkben. Ezért sosem okoznak körkörös függőséget.
 	
 	[img]dialogue/delay_buffer.png[/img]
 $17588119878416
-The delay line is allowed to depend on its own input. This is because its input does not influence the rest of the circuit until next tick.
+A delay line-nak megengedett a saját kimenetén való függés. Ez azért van, mert nem befolyásolja az áramkör többi részét a következő tikkig.
 	
 [img]dialogue/delay_buffer.png[/img]
 
@@ -273,21 +273,21 @@ If you get stuck, try [color=#e63e5b][url=byte_switch]this hint[/url][/color].
 
 === levels/saving_gracefully ===
 
-$14295883660596 VALUE
-$14950983012226 SAVE
-$14837033157870 ACTION
+$14295883660596 ÉRTÉK
+$14950983012226 MENTSEN
+$14837033157870 AKCIÓ
 $12474728041023
-The Delay Line allows us to use a value 1 tick later.
+A delay line megengedi, hogy használjunk egy értéket egy tikkel később is.
 
-We need to make a component that allows us to use a value whenever we want, regardless of how many ticks later.
-We call such a value [color=#e49f44]saved[/color].
-$13045361823397 DON'T SAVE
+Csinálnod kell egy áramkört ami lehetővé teszi, hogy haszánjunk egy értéket akármikor.
+Úgy hívjuk azt az értéket, hogy [color=#e49f44]mentett[/color].
+$13045361823397 NE MENTSEN
 $13740696609075
-In this level you have 2 inputs.
-Only if the first input is [ON], update the [color=#e49f44]saved[/color] value.
-The second input is the value to be [color=#e49f44]saved[/color].
+Ezen a szinten két bemenet van.
+Csak akkor írd felöl a [color=#e49f44]mentett[/color] értéket, ha az első bemenet [ON].
+A második érték az [color=#e49f44]elmentendő[/color] érték.
 
-Always output what is currently [color=#e49f44]saved[/color].
+A kimenet mindig legyen a [color=#e49f44]mentett[/color] érték.
 
 
 === levels/Calibrating Laser Cannons ===
@@ -333,14 +333,14 @@ These conditions correspond to the condition component that was saved in the com
 
 === levels/circular_dependency ===
 
-$16336401898647 Test 1/2
-$13880985462901 Make a circuit where the input of a component depends on its own output
+$16336401898647 Teszt 1/2
+$13880985462901 Csinálj egy áramkört amiben az egyik komponens bemenete a saját kimenetén alapul
 $18010308863615
-Create a "circular dependency". This is a circuit where the input of a component relies on its own output. In a circular dependency situation, it is not possible to determine the output of a component, because you would first need to determine the input, which relies on the output and so on (hence the "circular").
+Csinálj egy "körkörös függőség"-et. Ez egy olyan áramkör amiben az egyik komponens bemenete a saját kimenetén alapul. Ebben az esetben nem lehet eldönteni a komponens kimenetét, mert először el kéne döntened a bemenetét, ami a kimenetén alapul (ezért az a neve, hogy "körkörös").
 
-This state is normally not allowed in other levels, but in this level the goal is to create it, so you understand what it is before going forward.
-$13520037133129 I am not sure it benefits the students, but teachers love it.
-$11316928751185 In our education system we traditionally teach by tricking students into doing the wrong thing and then teasing them.
+Ez az állapot általában nem megengedett más szinteken, de ezen a szinten az a célod, hogy előállítsd, hogy megértsd mi az mielőtt továbbmész a későbbi szintekre.
+$13520037133129 Nem vagyok benne biztos, hogy a diákok előnyére válik, de a tanárok szeretik használni.
+$11316928751185 A mi oktatási rendszerünkben hagyományosan úgy tanítunk, hogy becsapjuk a diákokat, hogy rossz dolgot csináljanak, majd utánna megmutatjuk a helyes megoldást.
 
 
 === levels/Second Tick ===
@@ -1004,7 +1004,7 @@ $18769284297247 Create a new schematic and add a program with 4 byte output
 $19085882338208 [b]Instrukció[/b]\nJobb klikk a jelölés törléséhez
 $10042327259531 Miután feloldottad a NAND kaput, itt az ideje, hogy készíts egy áramkört.
 $14042842216181 Az előző szinten az áramkör alapján készítetted a táblázatot. Ezen a szinten az áramkört készited ami megfelel a táblázatnak.
-$10604720087324 [b]Instrukció[/b]\nKészíts egy áramkört ami megfelel a táblázatnak.\nNyomd meg a [i][/i] -t (Next tick) a bal felső sarokban, hogy ellerőrizd az összes kombinációt.\nAkkor nyered meg ezt a szintet, amikor minden kombináció megfelel.
+$10604720087324 [b]Instrukció[/b]\nKészíts egy áramkört ami megfelel a táblázatnak.\nNyomd meg a [i][/i] -t (Next tick) a bal felső sarokban, hogy ellerőrizd az összes kombinációt.\nAkkor nyered meg ezt a szintet, amikor minden kombináció megfelel a táblázatnak.
 $19798729463813
 NAND kapuk használásával, Készítsd el a NOT kaput
 
