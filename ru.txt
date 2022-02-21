@@ -140,9 +140,9 @@ Use [color=#e63e5b][url=maze]this hint[/url][/color] if you get stuck.
 
 === levels/Further Delayed Lines ===
 
-$17366913897135 Construct a circuit that outputs the same as the input, just delayed by 2 ticks.
+$17366913897135 Создайте цепь которая выводит свой собственный вход с задержкой в 2 такта.
 $17497477227061
-In the last level you unlocked the Delay Buffer. It outputs its own input, just 1 tick late.
+На последнем уровне вы разблокировали линию задержки. Он выводит свой собственный вход с задержкой в 1 такт. 
 
 [img]dialogue/delay_buffer.png[/img]
 
@@ -208,14 +208,14 @@ When the input is 0, you should [color=#e49f44]pop[/color] a value off the stack
 
 === levels/odd_ticks ===
 
-$18510295620397 Output [ON] on the even ticks and [OFF] on the odd ticks. This level has no input.
-$16987046679863 In a previous level you learned how we don't allow circular dependencies. Now you must learn the one exception.
+$18510295620397 Выведите [OFF] для четных тактов и [ON] для нечетных тактов.
+$16987046679863 На предыдущем уровне вы узнали, что мы не допускаем круговых зависимостей. Теперь вы должны выучить одно исключение.
 $16037516781370
-Square pins in the game never affect the output in the same tick. They therefore never cause circular dependencies.
+Квадратные контакты в игре никогда не влияют на вывод в тот же такт. Поэтому они никогда не вызывают круговых зависимостей.
 	
 	[img]dialogue/delay_buffer.png[/img]
 $17588119878416
-The delay buffer is allowed to depend on its own input. This is because its input does not influence the rest of the circuit until next tick.
+Линия задержки может зависеть от собственного входа. Это потому, что её вход не влияет на остальную схему до следующего такта. 
 	
 [img]dialogue/delay_buffer.png[/img]
 
@@ -255,21 +255,21 @@ $19935950225431 Создайте компонент, который влючае
 
 === levels/saving_gracefully ===
 
-$14295883660596 VALUE
-$14950983012226 SAVE
-$14837033157870 ACTION
+$14295883660596 ЗНАЧЕНИЕ
+$14950983012226 СОХРАНИТЬ
+$14837033157870 ДЕЙСТВИЕ
 $12474728041023
-The Delay Buffer allows us to use a value 1 tick later.
+Линия задержки позволяет нам использовать значение на 1 такт позже. 
 
-We need to make a component that allows us to use a value whenever we want, regardless of how many ticks later.
-We call such a value [color=#e49f44]saved[/color].
-$13045361823397 DON'T SAVE
+Нам нужно создать компонент, который позволит нам использовать значение, когда мы захотим, не важно на сколько тактов позже. 
+Такое значение называется [color=#e49f44]сохранённым[/color].
+$13045361823397 НЕ СОХРАНЯТЬ
 $13740696609075
-In this level you have 2 inputs.
-Only if the first input is [ON], update the [color=#e49f44]saved[/color] value.
-The second input is the value to be [color=#e49f44]saved[/color].
+На этом уровне 2 входа.
+Только в случве если первый вход [ON], обновите [color=#e49f44]сохранённое[/color] значение.
+Второй вход указывает какое значение нужно [color=#e49f44]сохранить[/color].
 
-Always output what is currently [color=#e49f44]saved[/color].
+Всегда выводите [color=#e49f44]сохранённое[/color] значение.
 
 
 === levels/Calibrating Laser Cannons ===
@@ -317,7 +317,7 @@ These conditions correspond to the condition component that was saved in the com
 
 $16336401898647 ТЕСТ 1 из 2
 $13880985462901 Создайте цепь, в которой Ввод компонента зависит от его собственного Вывода
-$18010308863615 Придумайте вот что:
+$18010308863615 Создайте «круговую зависимость». Это схема, в которой вход компонента зависит от его собственного выхода. В ситуации круговой зависимости невозможно определить выход компонента, потому что сначала нужно определить вход, который зависит от выхода и т. д. (потому и называется «круговой»).
 $13520037133129 Не уверен, что это приносит пользу ученикам, но учителя в полном восторге!
 $11316928751185 Наша система образования, по давней традиции, подразумевает обман учеников, мы часто просим их делать то чего делать вообще нельзя и наблюдаем за эффектом. 
 
