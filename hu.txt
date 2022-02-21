@@ -44,37 +44,37 @@ $13520918982355 Add a ram block, so the computer can address 256 additional byte
 
 === levels/ram_block ===
 
-$17142958857584 A OR B
-$12901484249817 Can you fit 4 bytes of memory in this limited space?
+$17142958857584 A VAGY B
+$12901484249817 Tudsz 4 bájt memóriát beépíteni ebbe a korlátozott térbe?
 $14218335256117
-In our advanced civilization, forcing prisoners to do extremely menial tasks is slavery and is technically illegal.
-	  That is why we instead had our intern create the 256 byte version of your component.
+A mi fejlett civilizációnkban a foglyok kényszerítése rendkívül repetitív feladatok elvégzésére rabszolgaság, és technikailag illegális.
+	  Ezért kértük meg a gyakornokunkat, hogy hozza létre az alkatrész 256 bájtos változatát.
 $19282543476901 1
-$13765566466116 DON'T SAVE
-$15908016538045 VALUE
+$13765566466116 NE MENTS
+$15908016538045 ÉRTÉK
 $16196915566111 0
 $14259545926196 A
 $12306130287676
-In this level you have to build a circuit that 
-can [SAVE] or [LOAD] from 4 different bytes of memory.
+Ezen a szinten olyan áramkört kell építeni, amely 
+[SAVE] or [LOAD] from 4 different bytes of memory.
 
-You are given 1 bit that determines if you are to [LOAD]. Another bit determines if you are to [SAVE] and it comes with a corresponding value.
-Additionally, you have 2 address bits. 
+1 bitet kap, amely meghatározza, hogy [LOAD]-olj-e. Egy másik bit határozza meg, hogy [SAVE]-elsz-e egy értéket.
+Ezenkívül 2 "address" bited van. 
 
-With 2 bits, there are 4 combinations, one for each byte of memory in this level.
-[i][tip]Join wires in the middle and use right angles or this will be a mess.[/tip][/i]
-[i][tip]Spacebar rotates components.[/tip][/i]
+2 bittel 4 kombináció van, ez választja ki, hogy melyik byte-tat dolgozol.
+[i][tip]Csatlakoztasd a vezetékeket középen, és használj derékszögeket, különben ez rendetlenség lesz.[/tip][/i]
+[i][tip]A szóköz elforgatja az alkatrészeket.[/tip][/i]
 $16217965518477 B
 $10891070331034 B
-$18084166025569 Nothing
-$13082830776248 DON'T LOAD
-$17473197268827 LOAD
+$18084166025569 Semmi
+$13082830776248 NE ÍRD KI
+$17473197268827 ÍRD KI
 $13555908976270 0 OR 1
-$10311371309532 SAVE
-$16925432534232 LOAD
-$13644027370563 Load
+$10311371309532 MENTSD EL
+$16925432534232 ÍRD KI
+$13644027370563 Írd ki
 $12933801309767 A
-$12291627335021 SAVE
+$12291627335021 MENTSD EL
 
 
 === levels/byte_less_i ===
@@ -85,12 +85,12 @@ $19006843777401 Create a circuit that outputs [ON] when the first input is less 
 
 === levels/bit_inverter ===
 
-$15769391111364 When "Invert" is [ON], output the opposite of "Value". Otherwise, just output "Value" as is.
-$15272914096446 This level is exactly the same as the XOR one you solved before. Remember no matter what we tell you the goal of the level is, the real truth is in the truth table.
-$14944872827527 Despite the funny background you figured out this was just the XOR gate in disguise! Well done.
-$16125025706490 Hmm, perhaps you have studied momory a little bit too well...
-$12338758521470 This level is exactly the same as the XOR one you solved before. Remember no matter what we tell you the goal of the level is, the real truth is in the truth table.
-$13224963076378 We are experimenting with how backgrounds influence cognitive functions in earthlings.
+$15769391111364 Ha az "Invert" értéke [ON], a kimenet legyen a "Value" fordítottja. Különben a kimenet legyen a "Value" úgy, ahogy van.
+$15272914096446 Ez a szint ugyanaz mint a XOR, amit régebben oldottál meg. Ne feledd el, nem számít, mit mondunk neked, a szint célja mindig az, ami az igazságtáblázatban van.
+$14944872827527 A vicces háttér ellenére rájöttél, hogy ez csak a XOR kapu álruhában! Szép munka.
+$16125025706490 Hmm, lehet hogy egy kicsit túl jól érted a delay line-t...
+$12338758521470 Ez a szint ugyanaz mint a XOR, amit régebben oldottál meg. Ne feledd el, nem számít, mit mondunk neked, a szint célja mindig az, ami az igazságtáblázatban van.
+$13224963076378 Kísérletezünk azzal, hogy a háttér hogyan befolyásolja a földlakók kognitív funkcióit.
 
 
 === levels/and_gate_3 ===
@@ -101,23 +101,22 @@ $14788981567936 Készyíts egy AND kaput 3 bemenettel.
 === levels/saving_bytes ===
 
 $10633476398156
-Create a circuit that can [SAVE] or [LOAD] a byte.
+Készíts egy áramkört ami tud [SAVE]-elni vagy [LOAD]-olni egy byte-ot.
 
-When the first input bit is [ON], [LOAD] the memory and send it to output.
-When the second input bit is [ON], [SAVE] the input byte.
-$15510981129613 LOAD
+Ha az első "bit input" [ON], akkor a kimenet legyen az elmentett byte.
+Ha az második "bit input" [ON], mentsd el a byte-ot.
+$15510981129613 ÍRD KI
 $13502950630653
-[color=#ff9800]None
+[color=#ff9800]Semmi
 0
 0[/color]
-$19109563882664 DON'T LOAD
-$16372198430230 SAVE
-$11467279617581 SAVE
-$15498440508450 Do nothing
-$10080722944246 DON'T SAVE
-$18873598212433 LOAD
-$15582618410991 LOAD and SAVE
-
+$19109563882664 NE ÍRJ KI
+$16372198430230 MENTS
+$11467279617581 MENTS
+$15498440508450 Ne csinálj semmit
+$10080722944246 NE MENTS
+$18873598212433 ÍRD KI
+$15582618410991 ÍRJ KI ÉS MENTS
 
 === levels/maze ===
 
@@ -140,9 +139,9 @@ Use [color=#e63e5b][url=maze]this hint[/url][/color] if you get stuck.
 
 === levels/Further Delayed Lines ===
 
-$17366913897135 Construct a circuit that outputs the same as the input, just delayed by 2 ticks.
+$17366913897135 Csinálj egy áramkört ami késlelteti a bemeneti jelet 2 tikkel.
 $17497477227061
-In the last level you unlocked the Delay Line. It outputs its own input, just 1 tick late.
+Az előző szinten feloldottad a "delay line"-t. A delay line azt csinálja, hogy késlelteti a jelet amit beadsz neki egy tikkel.
 
 [img]dialogue/delay_buffer.png[/img]
 
@@ -150,18 +149,18 @@ In the last level you unlocked the Delay Line. It outputs its own input, just 1 
 === levels/negative_numbers ===
 
 $12574817679356
-We need a way to have negative values in bytes. The scheme we have been using so far can represent all numbers from 0 to 255 using a byte. This scheme is called "unsigned", since it only deals with positive numbers.
+Kell egy út ahogy tudunk tárolni negatív számokat egy byte-ban. A mostani rendszerben 0-tól 255-ig tudunk számokat vinni egy byte-ban. Ezt a rendszert "unsigned"-nak hívják (előjeltelen), mivel ez csak pozitív számokat tud kimutatni.
 
-We need a scheme that allows negative numbers, normally referred to as a "signed" representation. 
+Kell egy rendszer ami lehetővé teszi a negatív számokat, ezt a rendszert úgy hívják, hogy "signed" (előjeles).
 
-Additionally, it would greatly simplify future circuits if the representation works with the adder you already made. 
-$17231048881956 To know the difference between things, you need subtraction. To get subtraction, first you need negative numbers.
+Ennek a rendszernek működnie kell a byte adderrel amit már elkészítettél. 
+$17231048881956 Ahoz, hogy tudd a különbségeg két szám között, kell a kivonás. Ahhoz hogy legyen kivonás, először kellenek negatív számok.
 $19118970740682
-[color=#dd6576]Edit the numbers[/color] for each bit so that the following is true:
+[color=#dd6576]Változtasd a számokat[/color] a biteknél ameddig az összes alábbi állítás igaz lesz:
 
-[color=#e49f44]1[/color]: All numbers from -127 to 127 should also be representable
-[color=#e49f44]2[/color]: Bytes representing anything from 0 to 127 should be the same as unsigned
-[color=#e49f44]3[/color]: The new number system should work with the adder (for results between -127 and 127).
+[color=#e49f44]1[/color]: -127-től 127-ig minden szám kijelezhető
+[color=#e49f44]2[/color]: A 0-tól 127-ig ugynúgy működjön mint az "unsigned" rendszerben
+[color=#e49f44]3[/color]: Az új számrendszer működjön a byte adderrel (-127-től 127-ig).
 
 
 === levels/Masking Time ===
@@ -220,37 +219,37 @@ When the input is 0, you should [color=#e49f44]pop[/color] a value off the stack
 
 === levels/odd_ticks ===
 
-$18510295620397 Output [OFF] on the even ticks and [ON] on the odd ticks.
-$16987046679863 In a previous level you learned how we don't allow circular dependencies. Now you must learn the one exception.
+$18510295620397 A kimenet legyen [OFF] a páros számú tikkeken és legyen [ON] a páratlan tikkeken.
+$16987046679863 Az előző szinten megtanultad, hogy nem engedélyezzük a körkörös függőséget. Most megtanulod az egyetlen kivételt.
 $16037516781370
-Square pins in the game never affect the output in the same tick. They therefore never cause circular dependencies.
+Ebben a játékben a szögletes pin-ek nem befolyásolják a kimenetet ugyanabban a tikkben. Ezért sosem okoznak körkörös függőséget.
 	
 	[img]dialogue/delay_buffer.png[/img]
 $17588119878416
-The delay line is allowed to depend on its own input. This is because its input does not influence the rest of the circuit until next tick.
+A delay line-nak megengedett a saját kimenetén való függés. Ez azért van, mert nem befolyásolja az áramkör többi részét a következő tikkig.
 	
 [img]dialogue/delay_buffer.png[/img]
 
 
 === levels/any_doubles ===
 
-$16587030847545 Because we are so technologically advanced we have machines fold our socks. Unfortunately the circuit that detects sock pairs broke on the machine.
+$16587030847545 Mivel annyira technológiailag fejlettek vagyunk, vannak gépeink amik összehajtják a zokninkat. Sajnos az áramkör, amely érzékeli a zokni párokat, elromlott a gépben.
 $14373083988184
-This level has 4 inputs. 
-Output [ON] when 2 or more of them are [ON].
+Ennek a szintnek 4 bemenete van. 
+A kimenet legyen [ON] csak akkor ha a bemenetből 2 vagy több állapota [ON].
 
-[tip]Don't overthink this level.[/tip]
+[tip]Ne gondold túl ezt a szintet.[/tip]
 
 
 === levels/byte_adder ===
 
 $16888130664370
-If the result does not fit in 8 bits, turn the output carry [ON] (you can think of it as the 9th bit)
-	
-Finally, there is an input carry as well. This is useful for chaining together byte adders to add larger numbers. You can think of this carry as adding either 0 [OFF] or 1 [ON].
+Ha a kimenet nem fér bele a 8 bitbe akkor legyen a "carry out" [ON] (ezt tekintheted a 9. bitnek)
 
-Use [color=#e63e5b][url=byte_adder]this hint[/url][/color] if you get stuck.
-$18732877690173 Add the two input bytes. Each output bit in the output should be a result of the addition of the corresponding bits from the inputs, and potentially a carry.
+Végül van egy bemeneti carry is. Ez akkor hasznos, ha "byte adder"-eket láncosz össze, ha nagyobb számokat szeretnél összeadni. Ez a "carry" lehet 0 [OFF] vagy 1 [ON].
+
+Használd [color=#e63e5b][url=byte_adder]Ezt a segítséget[/url][/color] ha elakadnál.
+$18732877690173 Add össze a 2 bemeneti byte-ot. A kimenet legyen a bemenetek bitenkénti összeadása és ahhoz hozzáadva a carry, ha van.
 
 
 === levels/NAND Gate ===
@@ -267,27 +266,27 @@ $17994568832660 [b]Instrukció[/b]\nA középen lévő NAND komponens változtat
 === levels/Switch ===
 
 $19935950225431
-Create a component that switches an input byte on or off.
-If you get stuck, try [color=#e63e5b][url=byte_switch]this hint[/url][/color].
+Készíts egy komponenst ami kapcsolni tudja a bemeneti byte-ot.
+Ha elakadsz próbáld meg [color=#e63e5b][url=byte_switch]ezt a segítséget[/url][/color].
 
 
 === levels/saving_gracefully ===
 
-$14295883660596 VALUE
-$14950983012226 SAVE
-$14837033157870 ACTION
+$14295883660596 ÉRTÉK
+$14950983012226 MENTSEN
+$14837033157870 AKCIÓ
 $12474728041023
-The Delay Line allows us to use a value 1 tick later.
+A delay line megengedi, hogy használjunk egy értéket egy tikkel később is.
 
-We need to make a component that allows us to use a value whenever we want, regardless of how many ticks later.
-We call such a value [color=#e49f44]saved[/color].
-$13045361823397 DON'T SAVE
+Csinálnod kell egy áramkört ami lehetővé teszi, hogy haszánjunk egy értéket akármikor.
+Úgy hívjuk azt az értéket, hogy [color=#e49f44]mentett[/color].
+$13045361823397 NE MENTSEN
 $13740696609075
-In this level you have 2 inputs.
-Only if the first input is [ON], update the [color=#e49f44]saved[/color] value.
-The second input is the value to be [color=#e49f44]saved[/color].
+Ezen a szinten két bemenet van.
+Csak akkor írd felöl a [color=#e49f44]mentett[/color] értéket, ha az első bemenet [ON].
+A második érték az [color=#e49f44]elmentendő[/color] érték.
 
-Always output what is currently [color=#e49f44]saved[/color].
+A kimenet mindig legyen a [color=#e49f44]mentett[/color] érték.
 
 
 === levels/Calibrating Laser Cannons ===
@@ -333,14 +332,15 @@ These conditions correspond to the condition component that was saved in the com
 
 === levels/circular_dependency ===
 
-$16336401898647 Test 1/2
-$13880985462901 Make a circuit where the input of a component depends on its own output
+$16336401898647 Teszt 1/2
+$13880985462901 Csinálj egy áramkört amiben az egyik komponens bemenete a saját kimenetén alapul
 $18010308863615
-Create a "circular dependency". This is a circuit where the input of a component relies on its own output. In a circular dependency situation, it is not possible to determine the output of a component, because you would first need to determine the input, which relies on the output and so on (hence the "circular").
+Csinálj egy "körkörös függőség"-et. Ez egy olyan áramkör amiben az egyik komponens bemenete a saját kimenetén alapul. Ebben az esetben nem lehet eldönteni a komponens kimenetét, mert először el kéne döntened a bemenetét, ami a kimenetén alapul (ezért az a neve, hogy "körkörös").
 
-This state is normally not allowed in other levels, but in this level the goal is to create it, so you understand what it is before going forward.
-$13520037133129 I am not sure it benefits the students, but teachers love it.
-$11316928751185 In our education system we traditionally teach by tricking students into doing the wrong thing and then teasing them.
+Ez az állapot általában nem megengedett más szinteken, de ezen a szinten az a célod, hogy előállítsd, hogy megértsd mi az mielőtt továbbmész a későbbi szintekre.
+$13520037133129 Nem vagyok benne biztos, hogy a diákok előnyére válik, de a tanárok szeretik használni.
+$11316928751185 A mi oktatási rendszerünkben hagyományosan úgy tanítunk, hogy becsapjuk a diákokat, hogy rossz dolgot csináljanak, majd utánna megmutatjuk a helyes megoldást.
+
 
 
 === levels/Second Tick ===
@@ -350,8 +350,8 @@ $17526582195506 Ahogy már tudod, ezek a tesztek egy működő számítógép k�
 $15726318553190 Ez a fő ok, amiért nem eszünk meg utánna.
 $19277843280528
  [color=#b72d41][b]TIPP:[/b][/color] 
- Kiválaszthat egy komponenst a 
- pinek dupla kattintással
+ Kiválaszthatsz egy komponenst a
+ pinekkkel eggyütt az arra való dupla kattintással
 $15296208528991 A befejezésre képes fajokat a törvény érzőnek tekinti.
 
 
@@ -365,20 +365,20 @@ In this exercise, you are first given the numerator (7 in the example) and then 
 
 === levels/buffer ===
 
-$10260210687588 [center]Test 2: Left input is [img]dialogue/on.png[/img], right output should be [img]dialogue/on.png[/img].[/center]
-$13309706297402 [center]Test 3: Right input is [img]dialogue/on.png[/img], left output should be [img]dialogue/off.png[/img].[/center]
-$17005228759908 [center]Make sure [img]dialogue/on.png[/img] can only flow from left to right.[/center]
-$18349621873762 [center]Test 1: Both inputs are [img]dialogue/off.png[/img], neither side should turn [img]dialogue/on.png[/img].[/center]
+$10260210687588 [center]Teszt 2: Bal bemenet [img]dialogue/on.png[/img] lesz, jobb kimenetnek [img]dialogue/on.png[/img] kell lennie.[/center]
+$13309706297402 [center]Teszt 3: Jobb bemenet [img]dialogue/on.png[/img] lesz, bal kimenetnek [img]dialogue/off.png[/img] kell lennie.[/center]
+$17005228759908 [center]Győződj meg róla, hogy [img]dialogue/on.png[/img] csak balról jobbra áramlik.[/center]
+$18349621873762 [center]Teszt 1: Mind a két bemenet [img]dialogue/off.png[/img], Egyik se legyen [img]dialogue/on.png[/img].[/center]
 $15504762262759
-This level starts with 2 special components. They simultaneously act as input and output.
+Ezen a szinten két pin van. Ezek a pinek egyszerre bemenetek és kimenetek.
 
-Make sure the signal flows only from left to right. There are 3 tests.
+Győződj meg róla, hogy a jel csak balról jobbra áramlik. Három teszt van.
 
-[b]Test 1[/b]: Both sides will be [OFF].
+[b]Teszt 1[/b]: Mind a két oldal [OFF] lesz.
 
-[b]Test 2[/b]: The left side input will turn [ON] and the right side should be [ON].
+[b]Teszt 2[/b]: A bal oldal [ON] lesz, a jobbnak pedig [ON]-nak kell lennie.
 
-[b]Test 3[/b]: The right side output will turn [ON] and the left side should be [OFF].
+[b]Teszt 3[/b]: A jobb oldal [ON] a balnak pedig [OFF]-nak kell lennie..
 
 
 === levels/component_factory ===
@@ -533,10 +533,10 @@ $16301538038805 Bit 2
 
 === levels/signed_negator ===
 
-$10866019808027 For this level you probably want to turn on signed numbers, so the highest bit shows as -128. Click "+255" located in the top panel.
+$10866019808027 Ehhez a szinthez kapcsold be az előjeles számokat, szóval a legutolsó bit -128-at mutat. Kattints a "+255"-re a felső panelen.
 $10400106910274
-Taking the input as signed (where the 8th bit is -128), make a component that takes a number and negates it.
-For example 4 negated would become -4. -9 negated would become 9.
+A bemenetet előjeles formában kapod meg (Ahol a 8. bit az a -128), észíts egy komponenst ami az ellentétjét veszi a számnak(ugynaz mint ha megszoroznád -1-gyel).
+Példáué 4 átfuttatva ezen a komonensen -4 lenne, -9-ből pedig 9.
 
 
 === levels/byte_and ===
@@ -546,22 +546,22 @@ $15885763626223 Create a circuit that ANDs two bytes bitwise.
 
 === levels/1_decoder ===
 
-$16057674753878 Create a component that can switch a signal between 2 pins.
+$16057674753878 Készíts egy komponenst ami tud váltani 2 kimenet között.
 
 
 === levels/byte_mux ===
 
-$18296416014178 When the bit selector input is [OFF], output Byte A, otherwise output Byte B.
+$18296416014178 Ha a "bit selector" bemenet [OFF], a kimenet legyen Byte A, különben Byte B.
 $17093993196554
-Even though he did not pass our tests we decided to keep the dog. Unlike most earthlings he is fluffy and follows simple instructions well. 
+Annak ellenére, hogy nem ment át a teszten, úgy döntöttünk, hogy megtartjuk a kutyát. A legtöbb földlakótól eltérően bolyhos és jól követi az egyszerű utasításokat.  
 
-We might want to team you two up, since you compliment each other's shortcomings well.
+Lehet, hogy egy csapatok alkotunk belőletek, mivel jól dicséritek egymás hiányosságait.
 
 
 === levels/odd_number_of_signals ===
 
-$16173829560311 Using a maximum of 3 components, output [ON] only when an odd number of inputs are [ON].
-$18288998816979 This level has a [color=#e63e5b][url=odd_number]hint[/url][/color] you can use if you get stuck.
+$16173829560311 Maximum 3 komponens használatával készíts egy áramkört,  ahol a kimenet csak akkor legyen [ON], páratlan számú bemenet van [ON] állapotban.
+$18288998816979 Ennek a szintnek van egy [color=#e63e5b][url=odd_number]segítsége[/url][/color], amit használhatsz akkor ha elakadnál.
 
 
 === levels/unseen_fruit ===
@@ -638,8 +638,8 @@ $16072814175447 Programming on buggy hardware is very frustrating. It is painful
 
 === levels/3_decoder ===
 
-$19231618567710 With 3 bits of input there are 8 combinations. Make a circuit that selects 1 output for each of the 8 combinations. No more or less than 1 bit should be [ON] at a time.
-$14293122338496 We had our intern add a "disable" bit to this component. We were tired of looking at him running in circles and were looking for other pointless and tedious tasks to give him.
+$19231618567710 3 bit bemenettel 8 kombináció van. Készíts egy komponenst, amely mind a 8 kombinációhoz 1 kimenetet választ ki. Csak 1 bit legyen [ON] egyidőben.
+$14293122338496 A gyakornokunk hozzátadott egy "disable" bemenetet ehhez a komponenshez. Belefáradtunk abba, hogy körbe-körbe fut, és más értelmetlen és unalmas feladatot kerestünk, amelyet neki adhatunk.
 
 
 === levels/Nor GATE ===
@@ -672,9 +672,9 @@ $17495651785164 Add 6 registers to the map
 === levels/full_adder ===
 
 $17063157033479
-In the previous level we added together 2 inputs, this time we add 3. Once again, add the inputs together in binary, such that the result is either [ZERO] or [ONE].
+Az előző szinten 2 bemenetet adtunk össze, most pedig 3-at. Megint add össze őket binárisan, hogy az eredmény [ZERO] vagy [ONE] legyen.
 
-As with normal addition, if the result cannot be described with one digit, set the carry to [ONE].
+Mint a normális összeadásban, ha a kimenetet nem lehet egy számjeggyel kiírni, akkor legyen a carry [ONE].
 
 
 === levels/or_gate ===
@@ -695,10 +695,10 @@ $10451578314373 The Console Screen lets you draw characters to a screen (see man
 
 === levels/byte_not ===
 
-$14196498898485 Tool making and usage is key in the early evolutionary stages of developing intelligence.
-$12982025748137 "NOT" each bit of the byte input.
-$10294533225655 Our previous model of brain size being the main predictor of intelligence was naive.
-$14958585065722 Therefore the number of arms on a creature is clearly the main predictor of intelligence. Did you know there are sea creatures from your planet with four times as many arms as you and they are doing better in tests?
+$14196498898485 A szerszámkészítés és -használat kulcsfontosságú az intelligencia fejlesztésének a korai evolúciós szakaszban.
+$12982025748137 A kimenet legyen a bemenet bitenként átfuttatva egy NOT kapun.
+$10294533225655 Az eddigi modellünk szerint az agy mérete döntötte el az intelligencia mértékét, most már tudjuk hogy ez egy naív feltételezés.
+$14958585065722 Ezért világos, hogy az intelligencia mértékét a kezek száma dönti el. Tudtad, hogy vannak vízi lények a bolygódról akiknek 4-szer annyi kezük van mint neked és sokkal jobban teljesítenek a teszteken?
 
 
 === levels/and_gate ===
@@ -747,16 +747,16 @@ When in immediate mode the whole byte is interpreted as a number that we [SAVE] 
 
 === levels/byte_or ===
 
-$10368115829346 But actually it is OK because you lived good lives in the wild and we don't let the meat go to waste.
+$10368115829346 De igazábol ez teljesen oké, mert jó életet éltél a szabadban és mi nem hagyjuk kárba menni a húst.
 $15923734370936
-OR each bit of the input bytes and output the result.
+A kimenet legyen a bemenetek bitenkénti átfuttatása az OR kapun.
 
-For example:
+Például:
 [code]
-INPUT 1 [ON][ON][OFF][OFF][OFF][OFF][OFF][OFF]
-INPUT 2 [OFF][OFF][OFF][OFF][ON][ON][OFF][OFF]
-OUTPUT  [ON][ON][OFF][OFF][ON][ON][OFF][OFF][/code]
-$15226896485081 You may think it is unethical to eat all the earthlings that don’t win the competition?
+BEMENET 1 [ON][ON][OFF][OFF][OFF][OFF][OFF][OFF]
+BEMENET 2 [OFF][OFF][OFF][OFF][ON][ON][OFF][OFF]
+KIMENET   [ON][ON][OFF][OFF][ON][ON][OFF][OFF][/code]
+$15226896485081 Lehet hogy azt gondolod, hogy etikátlan megenni az összes földlakót aki nem nyeri meg a versenyt?
 
 
 === levels/program ===
@@ -878,33 +878,33 @@ $17156565273196 Output [ON] when both inputs are the same.
 
 === levels/Counter ===
 
-$17701404772563 Add 1
-$17940006660359 Count
+$17701404772563 Adjon hozzá 1-et
+$17940006660359 Számláljon
 $17263901743088
-Build a counter that will increase by 1 each tick.
+Építsen egy számlálót, amely minden tikkenként 1-el növekszik.
 
-Additionally, there should be an option for overwriting the counter with a given value.
+Ezenkívül lehetőséget kell biztosítani a számláló egy adott értékkel történő felülírására.
 
-You are given 2 inputs, a bit and a byte.
+2 bemenetet kapsz, egy bitet és egy byte-ot.
 
-The bit input should toggle between counting and overwriting with the value of the byte.
-$17883663978196 Overwrite
+A bit bemenet váltson a számlálás és a felülírás között,a byte a felülírás értékét adja meg.
+$17883663978196 Felülír
 $19407121413983 ACTION
 $10555159894041
-Counting is so fundamental even insects do it. From counting, species can evolve to compare and do arithmetic. And before you know it, you have apes building computers.
+A számolás annyira alapvető, hogy még a rovarok is ezt teszik. A számolásból a fajok fejlődhetnek, hogy összehasonlítsanak és műveleteket végezzenek. És mielőtt észrevennéd, a majmok számítógépeket építenek.
 
-Make a device that counts increments once per tick.
-
+Készítsen olyan komonenst, amely tikkenként növeli az értékét.
 
 === levels/binary_racer ===
 
-$16076448195257 This level is my favorite pastime. Converting decimal into binary under time pressure.
+$16076448195257 Ez a szint a kedvenc időtöltésem. Decimális számok konvertálása binárissá időnyomás alatt.
 $19111664765554
-Toggle the bits in the level panel so they add up to the decimal number in the question.
+Kapcsold a biteket az alábbi panelen, hogy azok összeadódjanak a kérdésben szereplő decimális számra.
 
-You must reach level 3 to pass.
+El kell érned a 3. szintet, hogy továbbhaladj.
 
-(click [color=#e63e5b][url=accessibility_mode]here[/url][/color] to turn on timerless accessibility mode)
+(kattints [color=#e63e5b][url=accessibility_mode]ide[/url][/color] az időzítő nélküli elérhetőségi mód bekapcsolásához)
+
 
 
 === levels/Immediate Values ===
@@ -1003,19 +1003,19 @@ $18769284297247 Create a new schematic and add a program with 4 byte output
 
 $19085882338208 [b]Instrukció[/b]\nJobb klikk a jelölés törléséhez
 $10042327259531 Miután feloldottad a NAND kaput, itt az ideje, hogy készíts egy áramkört.
-$14042842216181 Az előző szinten az áramkür alapján készítetted a táblázatot. Ezen a szinten az áramkört készited ami megfelel a táblázatnak.
-$10604720087324 [b]Instrukció[/b]\nKészíts egy áramkört ami megfelel a táblázatnak.\nNyomd meg a [i][/i] -t (Next tick) a bal felső sarokban, hogy ellerőrizd az összes kombinációt.\nAkkor nyered meg ezt a szintet, amikor minden kombináció megfelel.
+$14042842216181 Az előző szinten az áramkör alapján készítetted a táblázatot. Ezen a szinten az áramkört készited ami megfelel a táblázatnak.
+$10604720087324 [b]Instrukció[/b]\nKészíts egy áramkört ami megfelel a táblázatnak.\nNyomd meg a [i][/i] -t (Next tick) a bal felső sarokban, hogy ellerőrizd az összes kombinációt.\nAkkor nyered meg ezt a szintet, amikor minden kombináció megfelel a táblázatnak.
 $19798729463813
 NAND kapuk használásával, Készítsd el a NOT kaput
 
 Használd: [b]NAND kapu[/b]
 [code]BEMENET 1: [OFF][ON][OFF][ON]
 BEMENET 2: [OFF][OFF][ON][ON]
-KIMENET:  [ON][ON][ON][OFF][/code]
+KIMENET:   [ON][ON][ON][OFF][/code]
 
 Készítsd: [b]NOT kapu[/b]
 [code]BEMENET 1: [ON][OFF]
-KIMENET:  [OFF][ON][/code]
+KIMENET:   [OFF][ON][/code]
 $18442122157391 [b]Instrukció[/b]\nTöröld a kijelölést a háttérre kattintással
 $12880883686501 [b]Instrukció[/b]\nNyomj a NAND komponensre a képernyő bal felső sarkában és tedd le
 $18780831606716 [b]Instrukció[/b]\nA kébel hozzáadásához kattintson a táblára, és húzza az egérmutatót
@@ -1023,11 +1023,11 @@ $18780831606716 [b]Instrukció[/b]\nA kébel hozzáadásához kattintson a tábl
 
 === levels/bit_adder ===
 
-$13109388951000 We measure the universe with numbers. So your machine must learn to count.
+$13109388951000 Az univerzumot számokkal mérjük meg. Ezért a te gépednek meg kell tanulnia számolni.
 $16564356062672
-Treat the inputs as [ZERO] or [ONE] depending if they are [OFF] or [ON]. Add them together in binary, such that the result is either [ZERO] or [ONE].
+Kezelje a bemeneteket [ZERO] vagy [ONE]-ként attól függően, hogy [OFF] vagy [ON] van-e. Add össze őket binárisan, hogy az eredmény [ZERO] vagy [ONE] legyen.
 
-As with normal addition, if the result cannot be described with one digit, set the carry to [ONE].
+Mint a normális összeadásban, ha a kimenetet nem lehet egy számjeggyel kiírni, akkor legyen a carry [ONE].
 
 
 === levels/byte_shift ===
@@ -1093,18 +1093,18 @@ Additionally, this map has a dedicated input component, which can be the [color=
 === levels/double_number ===
 
 $19766257822639
-The input and output of this level are using bytes instead of bits. One of the two new components you are given takes a byte and splits it into bits and the other does the opposite.
+Ennek a szintnek a kimenete és bemenete nem biteket, hanem byte-okat használ. Az egyik új komponens amit adtál befogad egy byte-ot és szétosztja 8 bitre, a másik a ellentkezőjét csinálja.
 
-Using those components, figure out how to double the input number (up to 127).
+Ezek a komponensek használatával találd ki, hogy hogyan lehet megduplázni a számok értékét (max 127-ig).
 
 
 === levels/counting_signals ===
 
 $10724914203078
-The output component of this level is a binary counter where the first 3 pins correspond to 1, 2 and 4.
-Use the binary counter to count the number of signals.
+Ennek a szintnek a kimenete egy bináris számláló ahol az első 3 pin az 1-et, 2-t és 4-et jelenti.
+Használd a bináris számlálót arra hogy, megszámold azt, hogy mennyi bemenet státusza [ON].
 
-Check [color=#e63e5b][url=counting_signals]this hint[/url][/color] if you get stuck
+Nézd meg [color=#e63e5b][url=counting_signals]ezt a segytséget[/url][/color] ha elakadnál
 
 [i][tip]The solution for this level is not very neat and requires more components.[/tip][/i]
 $10881918807029
