@@ -118,7 +118,6 @@ $10080722944246 NE MENTS
 $18873598212433 ÍRD KI
 $15582618410991 ÍRJ KI ÉS MENTS
 
-
 === levels/maze ===
 
 $13225915898937
@@ -341,6 +340,7 @@ Csinálj egy "körkörös függőség"-et. Ez egy olyan áramkör amiben az egyi
 Ez az állapot általában nem megengedett más szinteken, de ezen a szinten az a célod, hogy előállítsd, hogy megértsd mi az mielőtt továbbmész a későbbi szintekre.
 $13520037133129 Nem vagyok benne biztos, hogy a diákok előnyére válik, de a tanárok szeretik használni.
 $11316928751185 A mi oktatási rendszerünkben hagyományosan úgy tanítunk, hogy becsapjuk a diákokat, hogy rossz dolgot csináljanak, majd utánna megmutatjuk a helyes megoldást.
+
 
 
 === levels/Second Tick ===
@@ -904,6 +904,7 @@ Kapcsold a biteket az alábbi panelen, hogy azok összeadódjanak a kérdésben 
 El kell érned a 3. szintet, hogy továbbhaladj.
 
 (kattints [color=#e63e5b][url=accessibility_mode]ide[/url][/color] az időzítő nélküli elérhetőségi mód bekapcsolásához)
+
 
 
 === levels/Immediate Values ===

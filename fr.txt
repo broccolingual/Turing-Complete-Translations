@@ -8,94 +8,95 @@ $10515630949378 We have hooked your machine up to our advanced robot and we want
 
 === levels/xnor ===
 
-$11090938799865 Créez la porte XOR inverse, connue sous le nom de XNORC.
+$11090938799865 Créez la porte XOR inverse, connue sous le nom de XNOR.
 
 
 === levels/decoder ===
 
-$16133643476631 The circuit you built in the "Registers" level can copy values between registers, while the "Arithmetic Engine" can do different operations on 2 inputs. But you need to be able to do both in the same circuit. To do this, build a "decoder", which will decide which mode our computer is in, based on the 2 bits we haven't used yet.
-$18435544383511 CALCULATE pattern\n[OFF] [ON] [ANY] [ANY] [ANY] [ANY] [ANY] [ANY]
-$18198768092383 COPY
+$16133643476631 Le circuit que vous avez créé dans le niveau "Registres" peut copier des valeurs entre différents registres, tandis que l' "Unité arithmétique et logique" a la capacité de faire différentes opérations avec ses deux entrées.
+Vous devez maintenant associer ces deux éléments, pour celà vous devrez commencer par construire un "décodeur" qui vous permettra de décider dans quel mode sera l'ordinateur en fonction des deux bits que nous n'avions pas utilisé pour l'instant.
+$18435544383511 CALCULER\n[OFF] [ON] [ANY] [ANY] [ANY] [ANY] [ANY] [ANY]
+$18198768092383 COPIER
 $18945946395447
-To distinguish between the [INSTRUCTIONS] of 4 different kinds, the two highest bits will be used to determine which MODE we are in as follows:
-[OFF] [OFF] [ANY] [ANY] [ANY] [ANY] [ANY] [ANY] Immediate
-[OFF] [ON] [ANY] [ANY] [ANY] [ANY] [ANY] [ANY] Calculate
-[ON] [OFF] [ANY] [ANY] [ANY] [ANY] [ANY] [ANY] Copy
-[ON] [ON] [ANY] [ANY] [ANY] [ANY] [ANY] [ANY] Condition
+Pour distinguer les 4 [INSTRUCTIONS], nous utiliserons les deux bits de plus haut poids qui définieront le MODE dans lequel nous serons.
+Cette liste montre les 4 modes à implémenter:
+[OFF] [OFF] [ANY] [ANY] [ANY] [ANY] [ANY] [ANY] Valeur immédiate
+[OFF] [ON] [ANY] [ANY] [ANY] [ANY] [ANY] [ANY] Calculer
+[ON] [OFF] [ANY] [ANY] [ANY] [ANY] [ANY] [ANY] Copier
+[ON] [ON] [ANY] [ANY] [ANY] [ANY] [ANY] [ANY] Condition logique
 
-Here [ANY] means any value.
+Ici [ANY] veut dire que l'ont peut avoir n'importe quelle valeur.
 
-Determine the MODE we are in from the input, then send [ON] to the correct output.
-$16785126425267 CALCULATION
-$15440615199508 CONDITION
-$12671132029272 Your circuit has been saved to the component factory.
-$15105859227432 COPY pattern\n[ON] [OFF] [ANY] [ANY] [ANY] [ANY] [ANY] [ANY]
-$12068329066372 [b]ALERT: THIS IS AN OUTDATED VERSION OF THIS MAP, PLEASE CLICK THE SAVE ICON IN THE TOP LEFT AND CREATE AND LOAD A NEW SCHEMATIC[/b]
-$11382827588408 CONDITION pattern\n[ON] [ON] [OFF] [OFF] [OFF] [ANY] [ANY] [ANY]
-$12976424717611 IMMEDIATE pattern\n[OFF] [OFF] [ANY] [ANY] [ANY] [ANY] [ANY] [ANY]
-$12532951884542 IMMEDIATE
+Déterminez le mode dans lequel nous sommes à partir de l'entrée et envoyez [ON] vers la sortie qui correspond.
+$16785126425267 Calculer
+$15440615199508 Condition logique
+$12671132029272 Votre circuit à été sauvegardé dans la fabrique de composants.
+$15105859227432 COPIER \n[ON] [OFF] [ANY] [ANY] [ANY] [ANY] [ANY] [ANY]
+$12068329066372 [b]ATTENTION: CETTE VERSION DU CIRCUIT EST OBSOLÈTE, VEUILLEZ CLIQUER SUR L'ICÔNE DE SAUVEGARDE ET CRÉEZ UNE NOUVELLE VERSION DE CE CIRCUIT[/b]
+$11382827588408 Condition logique\n[ON] [ON] [OFF] [OFF] [OFF] [ANY] [ANY] [ANY]
+$12976424717611 Valeur immédiate\n[OFF] [OFF] [ANY] [ANY] [ANY] [ANY] [ANY] [ANY]
+$12532951884542 Valeur immédiate
 
 
 === levels/RAM ===
 
-$17967666262990 In this test, first copy from input 32 times and store these values. After you have loaded the 32 values, output them in the same order as you got them. Outputting before you have read all the inputs will fail the level.
-$13520918982355 Add a ram block, so the computer can address 256 additional bytes of memory. You need a way to decide which of the 256 bytes inside the ram we are addressing. Select a register and wire it up, so its value always selects the RAM address. When you later want to load or save to the RAM, you will have to first copy the RAM address to this register.
+$17967666262990 Dans ce niveau, copiez d'abord 32 valeurs et sauvegardez chacune d'elle. Après les avoirs sauvegardé, envoyez les vers la sortie dans l'ordre d'arrivé. Envoyer une valeur vers la sortie avant d'avoir stocker toutes les valeurs vous fera perdre le niveau. 
+$13520918982355 Ajoutez un bloc de ram, ainsi l'ordinateur aura 256 bytes de mémoire en plus. Vous devez trouver un moyen d'accéder à un byte indépendamment des autres. Indice: nous utiliserons un registre pour choisir l'adresse de la RAM, ainsi si vous voulez sauvegarder ou charger une valeur, vous pourrez indiquer l'adresse dans ce registre.
 
 
 === levels/ram_block ===
 
-$17142958857584 A OR B
-$12901484249817 Can you fit 4 bytes of memory in this limited space?
+$17142958857584 A OU B
+$12901484249817 Pourrez-vous mettre 4 bytes de mémoire dans un espace aussi limité?
 $14218335256117
-In our advanced civilization, forcing prisoners to do extremely menial tasks is slavery and is technically illegal.
-	  That is why we instead had our intern create the 256 byte version of your component.
+Dans notre civilisation avancée, forcer les prisonniers à faire des tâches complexes est de l'esclavage et est techniquement illégal.
+		C'est pour cela que nous avons dis au stagiaire de faire une version 256 bytes de votre composant. 
 $19282543476901 1
-$13765566466116 DON'T SAVE
-$15908016538045 VALUE
+$13765566466116 NE PAS SAUVEGARDER
+$15908016538045 VALEUR
 $16196915566111 0
 $14259545926196 A
 $12306130287676
-In this level you have to build a circuit that 
-can [SAVE] or [LOAD] from 4 different bytes of memory.
+Dans ce niveau vous devrez construire un circuit qui pourra
+[SAUVEGARDER] ou [CHARGER] 4 bytes de mémoire différents. 
 
-You are given 1 bit that determines if you are to [LOAD]. Another bit determines if you are to [SAVE] and it comes with a corresponding value.
-Additionally, you have 2 address bits. 
+1 Bit sera donné pour [CHARGER] et un autre pour [SAUVEGARDER].
+Enfin, 2 bits seront données pour l'adresse.
 
-With 2 bits, there are 4 combinations, one for each byte of memory in this level.
-[i][tip]Join wires in the middle and use right angles or this will be a mess.[/tip][/i]
-[i][tip]Spacebar rotates components.[/tip][/i]
+Avec 2 bits, vous aurez 4 combinaisons possibles, une pour chaque byte de mémoire dans ce niveau.
+[i][tip]Rassemblez les fils au centre et utilisez des angles droits, sinon ce sera le bazar ![/tip][/i]
+[i][tip]La barre d'espace fait tourner les composants.[/tip][/i]
 $16217965518477 B
 $10891070331034 B
-$18084166025569 Nothing
-$13082830776248 DON'T LOAD
-$17473197268827 LOAD
-$13555908976270 0 OR 1
-$10311371309532 SAVE
-$16925432534232 LOAD
-$13644027370563 Load
+$18084166025569 Rien
+$13082830776248 NE PAS SAUVEGARDER
+$17473197268827 CHARGER
+$13555908976270 0 OU 1
+$10311371309532 SAUVEGARDER
+$16925432534232 CHARGER
+$13644027370563 Charger
 $12933801309767 A
-$12291627335021 SAVE
+$12291627335021 SAUVEGARDER
 
 
 === levels/byte_less_i ===
 
-$16755383054285 [center]Determine if the first input is less than the second.[/center]
-$19006843777401 Create a circuit that outputs [ON] when the first input is less than the second. Interpret the bytes as being [color=#dd6576]SIGNED[/color].
+$16755383054285 [center]Déterminez si la première entrée est plus petite que la seconde.[/center]
+$19006843777401 Créez un circuit qui sortira [ON] quand la première entrée est plus petite que la seconde. Interprêtez les bytes comme étant [color=#dd6576]SIGNÉS[/color].
 
 
 === levels/bit_inverter ===
 
-$15769391111364 When "Invert" is [ON], output the opposite of "Value". Otherwise, just output "Value" as is.
-$15272914096446 This level is exactly the same as the XOR one you solved before. Remember no matter what we tell you the goal of the level is, the real truth is in the truth table.
-$14944872827527 Despite the funny background you figured out this was just the XOR gate in disguise! Well done.
-$16125025706490 Hmm, perhaps you have studied momory a little bit too well...
-$12338758521470 This level is exactly the same as the XOR one you solved before. Remember no matter what we tell you the goal of the level is, the real truth is in the truth table.
-$13224963076378 We are experimenting with how backgrounds influence cognitive functions in earthlings.
-
+$15769391111364 Quand "Inverser" est [ON], veuillez sortir l'inverse de la valeur d'entrée. Sinon, copiez l'entrée sur la sortie.
+$15272914096446 Ce niveau est exactement comme le XOR que vous avez résolu avant. N'oubliez pas: la seule véritée se trouve dans la table de véritée.
+$14944872827527 Malgré le drôle de context que nous vous avons donné, vous avez réussi à voir qu'il ne s'agissait en réallité que d'une porte XOR déguisée. Bien joué!
+$16125025706490 Hmm, peut-être que vous avez étudié un peu trop les mémoires...
+$12338758521470 Ce niveau est exactement comme le XOR que vous avez résolu avant. N'oubliez pas: la seule véritée se trouve dans la table de véritée.
+$13224963076378 Nous étudions comment les expériences passés influent les fonctions cognitives des humains.
 
 === levels/and_gate_3 ===
 
-$14788981567936 Create an AND gate with 3 inputs.
+$14788981567936 Créez une porte NAND avec 3 entrées.
 
 
 === levels/saving_bytes ===
