@@ -8,12 +8,12 @@ $10515630949378 We have hooked your machine up to our advanced robot and we want
 
 === components/OutputQword ===
 
-$43552728118031 Output
+$43552728118031 Sortie
 
 
 === components/Output 1 ===
 
-$12242923444593 Output
+$12242923444593 Sortie
 
 
 === levels/RAM ===
