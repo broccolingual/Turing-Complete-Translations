@@ -244,14 +244,13 @@ $12746117288689 Input
 
 === levels/Second Tick ===
 
-$14355963067874 Output [ON] on the second tick only.
-$17526582195506 As you know these tests culminate in building a functioning computer.
-$15726318553190 This is the main reason we don't eat you afterwards.
+$14355963067874 Activer la sortie au second tick d'horloge.
+$17526582195506 Comme tu sais ces tests visent à réaliser un ordinateur qui fonctionne.
+$15726318553190 C'est ce qui explique que tu ne seras pas mangé à la fin.
 $19277843280528
  [color=#b72d41][b]TIP:[/b][/color] 
- You can select a component with 
- its pins by double clicking it
-$15296208528991 Species that are capable of finishing are considered sentient by law.
+ Tu peux sélectionner un composant et ses pattes en double-cliquant dessus
+$15296208528991 Les espèces capables de finir sont considérées conscientes légalement.
 
 
 === levels/divide ===
