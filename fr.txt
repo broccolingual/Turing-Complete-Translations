@@ -26,6 +26,7 @@ $13520918982355 Ajoutez un bloc de ram, ainsi l'ordinateur aura 256 bytes de mé
 
 $16755383054285 [center]Déterminez si la première entrée est plus petite que la seconde.[/center]
 $19006843777401 Créez un circuit qui sortira [ON] quand la première entrée est plus petite que la seconde. Interprêtez les bytes comme étant [color=#dd6576]SIGNÉS[/color].
+$46083799633716 Is {input_1} less than {input_2}?
 
 
 === ui/toggles/level_map ===
@@ -1438,6 +1439,7 @@ $79554853897000 Switch schematic
 === levels/byte_less ===
 
 $11252365204151 Create a circuit that outputs [ON] when the first input is less than the second. Interpret the bytes as being [color=#dd6576]UNSIGNED[/color].
+$62766453128684 Is {a} less than {b}?
 $11632471752785 [center]Determine if the first input is less than the second.[/center]
 
 

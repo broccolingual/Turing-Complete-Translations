@@ -26,6 +26,7 @@ $13520918982355 Προσθέστε ένα μπλοκ ram, ώστε ο υπολο
 
 $16755383054285 [center]Προσδιορίστε αν η πρώτη είσοδος είναι μικρότερη από τη δεύτερη.[/center]
 $19006843777401 Δημιουργήστε ένα κύκλωμα που να βγάζει [ON] όταν η πρώτη είσοδος είναι μικρότερη από τη δεύτερη. Ερμηνεύστε τα bytes ως [color=#dd6576]ΥΠΟΓΡΑΦΗ[/color].
+$46083799633716 Is {input_1} less than {input_2}?
 
 
 === ui/toggles/level_map ===
@@ -1436,6 +1437,7 @@ $79554853897000 Switch schematic
 === levels/byte_less ===
 
 $11252365204151 Create a circuit that outputs [ON] when the first input is less than the second. Interpret the bytes as being [color=#dd6576]UNSIGNED[/color].
+$62766453128684 Is {a} less than {b}?
 $11632471752785 [center]Determine if the first input is less than the second.[/center]
 
 
