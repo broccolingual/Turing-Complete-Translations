@@ -256,11 +256,11 @@ $15296208528991 Les espèces capables de finir sont considérées conscientes l�
 
 === levels/divide ===
 
-$16412715945615 [center]Divide the two numbers[/center]
+$16412715945615 [center]Diviser deux nombres[/center]
 $14525870461271
-Integer divide two numbers to find the quotient and the remainder. Consider the fraction 7/3. 3 goes into 7 2 times and 1 is left over. Here 2 is called the [color=#e49f44]quotient[/color] and 1 is called the [color=#e49f44]remainder[/color].
-In this exercise, you are first given the numerator (7 in the example) and then the denominator (3) and you are then expected to output the quotient (2) and then the remainder (1).
-$76454016047920 {numerator}/{denominator} = {quotient}, remainder {remainder}
+Réalise la division entière des deux nombres pour calculer le quotient et le reste. Considérons la fraction 7/3. 7 contient deux fois 3 et encore 1. Dans ce cas on appelle 2 le [color=#e49f44]quotient[/color] et 1 le [color=#e49f44]reste[/color].
+Dans cet exercice, tu reçois d'abord le numerateur (7 dans l'example) puis le dénominateur (3) et on attend en sortie le quotient (2) puis le reste (1).
+$76454016047920 {numerator}/{denominator} = {quotient}, reste {remainder}
 
 
 === levels/buffer ===
