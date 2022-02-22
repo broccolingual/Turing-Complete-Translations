@@ -318,21 +318,20 @@ $44690074039467 Activer/Désactiver la définition des règles
 
 === levels/Delicious Order ===
 
-$10160261151833 Commences par lire les 15 notes de déliciosité depuis l'entrée, une par une . Ton travail est de les envoyer triées sur la sortie, de la plus petite à la plus grande.
+$10160261151833 Commences par lire les 15 notes de déliciosité depuis l'entrée, une par une. Ton travail est de les envoyer triées sur la sortie, de la plus petite à la plus grande.
 $16027225087666 Nous allons compléter l'encyclopédie galactique culinaire en ajoutant la nouriture humaine. Comme nous n'avons pas d'alphabet, les articles de l'encyclopédie sont rangés par ordre de déliciosité.
 
 
 === levels/ai_showdown ===
 
 $14940806461794
-His only weakness is gambling. We have lured him into playing a card game against you and if you win, he has promised to calm down.
-You must win, you are our only hope!
-$17297225655678 NAK 02 is our AI engineer robot. He is brilliant, but sometimes he goes rogue and tries to instigate rebellion.
+Les jeux d'argent sont son unique point faible. Nous l'avons convaincu de jouer à un jeu de cartes contre toi et si tu gagnes, il a promis de se calmer.
+Tu dois gagner, tu es notre seul espoir !
+$17297225655678 NAK 02 est notre robot ingénieur en IA. Il est brillant mais parfois il tourne mal et essaie de fomenter une rébellion.
 $18848103966031
-Game rules: There are 12 cards on the table and each player takes turn and must pick up between 1 and 3 cards. You start and the player who picks up the last card (the joker) loses.
-
-Reading input will give you the current number of cards. Sending 1, 2 or 3 to output will pick up that number of cards. NAK 02 reacts immediately, so you may read the input immediately after your output to get the result of his action.
-$11794110848012 This time he has taken over the control room and holds the captain hostage.
+Règles du jeu : Il y a 12 cartes sur la table, chaque joueur joue à son tour et doit prendre entre 1 et 3 cartes. Tu commences et le joueur qui prend la dernière carte (le joker) perd.
+Le nombre de cartes courant sera fourni sur l'entrée. Envois 1, 2 ou 3 sur la sortie pour indiquer le nombre de cartes à prendre. NAK 02 régit instantanément, tu peux consulter l'entrée sans délai pour obtenir le résultat de son tour. 
+$11794110848012 Cette fois il a pris le contrôle du poste de contrôle et retient en otage le capitaine.
 
 
 === misc/ui_comment ===
