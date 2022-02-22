@@ -303,23 +303,23 @@ $15549447390000 2 composants d'entrée/sortie sont dans la même zone. Le compos
 
 === ui/state_ui/state_ui_output_bit ===
 
-$40754755480566 Output
+$40754755480566 Sortie
 
 
 === misc/instr_delete ===
 
-$91861509153454 Delete
+$91861509153454 Supprimer
 
 
 === misc/instruction_expand ===
 
-$44690074039467 Toggle define rules
+$44690074039467 Activer/Désactiver la définition des règles
 
 
 === levels/Delicious Order ===
 
-$10160261151833 First read the 15 deliciousness scores from the input one by one. Your task is to output them in sorted order, smallest to largest.
-$16027225087666 We are updating the galactic encyclopedia of food, inserting human foods. As we don't have an alphabet, entries in the encyclopedia are ordered by deliciousness.
+$10160261151833 Commences par lire les 15 notes de déliciosité depuis l'entrée, une par une . Ton travail est de les envoyer triées sur la sortie, de la plus petite à la plus grande.
+$16027225087666 Nous allons compléter l'encyclopédie galactique culinaire en ajoutant la nouriture humaine. Comme nous n'avons pas d'alphabet, les articles de l'encyclopédie sont rangés par ordre de déliciosité.
 
 
 === levels/ai_showdown ===
