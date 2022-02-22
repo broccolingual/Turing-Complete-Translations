@@ -1,11 +1,11 @@
-Game version: 0.547 Beta
-Total translation entries: 571
+Game version: 0.548 Beta
+Total translation entries: 573
 
 Language progress:
-gr 10.9%
-ru 18.0%
-fr 12.8%
-hu 23.3%
+gr 11.2%
+ru 18.3%
+fr 13.1%
+hu 23.6%
 
 If a translation is identical to the orignal text, you may put a _ before the translation so that the progress script detects it as different. Leading _ are removed when translations are loaded.
 
