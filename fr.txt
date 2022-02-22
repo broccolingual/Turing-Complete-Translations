@@ -265,20 +265,20 @@ $76454016047920 {numerator}/{denominator} = {quotient}, reste {remainder}
 
 === levels/buffer ===
 
-$10260210687588 [center]Test 2: Left input is [img]dialogue/on.png[/img], right output should be [img]dialogue/on.png[/img].[/center]
-$13309706297402 [center]Test 3: Right input is [img]dialogue/on.png[/img], left output should be [img]dialogue/off.png[/img].[/center]
-$17005228759908 [center]Make sure [img]dialogue/on.png[/img] can only flow from left to right.[/center]
-$18349621873762 [center]Test 1: Both inputs are [img]dialogue/off.png[/img], neither side should turn [img]dialogue/on.png[/img].[/center]
+$10260210687588 [center]Test 2: l'entrée gauche est [img]dialogue/on.png[/img], la sortie droite devra être [img]dialogue/on.png[/img].[/center]
+$13309706297402 [center]Test 3: l'entrée droite est [img]dialogue/on.png[/img], la sortie gauche devra être [img]dialogue/off.png[/img].[/center]
+$17005228759908 [center]Assures toi que [img]dialogue/on.png[/img] ne peut se propager que de gauche à droite.[/center]
+$18349621873762 [center]Test 1: les deux entrées sont [img]dialogue/off.png[/img], aucune sortie ne devra être [img]dialogue/on.png[/img].[/center]
 $15504762262759
-This level starts with 2 special components. They simultaneously act as input and output.
+Ce niveau démarre avec 2 composants spéciaux. Ils jouent les rôles à fois d'entrée et de sortie.
 
-Make sure the signal flows only from left to right. There are 3 tests.
+Assures toi que le signal ne se propage que de gauche à droite. Il y aura trois vérifications.
 
-[b]Test 1[/b]: Both sides will be [OFF].
+[b]Test 1[/b]: Les deux cotés seront [OFF].
 
-[b]Test 2[/b]: The left side input will turn [ON] and the right side should be [ON].
+[b]Test 2[/b]: L'entrée gauche [ON] et le coté droit devra être [ON].
 
-[b]Test 3[/b]: The right side output will turn [ON] and the left side should be [OFF].
+[b]Test 3[/b]: La sortie droite deviendra [ON] et le coté gauche devra être [OFF].
 
 
 === components/Output 4 ===
