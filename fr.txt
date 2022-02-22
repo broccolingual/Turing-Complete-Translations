@@ -283,24 +283,23 @@ Assures toi que le signal ne se propage que de gauche à droite. Il y aura trois
 
 === components/Output 4 ===
 
-$90190739202646 Output
+$90190739202646 Sortie
 
 
 === misc/select_color ===
 
-$97461374731210 Wire color
+$97461374731210 Couleur de fil
 
 
 === levels/component_factory ===
 
-$17077079648771 Components can be added, renamed or deleted using the level save system.
+$17077079648771 Des composants peuvent être ajoutés, renommés ou supprimés en utilisant le système de sauvegarde du niveau.
 $19551383617326
-Welcome to the component factory, the circuits you create in here will be usable as components in architecture levels.
-The circuitry you create defines the behavior of the component and the layout defines its shape.
-$12516102012088 This component has no area and will not be usable in levels. Place components on the map to give it area.
-$14712417427860 Since this level is a tool and not a challenge, you can go to the level map and continue on when you want.
-$15549447390000 2 input/output components are in the same square. The custom component will be unusable since 2 pins can't overlap.
-
+Bienvenue à la fabrique de composants, les circuits que tu crées ici pourront être utilisés comme composants dans les niveaux d'architecture.
+La circuiterie créée ici définira le comportement du composant et son schéma définira sa forme.
+$12516102012088 Ce composant n'a pas de forme définie et ne pourra pas être réutilisé. Placer des composants sur la carte pour définir sa forme.
+$14712417427860 Comme ce niveau est un outil et pas un défi, tu peux revenir à la carte des niveaux pour continuer quand tu voudras.
+$15549447390000 2 composants d'entrée/sortie sont dans la même zone. Le composant personalisé sera inutilisable car 2 pattes ne peuvent se chevaucher.
 
 === ui/state_ui/state_ui_output_bit ===
 
