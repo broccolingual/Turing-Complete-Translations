@@ -336,16 +336,16 @@ $11794110848012 Cette fois il a pris le contrôle du poste de contrôle et retie
 
 === misc/ui_comment ===
 
-$69987793052607 Wire comment (Click on wire)
+$69987793052607 Commentaire de fil (Cliquer sur le fil)
 
 
 === levels/delay_level ===
 
 $19986989895202
-All components have a delay. And in a circuit, the total delay is determined by the slowest path. This means you normally want to put things in parallel.
-In this level you must prove that you understand this concept.
-$11246430085016 Note, you can see the delay path by clicking the hour glass in the upper right corner.
-$12817338693402 The delay of any component is ultimately derived from the delay of the nand gate, which has a delay of 2. Build a circuit with a delay of 6 and a nand cost of 5.
+Tous les composants ont un délai. Au niveau du circuit, le délai cumulé est déterminé par le chemin le plus lent. En pratique ça signifie qu'il faut paralléliser les choses.
+Dans ce niveau tu vas devoir prouver que tu as compris ce concept.
+$11246430085016 Le délai de propagation est visible en cliquant sur le sablier dans le coin supérieur droit.
+$12817338693402 Le délai de tous les compostants dérivent en fin de compte du délai de la porte nand, qui a un délai de 2. Réalises un circuit ayant un délai de 6 et un coût nand de 5.
 
 
 === levels/push_pop ===
