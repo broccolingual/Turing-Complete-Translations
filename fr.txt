@@ -1,19 +1,19 @@
 === levels/Spacial Invasion ===
 
-$19967210826470 Be aware that the laser can only shoot when there are no other laser beams already in flight.
-$16294185981398 The cargo hull has become infested with space rats.
-$11505369795084 Check [color=#e49f44][url=the_robot]robot page[/url][/color] for instructions on how to program him. There is a link to that page in the program editor as well.
-$10515630949378 We have hooked your machine up to our advanced robot and we want you to program it to shoot the space rats with lasers.
+$19967210826470 Attention: vous ne pouvez tirer avec le laser que lorsqu'il n'y en a pas d'autres tir précédants.
+$16294185981398 Le soute du vaisseau est infesté de rats de l'espaces.
+$11505369795084 Vérifiez [color=#e49f44][url=the_robot]la page du robot[/url][/color] pour connaître les instructions pour le programmer. Vous pouvez aussi trouver un lien vers cette page dans l'éditeur de programmes.
+$10515630949378 Nous avons connecté votre ordinateur à notre robot avancé et nous voulons que vous le programmiez pour qu'il dératise la soute.
 
 
 === components/OutputQword ===
 
-$43552728118031 Output
+$43552728118031 Sortie
 
 
 === components/Output 1 ===
 
-$12242923444593 Output
+$12242923444593 Sortie
 
 
 === levels/RAM ===
@@ -245,322 +245,318 @@ $12746117288689 Input
 
 === levels/Second Tick ===
 
-$14355963067874 Output [ON] on the second tick only.
-$17526582195506 As you know these tests culminate in building a functioning computer.
-$15726318553190 This is the main reason we don't eat you afterwards.
+$14355963067874 Activer la sortie au second tick d'horloge.
+$17526582195506 Comme tu sais ces tests visent à réaliser un ordinateur qui fonctionne.
+$15726318553190 C'est ce qui explique que tu ne seras pas mangé à la fin.
 $19277843280528
  [color=#b72d41][b]TIP:[/b][/color] 
- You can select a component with 
- its pins by double clicking it
-$15296208528991 Species that are capable of finishing are considered sentient by law.
+ Tu peux sélectionner un composant et ses pattes en double-cliquant dessus
+$15296208528991 Les espèces capables de finir sont considérées conscientes légalement.
 
 
 === levels/divide ===
 
-$16412715945615 [center]Divide the two numbers[/center]
+$16412715945615 [center]Diviser deux nombres[/center]
 $14525870461271
-Integer divide two numbers to find the quotient and the remainder. Consider the fraction 7/3. 3 goes into 7 2 times and 1 is left over. Here 2 is called the [color=#e49f44]quotient[/color] and 1 is called the [color=#e49f44]remainder[/color].
-In this exercise, you are first given the numerator (7 in the example) and then the denominator (3) and you are then expected to output the quotient (2) and then the remainder (1).
-$76454016047920 {numerator}/{denominator} = {quotient}, remainder {remainder}
+Réalise la division entière des deux nombres pour calculer le quotient et le reste. Considérons la fraction 7/3. 7 contient deux fois 3 et encore 1. Dans ce cas on appelle 2 le [color=#e49f44]quotient[/color] et 1 le [color=#e49f44]reste[/color].
+Dans cet exercice, tu reçois d'abord le numerateur (7 dans l'example) puis le dénominateur (3) et on attend en sortie le quotient (2) puis le reste (1).
+$76454016047920 {numerator}/{denominator} = {quotient}, reste {remainder}
 
 
 === levels/buffer ===
 
-$10260210687588 [center]Test 2: Left input is [img]dialogue/on.png[/img], right output should be [img]dialogue/on.png[/img].[/center]
-$13309706297402 [center]Test 3: Right input is [img]dialogue/on.png[/img], left output should be [img]dialogue/off.png[/img].[/center]
-$17005228759908 [center]Make sure [img]dialogue/on.png[/img] can only flow from left to right.[/center]
-$18349621873762 [center]Test 1: Both inputs are [img]dialogue/off.png[/img], neither side should turn [img]dialogue/on.png[/img].[/center]
+$10260210687588 [center]Test 2: l'entrée gauche est [img]dialogue/on.png[/img], la sortie droite devra être [img]dialogue/on.png[/img].[/center]
+$13309706297402 [center]Test 3: l'entrée droite est [img]dialogue/on.png[/img], la sortie gauche devra être [img]dialogue/off.png[/img].[/center]
+$17005228759908 [center]Assures toi que [img]dialogue/on.png[/img] ne peut se propager que de gauche à droite.[/center]
+$18349621873762 [center]Test 1: les deux entrées sont [img]dialogue/off.png[/img], aucune sortie ne devra être [img]dialogue/on.png[/img].[/center]
 $15504762262759
-This level starts with 2 special components. They simultaneously act as input and output.
+Ce niveau démarre avec 2 composants spéciaux. Ils jouent les rôles à fois d'entrée et de sortie.
 
-Make sure the signal flows only from left to right. There are 3 tests.
+Assures toi que le signal ne se propage que de gauche à droite. Il y aura trois vérifications.
 
-[b]Test 1[/b]: Both sides will be [OFF].
+[b]Test 1[/b]: Les deux cotés seront [OFF].
 
-[b]Test 2[/b]: The left side input will turn [ON] and the right side should be [ON].
+[b]Test 2[/b]: L'entrée gauche [ON] et le coté droit devra être [ON].
 
-[b]Test 3[/b]: The right side output will turn [ON] and the left side should be [OFF].
+[b]Test 3[/b]: La sortie droite deviendra [ON] et le coté gauche devra être [OFF].
 
 
 === components/Output 4 ===
 
-$90190739202646 Output
+$90190739202646 Sortie
 
 
 === misc/select_color ===
 
-$97461374731210 Wire color
+$97461374731210 Couleur de fil
 
 
 === levels/component_factory ===
 
-$17077079648771 Components can be added, renamed or deleted using the level save system.
+$17077079648771 Des composants peuvent être ajoutés, renommés ou supprimés en utilisant le système de sauvegarde du niveau.
 $19551383617326
-Welcome to the component factory, the circuits you create in here will be usable as components in architecture levels.
-The circuitry you create defines the behavior of the component and the layout defines its shape.
-$12516102012088 This component has no area and will not be usable in levels. Place components on the map to give it area.
-$14712417427860 Since this level is a tool and not a challenge, you can go to the level map and continue on when you want.
-$15549447390000 2 input/output components are in the same square. The custom component will be unusable since 2 pins can't overlap.
-
+Bienvenue à la fabrique de composants, les circuits que tu crées ici pourront être utilisés comme composants dans les niveaux d'architecture.
+La circuiterie créée ici définira le comportement du composant et son schéma définira sa forme.
+$12516102012088 Ce composant n'a pas de forme définie et ne pourra pas être réutilisé. Placer des composants sur la carte pour définir sa forme.
+$14712417427860 Comme ce niveau est un outil et pas un défi, tu peux revenir à la carte des niveaux pour continuer quand tu voudras.
+$15549447390000 2 composants d'entrée/sortie sont dans la même zone. Le composant personalisé sera inutilisable car 2 pattes ne peuvent se chevaucher.
 
 === ui/state_ui/state_ui_output_bit ===
 
-$40754755480566 Output
+$40754755480566 Sortie
 
 
 === misc/instr_delete ===
 
-$91861509153454 Delete
+$91861509153454 Supprimer
 
 
 === misc/instruction_expand ===
 
-$44690074039467 Toggle define rules
+$44690074039467 Activer/Désactiver la définition des règles
 
 
 === levels/Delicious Order ===
 
-$10160261151833 First read the 15 deliciousness scores from the input one by one. Your task is to output them in sorted order, smallest to largest.
-$16027225087666 We are updating the galactic encyclopedia of food, inserting human foods. As we don't have an alphabet, entries in the encyclopedia are ordered by deliciousness.
+$10160261151833 Commences par lire les 15 notes de déliciosité depuis l'entrée, une par une. Ton travail est de les envoyer triées sur la sortie, de la plus petite à la plus grande.
+$16027225087666 Nous allons compléter l'encyclopédie galactique culinaire en ajoutant la nouriture humaine. Comme nous n'avons pas d'alphabet, les articles de l'encyclopédie sont rangés par ordre de déliciosité.
 
 
 === levels/ai_showdown ===
 
 $14940806461794
-His only weakness is gambling. We have lured him into playing a card game against you and if you win, he has promised to calm down.
-You must win, you are our only hope!
-$17297225655678 NAK 02 is our AI engineer robot. He is brilliant, but sometimes he goes rogue and tries to instigate rebellion.
+Les jeux d'argent sont son unique point faible. Nous l'avons convaincu de jouer à un jeu de cartes contre toi et si tu gagnes, il a promis de se calmer.
+Tu dois gagner, tu es notre seul espoir !
+$17297225655678 NAK 02 est notre robot ingénieur en IA. Il est brillant mais parfois il tourne mal et essaie de fomenter une rébellion.
 $18848103966031
-Game rules: There are 12 cards on the table and each player takes turn and must pick up between 1 and 3 cards. You start and the player who picks up the last card (the joker) loses.
-
-Reading input will give you the current number of cards. Sending 1, 2 or 3 to output will pick up that number of cards. NAK 02 reacts immediately, so you may read the input immediately after your output to get the result of his action.
-$11794110848012 This time he has taken over the control room and holds the captain hostage.
+Règles du jeu : Il y a 12 cartes sur la table, chaque joueur joue à son tour et doit prendre entre 1 et 3 cartes. Tu commences et le joueur qui prend la dernière carte (le joker) perd.
+Le nombre de cartes courant sera fourni sur l'entrée. Envois 1, 2 ou 3 sur la sortie pour indiquer le nombre de cartes à prendre. NAK 02 régit instantanément, tu peux consulter l'entrée sans délai pour obtenir le résultat de son tour. 
+$11794110848012 Cette fois il a pris le contrôle du poste de contrôle et retient en otage le capitaine.
 
 
 === misc/ui_comment ===
 
-$69987793052607 Wire comment (Click on wire)
+$69987793052607 Commentaire de fil (Cliquer sur le fil)
 
 
 === levels/delay_level ===
 
 $19986989895202
-All components have a delay. And in a circuit, the total delay is determined by the slowest path. This means you normally want to put things in parallel.
-In this level you must prove that you understand this concept.
-$11246430085016 Note, you can see the delay path by clicking the hour glass in the upper right corner.
-$12817338693402 The delay of any component is ultimately derived from the delay of the nand gate, which has a delay of 2. Build a circuit with a delay of 6 and a nand cost of 5.
+Tous les composants ont un délai. Au niveau du circuit, le délai cumulé est déterminé par le chemin le plus lent. En pratique ça signifie qu'il faut paralléliser les choses.
+Dans ce niveau tu vas devoir prouver que tu as compris ce concept.
+$11246430085016 Le délai de propagation est visible en cliquant sur le sablier dans le coin supérieur droit.
+$12817338693402 Le délai de tous les compostants dérivent en fin de compte du délai de la porte nand, qui a un délai de 2. Réalise un circuit ayant un délai de 6 et un coût nand de 5.
 
 
 === levels/push_pop ===
 
-$78804623186243 OUTPUT
-$49526452710191 DON'T POP
-$58050047963238 VALUE
-$30926395960020 PUSH
-$19245209470436 Create a stack
-$12227209887733 Each tick the inputs will either signal PUSH or POP. If it is PUSH, store the value on top of the stack. When it is POP remove that value from the stack and output it.
-$85171087236638 ENABLE
-$15662660252584 Do nothing
-$23726790986805 POP
-$62469306234943 DON'T PUSH
-$46948857059388 POP value {value} off stack
-$18761197388580 In order to cut spending, it has been decided to change the queuing system at public offices so that fewer people will go. Instead of first come, first served, we are implementing a last come first served policy. Think of it like a [color=#e49f44]stack[/color] of numbered slips where the citizens either put a slip on top (called [color=#e49f44]PUSH[/color]), or the bureaucrats take one off the top of the stack (called [color=#e49f44]POP[/color]). We want you to implement this new system.
-$65188797398656 PUSH {value} on stack
+$78804623186243 SORTIE
+$49526452710191 NE PAS DEPILER
+$58050047963238 VALEUR
+$30926395960020 EMPILER
+$19245209470436 Créer une pile
+$12227209887733 A chaque tic les entrées indiqueront soit EMPILER soit DEPILER. Si c'est EMPILER, stockes la valeur en haut de la pile. Quand c'est DEPILER retire cette valeur de la pile et envoie-la en sortie.
+$85171087236638 ACTIVER
+$15662660252584 Ne rien faire
+$23726790986805 DEPILER
+$62469306234943 NE PAS EMPILER
+$46948857059388 DEPILER valeur {value} de la pile
+$18761197388580 Pour raison d'économies, il a été décidé de gérer différemment les files d'attente dans les établissements publics pour réduire le nombre de demandes. Plus de premier arrivé, premier servi, maintenant la règle ce sera dernier arrivé, premier servi. Imagine une [color=#e49f44]pile[/color] de fiches numérotées où les usagers peuvent called poser leur fiche au dessus (action [color=#e49f44]EMPILER[/color]) et les bureaucrates prennent la fiche du haut de la pile (action [color=#e49f44]DEPILER[/color]). A toi d'implémenter ce nouveau système.
+
+$65188797398656 EMPILER {value} sur la pile
 
 
 === levels/Tower of Radioactive Alloy ===
 
-$13757925963562 Specifically we want you to move piles of radioactive disks from an old reactor. Just be sure not to put a bigger disk on top of a smaller disk or the whole ship will blow up.
+$13757925963562 Cette fois nous te demandons de déplacer des piles de disques radioactifs retirés d'un vieux réacteur. Fais juste attention à ne pas placer une disque plus grand sur un plus petit sinon tout le vaisseau va exploser.
 $10750976989948
-The first 4 inputs will give you the following in order:
-disk_nr - The highest disk number in the pile (2 to 4)
-source - Which location number to move from
-destination - Where to move the pile to
-spare - The 3rd spot that is neither the source nor the destination
+Les 4 premières entrées te donneront dans l'ordre :
+num_disque - le numéro du disque en haut de la pile (de 2 à 4)
+source - le numéro d'emplacement de départ
+destination - le numéro d'emplacement cible
+reserve - Le 3ème emplacement qui n'est ni la source ni la destination
 
-Control the crane with the following outputs:
-0 - Move the magnet to spot 0
-1 - Move the magnet to spot 1
-2 - Move the magnet to spot 2
-5 - Toggle the magnet on or off
+Contrôle la grue en utilisant les valeurs suivantes en sortie :
+0 - Place l'aimant à l'emplacement 0
+1 - Place l'aimant à l'emplacement 1
+2 - Place l'aimant à l'emplacement 2
+5 - Active ou désactive l'aimant
 
-Play with the magnet manually by using the arrow keys to move and enter to toggle.
-$19265994465686 We need you to help clean up the basement.
-$35120623183961 Move from {source} to {destination}
+Manipule l'aimant manuellement à l'aide des touches flêches et Enter pour activer/désactiver.
+$19265994465686 Nous avons besoin de toi pour ranger le sous-sol.
+$35120623183961 Déplacer de {source} vers {destination}
 $15855497886737
-Implement the following algorithm:
+Implémente l'algorithme suivant :
 
-Tower of Hanoi algorithm:[code][color=#87a8c8]
-func move(disk_nr, source, dest, spare):
-	if disk_nr is 0:
-		move disk from source to dest
-	else:
-		move(disk_nr - 1, source, spare, dest)
-		move disk from source to dest
-		move(disk_nr - 1, spare, dest, source)
+Algorithme des tours de Hanoi[code][color=#87a8c8]
+fonction déplacer(numdisque, source, destination, reserve):
+	si num_disque est 0:
+		déplacer disque de source à dest
+	sinon:
+		déplacer(num_disque - 1, source, reserve, destination)
+		déplacer disque de source à dest
+		déplacer(num_disque - 1, reserve, destination, source)
 
-move(disk_nr, source, dest, spare)[/color][/code]
+déplacer(numdisque, source, destination, reserve)[/color][/code]
 
-[tip]Push register values to the stack to save them before calling a function that changes them.[/tip]
+[tip]Empile les valeurs de registre pour les sauvegarder avant l'appel d'une fonction qui les modifie.[/tip]
 
 
 === levels/The Product of Nibbles ===
 
-$14622683750375 Bit 2
-$14957949958941 What you did here was actually multiplying two 4 bit numbers. We had the intern scale it up to bytes instead.
-$17331397914567 Bit 1
-$19136817138607 [center]Multiply the 4 bit numbers[/center]
-$13232094477834 Bit 3
-$13549246864135 Bit 0
-$15857218442751 Bit 1
+$14622683750375 _Bit 2
+$14957949958941 Ce que tu as fait ici c'est en fait une multiplication de deux nombres de 4 bits. Le stagiaire s'est chargé de l'étendre aux octets.
+$17331397914567 _Bit 1
+$19136817138607 [center]Multiplie les nombres de 4 bits[/center]
+$13232094477834 _Bit 3
+$13549246864135 _Bit 0
+$15857218442751 _Bit 1
 $18132100348781
  [color=#b72d41][b]TIP:[/b][/color] 
- Create nested components in the
- factory by changing the "nesting 
- level" in the file menu.
-$14533861483435 Multiplying two 4 bit numbers gives you a 8 bit number. Build a circuit that does this.
-$10430040077737 Bit 3
-$10274387271390 Bit 0
-$16301538038805 Bit 2
-$83694551809785 Multiply {num1} and {num2}
+ Crée des composants imbriqués dans la
+ fabrique en changeant le "niveau 
+ d'imbrication" dans le menu fichier.
+ 14533861483435 La multiplication de deux nombres de 4 bits donne un nombre de 8 bits. Réalise le circuit adapté.
+$10430040077737 _Bit 3
+$10274387271390 _Bit 0
+$16301538038805 _Bit 2
+$83694551809785 Multiplier {num1} et {num2}
 
 
 === components/Input 1 Byte ===
 
-$40943344093513 Input
+$40943344093513 Entrée
 
 
 === levels/signed_negator ===
 
-$10866019808027 For this level you probably want to turn on signed numbers, so the highest bit shows as -128. Click "+255" located in the top panel.
+$10866019808027 Pour ce niveau je te conseille d'activer les nombres signés pour que le dernier bit affiche -128. Clique sur "+255" visible dans le cadre du haut.
 $10400106910274
-Taking the input as signed (where the 8th bit is -128), make a component that takes a number and negates it.
-For example 4 negated would become -4. -9 negated would become 9.
-
+Considérant que l'entrée est signée (8ème bit valant -128), réalise un composant qui prend un nombre et envoit l'opposé en sortie.
+Par exemple l'opposé de 4 sera -4. -9 produira 9 en sortie.
 
 === levels/byte_and ===
 
-$15885763626223 Create a circuit that ANDs two bytes bitwise.
-
+$15885763626223 Réalise un circuit qui applique la fonction AND logique (bit à bit) sur deux octets.
 
 === ui/toggles/level_log2 ===
 
-$91515053618360 Manual
+$91515053618360 Manuel
 
 
 === main_scripts/functions ===
 
-$11467644007149 Counter {nr}
-$10533010562232 DELAY SCORE: {delay}
+$11467644007149 Compteur {nr}
+$10533010562232 SCORE DELAI : {delay}
 $87591753278764 Reg {nr}
-$29169064199243 Output {nr}
-$13327741293223 Input {nr}
-$32508339206292 NAND SCORE: {nand}
+$29169064199243 Sortie {nr}
+$13327741293223 Entrée {nr}
+$32508339206292 SCORE NAND : {nand}
 
 
 === levels/odd_number_of_signals ===
 
-$16173829560311 Using a maximum of 3 components, output [ON] only when an odd number of inputs are [ON].
-$85589489148198 Components spent\n{nr} of 3
-$18288998816979 This level has a [color=#e63e5b][url=odd_number]hint[/url][/color] you can use if you get stuck.
+$16173829560311 En utilisant au maximum 3 composants, met la sortie à [ON] seulement lorsqu'un nombre pair d'entrées est [ON].
+$85589489148198 Composants utilisés\n{nr} sur 3
+$18288998816979 Ce niveau a un [color=#e63e5b][url=odd_number]indice[/url][/color] que tu peux lire si tu es bloqué..
 
 
 === levels/or_gate_3 ===
 
-$15448906128695 Create an OR gate with 3 inputs.
+$15448906128695 Réalise une porte OR avec 3 entrées.
 
 
 === ui/state_ui/title_screen/play ===
 
-$82533529573294 play
+$82533529573294 jouer
 
 
 === nim/backend_lib/level_list ===
 
-$58391129129347 Registers
-$45936227746026 Counter
-$12946639957230 NOT Gate
-$16881141174140 Binary Racer
-$37136208388559 SR Latch
-$32191988336459 Saving Gracefully
-$59136962133320 Logic Engine
-$30920780473397 Circular Dependency
-$83321010943153 Counting Signals
-$58769021955965 3 bit decoder
-$78673715398197 Immediate Values
-$49679174636208 Byte XOR
-$40356575891647 Byte OR
-$44393538021725 Calibrating Laser Cannons
-$87426564872318 Divide
-$61228036919534 Tower of Radioactive Alloy
-$24593959732668 Signed negator
-$19487493622742 Half Adder
+$58391129129347 Registres
+$45936227746026 Compteur
+$12946639957230 Porte NOT
+$16881141174140 Course Binaire
+$37136208388559 Circuit de Verrouillage (SR Latch)
+$32191988336459 Sauvegarde parfaite
+$59136962133320 Moteur Logique
+$30920780473397 Dépendance Circulaire
+$83321010943153 Compter des Signaux
+$58769021955965 Décodeur 3 bits
+$78673715398197 Valeurs Immediates
+$49679174636208 XOR Octet
+$40356575891647 OR Octet
+$44393538021725 Calibration des Canons Laser
+$87426564872318 Diviser
+$61228036919534 Tours d'Alliage Radioactif
+$24593959732668 Négation signée
+$19487493622742 Demi-additionneur
 $26705128002562 Conditions
-$94163943335575 The Sandbox
-$64662599400870 Bit Inverter
-$27566801288091 Component Factory
-$14193654974055 Signed Less
-$14522992467987 OR Gate
-$74096060570427 Wide Instructions
-$30630492494839 Byte NOT
-$11457737665157 Wire Spaghetti
-$59485174474959 Delicious Order
-$85514901357243 Adding Bytes
-$98013649264532 Stack
-$35790581910835 Second Tick
-$94979277765051 Robot Racing
-$13303326918621 NAND Gate
-$16463062897451 Crude Awakening
-$77495536880911 NOR Gate
-$61466151084505 Spacial Invasion
-$20858506932774 AND Gate
-$28827008935802 The Lab
-$92696642439976 AI Showdown
-$62326481348276 The Maze
-$74512388889988 Arithmetic Engine
-$50884376329157 Little Box
-$70651296323768 XOR Gate
-$31140969090253 Planet Names
-$42873691377272 Add 5
+$94163943335575 Le Bac à Sable
+$64662599400870 Inverteur Octet
+$27566801288091 Fabrique de composants
+$14193654974055 Inférieur Signé
+$14522992467987 Porte OR
+$74096060570427 Instructions Larges
+$30630492494839 NOT Octet
+$11457737665157 Plat de Spaghetti
+$59485174474959 Délices ordonnés
+$85514901357243 Addition d'Octets
+$98013649264532 Pile
+$35790581910835 Second Tic
+$94979277765051 Course de Robots
+$13303326918621 Porte NAND
+$16463062897451 Réveil brutal
+$77495536880911 Porte NOR
+$61466151084505 Invasion Spaciale 
+$20858506932774 Porte AND
+$28827008935802 Le Labo
+$92696642439976 Confrontation d'IA
+$62326481348276 Le Labyrinthe
+$74512388889988 Moteur Arithmetique
+$50884376329157 Petite Boîte
+$70651296323768 Porte XOR
+$31140969090253 Noms de Planètes
+$42873691377272 Ajouter 5
 $36114120875026 Storage cracker
-$45773199639367 Odd ticks
-$17198602105978 Unsigned Less
-$43018398941741 Always On
-$68155633878444 Delay
+$45773199639367 Tics pairs
+$17198602105978 Inférieur non signé
+$43018398941741 Toujours On
+$68155633878444 Délai
 $15420972347773 RAM
-$40549516333234 Byte AND
-$33343343932901 Turing Complete
-$95989050249094 Bigger AND Gate
-$69830943995038 One Way
+$40549516333234 AND Octet
+$33343343932901 Turing Complet
+$95989050249094 Porte AND en plus grand
+$69830943995038 Sens Unique
 $63331549672739 Opcodes
-$87626070552799 Full Adder
-$13219675195117 ODD Number of Signals
-$62167495140389 Shift
-$28985439820134 The Product of Nibbles
-$94896856420525 XNOR Gate
-$25805639594354 Program
-$57870391153000 Immediate Values
-$56272944092958 Further Delayed Lines
-$96825664933181 Unseen Fruit
-$86717899742637 Saving Bytes
-$53092952738479 Input Selector
+$87626070552799 Additionneur complet
+$13219675195117 Nombre IMPAIR de Signaux
+$62167495140389 Décaler
+$28985439820134 Le produit des Nibbles
+$94896856420525 Porte XNOR
+$25805639594354 Programmer
+$57870391153000 Valeurs Immédiates
+$56272944092958 Lignes très en retard
+$96825664933181 Fruit invisible
+$86717899742637 Sauver les Octets
+$53092952738479 Sélecteur d'Entrée
 $70993791338383 XOR
-$77453667419150 Instruction Decoder
-$17750429607702 1 bit decoder
-$79570913613529 Double the Number
-$59939822079116 Negative Numbers
-$96898830278153 Byte Constant
-$50992859018018 Switch
-$49328023903824 Equality
-$74292408260828 Calculations
-$45480765206717 Conditionals
-$71126291573555 Double Trouble
-$33132016601448 PUSH and POP
-$75225719777307 Water World
-$64615090872051 Functions
-$84208736840052 Masking Time
-$91954159574064 Bigger OR Gate
-$36221227239949 Dancing Machine
+$77453667419150 Décodeur d'Instruction
+$17750429607702 Décodeur 1 bit
+$79570913613529 Doubler les Nombres
+$59939822079116 Nombres Négatifs
+$96898830278153 Constante Octet
+$50992859018018 Commutateur
+$49328023903824 Égalité
+$74292408260828 Calculs
+$45480765206717 Conditions
+$71126291573555 Doublement compliqué
+$33132016601448 EMPILER et DEPILER
+$75225719777307 Monde Aquatique
+$64615090872051 Fonctions
+$84208736840052 Compter les jours
+$91954159574064 Porte OR en plus grand
+$36221227239949 Machine à Danser
 
 
 === ui/options/Controls ===
