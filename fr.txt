@@ -345,24 +345,25 @@ $19986989895202
 Tous les composants ont un délai. Au niveau du circuit, le délai cumulé est déterminé par le chemin le plus lent. En pratique ça signifie qu'il faut paralléliser les choses.
 Dans ce niveau tu vas devoir prouver que tu as compris ce concept.
 $11246430085016 Le délai de propagation est visible en cliquant sur le sablier dans le coin supérieur droit.
-$12817338693402 Le délai de tous les compostants dérivent en fin de compte du délai de la porte nand, qui a un délai de 2. Réalises un circuit ayant un délai de 6 et un coût nand de 5.
+$12817338693402 Le délai de tous les compostants dérivent en fin de compte du délai de la porte nand, qui a un délai de 2. Réalise un circuit ayant un délai de 6 et un coût nand de 5.
 
 
 === levels/push_pop ===
 
-$78804623186243 OUTPUT
-$49526452710191 DON'T POP
-$58050047963238 VALUE
-$30926395960020 PUSH
-$19245209470436 Create a stack
-$12227209887733 Each tick the inputs will either signal PUSH or POP. If it is PUSH, store the value on top of the stack. When it is POP remove that value from the stack and output it.
-$85171087236638 ENABLE
-$15662660252584 Do nothing
-$23726790986805 POP
-$62469306234943 DON'T PUSH
-$46948857059388 POP value {value} off stack
-$18761197388580 In order to cut spending, it has been decided to change the queuing system at public offices so that fewer people will go. Instead of first come, first served, we are implementing a last come first served policy. Think of it like a [color=#e49f44]stack[/color] of numbered slips where the citizens either put a slip on top (called [color=#e49f44]PUSH[/color]), or the bureaucrats take one off the top of the stack (called [color=#e49f44]POP[/color]). We want you to implement this new system.
-$65188797398656 PUSH {value} on stack
+$78804623186243 SORTIE
+$49526452710191 NE PAS DEPILER
+$58050047963238 VALEUR
+$30926395960020 EMPILER
+$19245209470436 Créer une pile
+$12227209887733 A chaque tic les entrées indiqueront soit EMPILER soit DEPILER. Si c'est EMPILER, stockes la valeur en haut de la pile. Quand c'est DEPILER retire cette valeur de la pile et envoie-la en sortie.
+$85171087236638 ACTIVER
+$15662660252584 Ne rien faire
+$23726790986805 DEPILER
+$62469306234943 NE PAS EMPILER
+$46948857059388 DEPILER valeur {value} de la pile
+$18761197388580 Pour raison d'économies, il a été décidé de gérer différemment les files d'attente dans les établissements publics pour réduire le nombre de demandes. Plus de premier arrivé, premier servi, maintenant la règle ce sera dernier arrivé, premier servi. Imagine une [color=#e49f44]pile[/color] de fiches numérotées où les usagers peuvent called poser leur fiche au dessus (action [color=#e49f44]EMPILER[/color]) et les bureaucrates prennent la fiche du haut de la pile (action [color=#e49f44]DEPILER[/color]). A toi d'implémenter ce nouveau système.
+
+$65188797398656 EMPILER {value} sur la pile
 
 
 === levels/Tower of Radioactive Alloy ===
