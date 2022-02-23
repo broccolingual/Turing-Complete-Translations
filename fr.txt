@@ -1,9 +1,9 @@
 === levels/Spacial Invasion ===
 
-$19967210826470 Be aware that the laser can only shoot when there are no other laser beams already in flight.
-$16294185981398 The cargo hull has become infested with space rats.
-$11505369795084 Check [color=#e49f44][url=the_robot]robot page[/url][/color] for instructions on how to program him. There is a link to that page in the program editor as well.
-$10515630949378 We have hooked your machine up to our advanced robot and we want you to program it to shoot the space rats with lasers.
+$19967210826470 Attention: vous ne pouvez tirer avec le laser que lorsqu'il n'y en a pas d'autres tir précédants.
+$16294185981398 Le soute du vaisseau est infesté de rats de l'espaces.
+$11505369795084 Vérifiez [color=#e49f44][url=the_robot]la page du robot[/url][/color] pour connaître les instructions pour le programmer. Vous pouvez aussi trouver un lien vers cette page dans l'éditeur de programmes.
+$10515630949378 Nous avons connecté votre ordinateur à notre robot avancé et nous voulons que vous le programmiez pour qu'il dératise la soute.
 
 
 === components/OutputQword ===
