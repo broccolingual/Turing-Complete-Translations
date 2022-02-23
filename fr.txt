@@ -301,6 +301,7 @@ $12516102012088 Ce composant n'a pas de forme définie et ne pourra pas être r�
 $14712417427860 Comme ce niveau est un outil et pas un défi, tu peux revenir à la carte des niveaux pour continuer quand tu voudras.
 $15549447390000 2 composants d'entrée/sortie sont dans la même zone. Le composant personalisé sera inutilisable car 2 pattes ne peuvent se chevaucher.
 
+
 === ui/state_ui/state_ui_output_bit ===
 
 $40754755480566 Sortie
@@ -362,7 +363,6 @@ $23726790986805 DEPILER
 $62469306234943 NE PAS EMPILER
 $46948857059388 DEPILER valeur {value} de la pile
 $18761197388580 Pour raison d'économies, il a été décidé de gérer différemment les files d'attente dans les établissements publics pour réduire le nombre de demandes. Plus de premier arrivé, premier servi, maintenant la règle ce sera dernier arrivé, premier servi. Imagine une [color=#e49f44]pile[/color] de fiches numérotées où les usagers peuvent called poser leur fiche au dessus (action [color=#e49f44]EMPILER[/color]) et les bureaucrates prennent la fiche du haut de la pile (action [color=#e49f44]DEPILER[/color]). A toi d'implémenter ce nouveau système.
-
 $65188797398656 EMPILER {value} sur la pile
 
 
@@ -404,22 +404,23 @@ déplacer(numdisque, source, destination, reserve)[/color][/code]
 
 === levels/The Product of Nibbles ===
 
-$14622683750375 _Bit 2
+$14622683750375 Bit 2
 $14957949958941 Ce que tu as fait ici c'est en fait une multiplication de deux nombres de 4 bits. Le stagiaire s'est chargé de l'étendre aux octets.
-$17331397914567 _Bit 1
+$17331397914567 Bit 1
 $19136817138607 [center]Multiplie les nombres de 4 bits[/center]
-$13232094477834 _Bit 3
-$13549246864135 _Bit 0
-$15857218442751 _Bit 1
+$13232094477834 Bit 3
+$13549246864135 Bit 0
+$15857218442751 Bit 1
 $18132100348781
  [color=#b72d41][b]TIP:[/b][/color] 
  Crée des composants imbriqués dans la
  fabrique en changeant le "niveau 
  d'imbrication" dans le menu fichier.
  14533861483435 La multiplication de deux nombres de 4 bits donne un nombre de 8 bits. Réalise le circuit adapté.
-$10430040077737 _Bit 3
-$10274387271390 _Bit 0
-$16301538038805 _Bit 2
+$14533861483435 Multiplying two 4 bit numbers gives you a 8 bit number. Build a circuit that does this.
+$10430040077737 Bit 3
+$10274387271390 Bit 0
+$16301538038805 Bit 2
 $83694551809785 Multiplier {num1} et {num2}
 
 
@@ -435,9 +436,11 @@ $10400106910274
 Considérant que l'entrée est signée (8ème bit valant -128), réalise un composant qui prend un nombre et envoit l'opposé en sortie.
 Par exemple l'opposé de 4 sera -4. -9 produira 9 en sortie.
 
+
 === levels/byte_and ===
 
 $15885763626223 Réalise un circuit qui applique la fonction AND logique (bit à bit) sur deux octets.
+
 
 === ui/toggles/level_log2 ===
 
