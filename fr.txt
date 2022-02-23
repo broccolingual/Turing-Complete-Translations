@@ -368,38 +368,38 @@ $65188797398656 EMPILER {value} sur la pile
 
 === levels/Tower of Radioactive Alloy ===
 
-$13757925963562 Specifically we want you to move piles of radioactive disks from an old reactor. Just be sure not to put a bigger disk on top of a smaller disk or the whole ship will blow up.
+$13757925963562 Cette fois nous te demandons de déplacer des piles de disques radioactifs retirés d'un vieux réacteur. Fais juste attention à ne pas placer une disque plus grand sur un plus petit sinon tout le vaisseau va exploser.
 $10750976989948
-The first 4 inputs will give you the following in order:
-disk_nr - The highest disk number in the pile (2 to 4)
-source - Which location number to move from
-destination - Where to move the pile to
-spare - The 3rd spot that is neither the source nor the destination
+Les 4 premières entrées te donneront dans l'ordre :
+num_disque - le numéro du disque en haut de la pile (de 2 à 4)
+source - le numéro d'emplacement de départ
+destination - le numéro d'emplacement cible
+reserve - Le 3ème emplacement qui n'est ni la source ni la destination
 
-Control the crane with the following outputs:
-0 - Move the magnet to spot 0
-1 - Move the magnet to spot 1
-2 - Move the magnet to spot 2
-5 - Toggle the magnet on or off
+Controle la grue en utilisant les valeurs suivantes en sortie :
+0 - Place l'aimant à l'emplacement 0
+1 - Place l'aimant à l'emplacement 1
+2 - Place l'aimant à l'emplacement 2
+5 - Active ou désactive l'aimant
 
-Play with the magnet manually by using the arrow keys to move and enter to toggle.
-$19265994465686 We need you to help clean up the basement.
-$35120623183961 Move from {source} to {destination}
+Manipule l'aimant manuellement à l'aide des touches flêches et Enter pour activer/désactiver.
+$19265994465686 Nous avons besoin de toi pour ranger le sous-sol.
+$35120623183961 Déplacer de {source} vers {destination}
 $15855497886737
-Implement the following algorithm:
+Implémente l'algorithme suivant :
 
-Tower of Hanoi algorithm:[code][color=#87a8c8]
-func move(disk_nr, source, dest, spare):
-	if disk_nr is 0:
-		move disk from source to dest
+Algorithme des tours de Hanoi[code][color=#87a8c8]
+fonction déplacer(numdisque, source, destination, reserve):
+	si num_disque est 0:
+		déplacer disque de source à dest
 	else:
-		move(disk_nr - 1, source, spare, dest)
-		move disk from source to dest
-		move(disk_nr - 1, spare, dest, source)
+		déplacer(num_disque - 1, source, reserve, destination)
+		déplacer disque de source à dest
+		déplacer(num_disque - 1, reserve, destination, source)
 
-move(disk_nr, source, dest, spare)[/color][/code]
+déplacer(numdisque, source, destination, reserve)[/color][/code]
 
-[tip]Push register values to the stack to save them before calling a function that changes them.[/tip]
+[tip]Empile les valeurs de registre pour les sauvegarder avant l'appel d'une fonction qui les modifie.[/tip]
 
 
 === levels/The Product of Nibbles ===
