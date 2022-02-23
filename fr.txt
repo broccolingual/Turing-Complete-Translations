@@ -376,7 +376,7 @@ source - le numéro d'emplacement de départ
 destination - le numéro d'emplacement cible
 reserve - Le 3ème emplacement qui n'est ni la source ni la destination
 
-Controle la grue en utilisant les valeurs suivantes en sortie :
+Contrôle la grue en utilisant les valeurs suivantes en sortie :
 0 - Place l'aimant à l'emplacement 0
 1 - Place l'aimant à l'emplacement 1
 2 - Place l'aimant à l'emplacement 2
@@ -392,7 +392,7 @@ Algorithme des tours de Hanoi[code][color=#87a8c8]
 fonction déplacer(numdisque, source, destination, reserve):
 	si num_disque est 0:
 		déplacer disque de source à dest
-	else:
+	sinon:
 		déplacer(num_disque - 1, source, reserve, destination)
 		déplacer disque de source à dest
 		déplacer(num_disque - 1, reserve, destination, source)
@@ -404,161 +404,159 @@ déplacer(numdisque, source, destination, reserve)[/color][/code]
 
 === levels/The Product of Nibbles ===
 
-$14622683750375 Bit 2
-$14957949958941 What you did here was actually multiplying two 4 bit numbers. We had the intern scale it up to bytes instead.
-$17331397914567 Bit 1
-$19136817138607 [center]Multiply the 4 bit numbers[/center]
-$13232094477834 Bit 3
-$13549246864135 Bit 0
-$15857218442751 Bit 1
+$14622683750375 _Bit 2
+$14957949958941 Ce que tu as fait ici c'est en fait une multiplication de deux nombres de 4 bits. Le stagiaire s'est chargé de l'étendre aux octets.
+$17331397914567 _Bit 1
+$19136817138607 [center]Multiplie les nombres de 4 bits[/center]
+$13232094477834 _Bit 3
+$13549246864135 _Bit 0
+$15857218442751 _Bit 1
 $18132100348781
  [color=#b72d41][b]TIP:[/b][/color] 
- Create nested components in the
- factory by changing the "nesting 
- level" in the file menu.
-$14533861483435 Multiplying two 4 bit numbers gives you a 8 bit number. Build a circuit that does this.
-$10430040077737 Bit 3
-$10274387271390 Bit 0
-$16301538038805 Bit 2
-$83694551809785 Multiply {num1} and {num2}
+ Crée des composants imbriqués dans la
+ fabrique en changeant le "niveau 
+ d'imbrication" dans le menu fichier.
+ 14533861483435 La multiplication de deux nombres de 4 bits donne un nombre de 8 bits. Réalise le circuit adapté.
+$10430040077737 _Bit 3
+$10274387271390 _Bit 0
+$16301538038805 _Bit 2
+$83694551809785 Multiplier {num1} et {num2}
 
 
 === components/Input 1 Byte ===
 
-$40943344093513 Input
+$40943344093513 Entrée
 
 
 === levels/signed_negator ===
 
-$10866019808027 For this level you probably want to turn on signed numbers, so the highest bit shows as -128. Click "+255" located in the top panel.
+$10866019808027 Pour ce niveau je te conseille d'activer les nombres signés pour que le dernier bit affiche -128. Clique sur "+255" visible dans le cadre du haut.
 $10400106910274
-Taking the input as signed (where the 8th bit is -128), make a component that takes a number and negates it.
-For example 4 negated would become -4. -9 negated would become 9.
-
+Considérant que l'entrée est signée (8ème bit valant -128), réalise un composant qui prend un nombre et envoit l'opposé en sortie.
+Par exemple l'opposé de 4 sera -4. -9 produira 9 en sortie.
 
 === levels/byte_and ===
 
-$15885763626223 Create a circuit that ANDs two bytes bitwise.
-
+$15885763626223 Réalise un circuit qui applique la fonction AND logique (bit à bit) sur deux octets.
 
 === ui/toggles/level_log2 ===
 
-$91515053618360 Manual
+$91515053618360 Manuel
 
 
 === main_scripts/functions ===
 
-$11467644007149 Counter {nr}
-$10533010562232 DELAY SCORE: {delay}
+$11467644007149 Compteur {nr}
+$10533010562232 SCORE DELAI : {delay}
 $87591753278764 Reg {nr}
-$29169064199243 Output {nr}
-$13327741293223 Input {nr}
-$32508339206292 NAND SCORE: {nand}
+$29169064199243 Sortie {nr}
+$13327741293223 Entrée {nr}
+$32508339206292 SCORE NAND : {nand}
 
 
 === levels/odd_number_of_signals ===
 
-$16173829560311 Using a maximum of 3 components, output [ON] only when an odd number of inputs are [ON].
-$85589489148198 Components spent\n{nr} of 3
-$18288998816979 This level has a [color=#e63e5b][url=odd_number]hint[/url][/color] you can use if you get stuck.
+$16173829560311 En utilisant au maximum 3 composants, met la sortie à [ON] seulement lorsqu'un nombre pair d'entrées est [ON].
+$85589489148198 Composants utilisés\n{nr} sur 3
+$18288998816979 Ce niveau a un [color=#e63e5b][url=odd_number]indice[/url][/color] que tu peux lire si tu es bloqué..
 
 
 === levels/or_gate_3 ===
 
-$15448906128695 Create an OR gate with 3 inputs.
+$15448906128695 Réalise une porte OR avec 3 entrées.
 
 
 === ui/state_ui/title_screen/play ===
 
-$82533529573294 play
+$82533529573294 jouer
 
 
 === nim/backend_lib/level_list ===
 
-$58391129129347 Registers
-$45936227746026 Counter
-$12946639957230 NOT Gate
-$16881141174140 Binary Racer
-$37136208388559 SR Latch
-$32191988336459 Saving Gracefully
-$59136962133320 Logic Engine
-$30920780473397 Circular Dependency
-$83321010943153 Counting Signals
-$58769021955965 3 bit decoder
-$78673715398197 Immediate Values
-$49679174636208 Byte XOR
-$40356575891647 Byte OR
-$44393538021725 Calibrating Laser Cannons
-$87426564872318 Divide
-$61228036919534 Tower of Radioactive Alloy
-$24593959732668 Signed negator
-$19487493622742 Half Adder
+$58391129129347 Registres
+$45936227746026 Compteur
+$12946639957230 Porte NOT
+$16881141174140 Course Binaire
+$37136208388559 Circuit de Verrouillage (SR Latch)
+$32191988336459 Sauvegarde parfaite
+$59136962133320 Moteur Logique
+$30920780473397 Dépendance Circulaire
+$83321010943153 Compter des Signaux
+$58769021955965 Décodeur 3 bits
+$78673715398197 Valeurs Immediates
+$49679174636208 XOR Octet
+$40356575891647 OR Octet
+$44393538021725 Calibration des Canons Laser
+$87426564872318 Diviser
+$61228036919534 Tours d'Alliage Radioactif
+$24593959732668 Négation signée
+$19487493622742 Demi-additionneur
 $26705128002562 Conditions
-$94163943335575 The Sandbox
-$64662599400870 Bit Inverter
-$27566801288091 Component Factory
-$14193654974055 Signed Less
-$14522992467987 OR Gate
-$74096060570427 Wide Instructions
-$30630492494839 Byte NOT
-$11457737665157 Wire Spaghetti
-$59485174474959 Delicious Order
-$85514901357243 Adding Bytes
-$98013649264532 Stack
-$35790581910835 Second Tick
-$94979277765051 Robot Racing
-$13303326918621 NAND Gate
-$16463062897451 Crude Awakening
-$77495536880911 NOR Gate
-$61466151084505 Spacial Invasion
-$20858506932774 AND Gate
-$28827008935802 The Lab
-$92696642439976 AI Showdown
-$62326481348276 The Maze
-$74512388889988 Arithmetic Engine
-$50884376329157 Little Box
-$70651296323768 XOR Gate
-$31140969090253 Planet Names
-$42873691377272 Add 5
+$94163943335575 Le Bac à Sable
+$64662599400870 Inverteur Octet
+$27566801288091 Fabrique de composants
+$14193654974055 Inférieur Signé
+$14522992467987 Porte OR
+$74096060570427 Instructions Larges
+$30630492494839 NOT Octet
+$11457737665157 Plat de Spaghetti
+$59485174474959 Délices ordonnés
+$85514901357243 Addition d'Octets
+$98013649264532 Pile
+$35790581910835 Second Tic
+$94979277765051 Course de Robots
+$13303326918621 Porte NAND
+$16463062897451 Réveil brutal
+$77495536880911 Porte NOR
+$61466151084505 Invasion Spaciale 
+$20858506932774 Porte AND
+$28827008935802 Le Labo
+$92696642439976 Confrontation d'IA
+$62326481348276 Le Labyrinthe
+$74512388889988 Moteur Arithmetique
+$50884376329157 Petite Boîte
+$70651296323768 Porte XOR
+$31140969090253 Noms de Planètes
+$42873691377272 Ajouter 5
 $36114120875026 Storage cracker
-$45773199639367 Odd ticks
-$17198602105978 Unsigned Less
-$43018398941741 Always On
-$68155633878444 Delay
+$45773199639367 Tics pairs
+$17198602105978 Inférieur non signé
+$43018398941741 Toujours On
+$68155633878444 Délai
 $15420972347773 RAM
-$40549516333234 Byte AND
-$33343343932901 Turing Complete
-$95989050249094 Bigger AND Gate
-$69830943995038 One Way
+$40549516333234 AND Octet
+$33343343932901 Turing Complet
+$95989050249094 Porte AND en plus grand
+$69830943995038 Sens Unique
 $63331549672739 Opcodes
-$87626070552799 Full Adder
-$13219675195117 ODD Number of Signals
-$62167495140389 Shift
-$28985439820134 The Product of Nibbles
-$94896856420525 XNOR Gate
-$25805639594354 Program
-$57870391153000 Immediate Values
-$56272944092958 Further Delayed Lines
-$96825664933181 Unseen Fruit
-$86717899742637 Saving Bytes
-$53092952738479 Input Selector
+$87626070552799 Additionneur complet
+$13219675195117 Nombre IMPAIR de Signaux
+$62167495140389 Décaler
+$28985439820134 Le produit des Nibbles
+$94896856420525 Porte XNOR
+$25805639594354 Programmer
+$57870391153000 Valeurs Immédiates
+$56272944092958 Lignes très en retard
+$96825664933181 Fruit invisible
+$86717899742637 Sauver les Octets
+$53092952738479 Sélecteur d'Entrée
 $70993791338383 XOR
-$77453667419150 Instruction Decoder
-$17750429607702 1 bit decoder
-$79570913613529 Double the Number
-$59939822079116 Negative Numbers
-$96898830278153 Byte Constant
-$50992859018018 Switch
-$49328023903824 Equality
-$74292408260828 Calculations
-$45480765206717 Conditionals
-$71126291573555 Double Trouble
-$33132016601448 PUSH and POP
-$75225719777307 Water World
-$64615090872051 Functions
-$84208736840052 Masking Time
-$91954159574064 Bigger OR Gate
-$36221227239949 Dancing Machine
+$77453667419150 Décodeur d'Instruction
+$17750429607702 Décodeur 1 bit
+$79570913613529 Doubler les Nombres
+$59939822079116 Nombres Négatifs
+$96898830278153 Constante Octet
+$50992859018018 Commutateur
+$49328023903824 Égalité
+$74292408260828 Calculs
+$45480765206717 Conditions
+$71126291573555 Doublement compliqué
+$33132016601448 EMPILER et DEPILER
+$75225719777307 Monde Aquatique
+$64615090872051 Fonctions
+$84208736840052 Compter les jours
+$91954159574064 Porte OR en plus grand
+$36221227239949 Machine à Danser
 
 
 === ui/options/Controls ===
