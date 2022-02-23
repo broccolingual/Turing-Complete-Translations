@@ -1623,7 +1623,7 @@ In the next level you will implement more [color=#e49f44]OPCODES[/color], which 
 
 
 $10922418807673 Argument 7 means read from input, but input is not enabled.
-$62258842382434 Watched state {value} should point to the counter
+$62258842382434 Watched state {counter} should point to the counter
 $84307766381146 OPCODE
 $20950946171790 JUMP TO
 $18769284297247 Create a new schematic and add a program with 4 byte output
