@@ -69,7 +69,7 @@ $15582618410991 LOAD and SAVE
 
 $13225915898937
 If you choose to go on to the rest of the levels I will teach you about ram, the stack and function calls and you will get to solve more interesting challenges like this one.
-		
+    
 But first you would have to build a better computer. [color=#e49f44]OVERTURE[/color] was good as a first machine, but it is clumsy and programs get very messy. To solve the challenges I have for you without pulling all your hair out, you will need something more expressive, the [color=#e49f44]LEG[/color] architecture.
 $17275059688693 Congratulations, you won the competition! An amazing achievement!
 $13741358519166 The fabled maze. If you solve it you win the competition!
@@ -125,7 +125,7 @@ The [color=#e49f44]ret[/color] instruction has to do the following:
 You can pass information to and from a function by saving the data to registers as normal. Also be aware of which registers a function will overwrite before calling it.
 $19416009887091
 Sometimes it is useful to reuse a section of code. We call these sections "functions". To implement this reuse, one can [color=#e63e5b][url=termonology]jump[/url][/color] to the beginning of the function and jump back again at the end of the function. We call jumping to the function "calling" the function, and jumping back from the function "returning" from the function. 
-	
+  
 But for this section of code to actually be reusable, the return jump will have to be able to return to different locations, depending on where we called the function from.
 
 We could save the counter value to a register before jumping to the function and use this value when returning. However, if done this way, a function would not be able to call another function, since this would overwrite the original return address.
@@ -151,11 +151,11 @@ $18510295620397 Output [OFF] on the even ticks and [ON] on the odd ticks.
 $16987046679863 In a previous level you learned how we don't allow circular dependencies. Now you must learn the one exception.
 $16037516781370
 Square pins in the game never affect the output in the same tick. They therefore never cause circular dependencies.
-	
-	[img]dialogue/delay_buffer.png[/img]
+  
+  [img]dialogue/delay_buffer.png[/img]
 $17588119878416
 The delay line is allowed to depend on its own input. This is because its input does not influence the rest of the circuit until next tick.
-	
+  
 [img]dialogue/delay_buffer.png[/img]
 
 
@@ -392,12 +392,12 @@ Implement the following algorithm:
 
 Tower of Hanoi algorithm:[code][color=#87a8c8]
 func move(disk_nr, source, dest, spare):
-	if disk_nr is 0:
-		move disk from source to dest
-	else:
-		move(disk_nr - 1, source, spare, dest)
-		move disk from source to dest
-		move(disk_nr - 1, spare, dest, source)
+  if disk_nr is 0:
+    move disk from source to dest
+  else:
+    move(disk_nr - 1, source, spare, dest)
+    move disk from source to dest
+    move(disk_nr - 1, spare, dest, source)
 
 move(disk_nr, source, dest, spare)[/color][/code]
 
@@ -601,7 +601,7 @@ The second special keyword for the lab is [color=#c54d5e]set_input[/color]. With
 You can at any time also (re)import example tests by clicking below:
 [url=import_overture][color=#e49f44]OVERTURE[/color][/url]
 $15446846177093 Welcome to the lab. Like the component factory, this is not a normal level but a tool.
-$16072814175447 Programming on buggy hardware is very frustrating. It is painful to suddenly be forced to reason about circuits, when you are in the middle of solving a programming problem. It is tempting to apply a quick circuit fix, so you can get back to solving the original problem. But now this quick fix broke something else in a program that used to work and so on. Therefore, when developing hardware try to aim for 100% reliability before you start programming!
+$16072814175447 Programming on buggy hardware is very frustrating. It is painful to suddenly be forced to reason about circuits, when you are in the middle of solving a programming problem. It is tempting to apply a quick circuit fix, so you can get back to solving the original problem. But now this quick fix broke something else in a program that used to work and so on. Therefore, when developing hardware try to aim for 100% reliability before you start programming!
 
 
 === levels/Opcodes ===
@@ -682,7 +682,7 @@ $58678516111149 Edit watched state
 
 $16693098943939
 The [INSTRUCTION] input component has been removed. It has been replaced by a program component. Every tick, use the counter to load the next [INSTRUCTION] from the program's memory.
-	
+  
 You must use the counter component you unlocked earlier for this level.
 $19686277478479 The program is still outputting the first instruction. Did you hook up a counter?
 
@@ -863,7 +863,7 @@ $14108238519744 Time to create your master project, implementing the [color=#e49
 $14411286553593 Finally, the input and output components now have an additional pin. Set that pin [ON] when you want to read from input, or copy to output.
 $14041158687959
 [color=#c54d5e]Source[/color] and [color=#e49f44]destination[/color] can be 1 of 6 registers, we will name them REG 0 to REG 5 respectively. 
-	
+  
 Additionally, this map has a dedicated input component, which can be the [color=#c54d5e]source[/color] and an output component, which can be the [color=#e49f44]destination[/color].
 
 
@@ -916,7 +916,7 @@ $17142958857584 A ή B
 $12901484249817 Μπορείτε να χωρέσετε 4 bytes μνήμης σε αυτόν τον περιορισμένο χώρο;
 $14218335256117
 Στον προηγμένο πολιτισμό μας, ο εξαναγκασμός των κρατουμένων σε εξαιρετικά ταπεινές εργασίες είναι δουλεία και τεχνικά παράνομος.
-	  Αυτός είναι ο λόγος για τον οποίο βάλαμε τον εκπαιδευόμενό μας να δημιουργήσει την έκδοση των 256 byte του εξαρτήματός.
+    Αυτός είναι ο λόγος για τον οποίο βάλαμε τον εκπαιδευόμενό μας να δημιουργήσει την έκδοση των 256 byte του εξαρτήματός.
 $19282543476901 1
 $13765566466116 ΜΗΝ ΑΠΟΘΗΚΕΥΣΕΤΕ
 $15908016538045 ΤΙΜΗ
@@ -975,8 +975,8 @@ $38481453712356 Edit memory
 === levels/Switch ===
 
 $19935950225431
-Create a component that switches an input byte on or off.
-If you get stuck, try [color=#e63e5b][url=byte_switch]this hint[/url][/color].
+Δημιουργήστε ένα εξάρτημα που ενεργοποιεί ή απενεργοποιεί ένα μπάιτ εισόδου.
+Αν κολλήσετε, δοκιμάστε αυτό το [color=#e63e5b][url=byte_switch]βοήθημα[/url][/color].
 $77731476872422 Your answer {your_answer}\nCorrect answer {correct_answer}
 
 
@@ -1018,7 +1018,7 @@ $19351773688761 Ticks left: {ticks_left}  Input: {input}
 $16810715868480 [center]Calculate modulo 4 of the input.[/center]
 $17375862136921
 The length of our week is 4 days. Our weekdays are named Zero's day, One's day, Two's day and Three's day. I hear some earthlings number their Two's day incorrectly? 
-	
+  
 It doesn't really surprise me.
 $65431688078892
 In this level you are given a number as input and you should return that number modulo 4 as a result.
@@ -1068,7 +1068,7 @@ $83829200305236 Expected output {expected}, got {got}
 
 $16888130664370
 If the result does not fit in 8 bits, turn the output carry [ON] (you can think of it as the 9th bit)
-	
+  
 Finally, there is an input carry as well. This is useful for chaining together byte adders to add larger numbers. You can think of this carry as adding either 0 [OFF] or 1 [ON].
 
 Use [color=#e63e5b][url=byte_adder]this hint[/url][/color] if you get stuck.
@@ -1140,7 +1140,7 @@ $18940654086036 We need you to help us find a good location for the Pirate's Plu
 $14706805272652 Hit ENTER to show water
 $12881972193444
 The landscape is 16 columns wide. Read the input 16 times to get the height of the landscape at each column from left to right.
-	
+  
 Then output the total volume that the landscape can carry as the answer.
 
 
@@ -1153,7 +1153,7 @@ $32835651830157 profile
 
 $14975070588197
 We all like the way Robot moves on the dance floor. That's why we want him to lead our dance team. 
-	
+  
 The only problem is to make him come up with original dance sequences. How do you make creativity out of deterministic logic you ask?
 
 The answer pseudo random number generators.
@@ -1338,7 +1338,7 @@ $10451578314373 The Console Screen lets you draw characters to a screen (see man
 
 $15232844525838
 Create the circuit that matches the table.
-	
+  
 [tip]Double click on a component to move it together with connected wires.[/tip]
 $15231724707514 I don't want to discourage you, but I think the elephant will win the competition. No offense but your brain is tiny in comparison.
 
@@ -1395,7 +1395,7 @@ $38557550573896 Level log
 
 $10794262854382
 Add if statements to your circuit. For the if statements, the 2 arguments are compared and if the condition is true, the counter is set to a jump address.
-	
+  
 The previous instructions had the 4 bytes represent:
 [code][color=#87a8c8]OPCODE, ARGUMENT_1, ARGUMENT_2, RESULT[/color][/code]
 
@@ -1471,6 +1471,7 @@ $18317133991943
  Inline SR latches like this one
  can be enabled for all levels
  through the options menu.
+
 $18165461234561 Delay lines are easy to understand and can be used to build any computer architecture. However, modern hardware no longer use these as a basis for memory.
 $15754153332116
 This level introduces the concept of latches. This mechanic is not used anywhere else in the game. However, this level is here for the sake of completeness.  
@@ -1524,12 +1525,12 @@ $79667526283284 Watched state {value} should point to the counter
 $13396354780304 ARGUMENT 1
 $14960344494328
 Sometimes it is useful to load a value directly from the program instead of from registers. This is called loading an immediate value. In the [color=#e49f44]LEG[/color] architecture we signal when we want to do this directly in the opcode. We can do that in the following way:
-	
+  
 When the 8th bit of the opcode is [ON], use argument 1 as an immediate value, instead of as a register address.
 When the 7th bit of the opcode is [ON], use argument 2 as an immediate value, instead of as a register address.
-	
-		[img]dialogue/leg_diagram.png[/img]
-		
+  
+    [img]dialogue/leg_diagram.png[/img]
+    
 $28668442247273 JUMP TO
 $10788301006338 Watched state {nr} should point to a register or custom component with a register inside
 $31564629398121 OPCODE
@@ -1567,7 +1568,7 @@ $15754373587500 Set the counter increment to 4
 $56024330661504 Watched state {watched_state} should point to a register or custom component with a register inside
 $19099471819164
 The following are the set up steps that needs to be done in order to complete this level:
-		
+    
 [b]1.[/b] Click the schematic icon ([b][i][/i][/b]) and create a new empty architecture.
 [b]2.[/b] Place a program block with 4 outputs.
 [b]3.[/b] Place a counter, set its increment to 4 and connect it to the program block.
@@ -1581,8 +1582,8 @@ The first byte describes the operation (called the [color=#e49f44]OPCODE[/color]
 Since many operations take 2 arguments (like ADD, OR etc), the second and third byte are for arguments.
 
 And since most operations return 1 result, the fourth byte is for the result.
-	
-	[img]dialogue/leg_diagram_1.png[/img]
+  
+  [img]dialogue/leg_diagram_1.png[/img]
 $11377431500625 Add 6 registers to the map
 $14051336765362 Finally it is time for you to start building the [color=#e49f44]LEG[/color] architecture!
 $38681417496680 ARGUMENT 1
@@ -1607,7 +1608,7 @@ The value of an argument or destination refers to one of these places:
 
 In the next level you will implement more [color=#e49f44]OPCODES[/color], which will require a different ALU than that of [color=#e49f44]OVERTURE[/color].
 $10922418807673 Argument 7 means read from input, but input is not enabled.
-$62258842382434 Watched state {value} should point to the counter
+$62258842382434 Watched state {counter} should point to the counter
 $84307766381146 OPCODE
 $20950946171790 JUMP TO
 $18769284297247 Create a new schematic and add a program with 4 byte output
