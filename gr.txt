@@ -1471,7 +1471,6 @@ $18317133991943
  Inline SR latches like this one
  can be enabled for all levels
  through the options menu.
-
 $18165461234561 Delay lines are easy to understand and can be used to build any computer architecture. However, modern hardware no longer use these as a basis for memory.
 $15754153332116
 This level introduces the concept of latches. This mechanic is not used anywhere else in the game. However, this level is here for the sake of completeness.  
