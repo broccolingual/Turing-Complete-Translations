@@ -157,7 +157,7 @@ $49363678936533 Run ticks faster (right click: change target speed)
 
 === misc/delay_overlay ===
 
-$85430022417382 Show delay overlay
+$85430022417382 Show delay
 
 
 === misc/options ===
