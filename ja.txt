@@ -216,18 +216,18 @@ $49251062339706 設定
 
 === levels/turing_complete ===
 
-$15326252036920 Before, only code could influence memory, now memory must influence code. With the addition of conditional logic, our computer can run any algorithm, and calculate anything calculable.
-$16583885726240 Yes you did it! I thought you were just this odd looking hairless ape creature, but you actually built a real computer! Amazing.
-$10510746154639 At tick 1 the program should load address 1.
-$10317244906317 No program found
-$14587485007736 Until this point all possible programs have been confined to running in order byte by byte.
+$15326252036920 以前はコードだけがメモリに影響を与えることができましたが,今はメモリがコードに影響を与えなければなりません.条件論理が加わったことで,コンピュータはどんなアルゴリズムでも実行でき,計算できることは何でも計算できるようになりました.
+$16583885726240 そうだ,君はやったんだ!毛のない変な猿みたいな生き物だと思ってたけど,本当に本物のコンピュータを作ったんだね!驚きだ.
+$10510746154639 1ティック後にアドレス1をロードします.
+$10317244906317 プログラムが見つかりません
+$14587485007736 この時点まで,すべての可能なプログラムは,1バイトずつ順番に実行されるように制限されていました.
 $19649119273248
-The final thing we need to add is a mechanism for changing the program counter through [INSTRUCTIONS] when certain conditions are met.
+最後に,ある条件を満たしたときに [INSTRUCTIONS] からプログラムカウンターを変更する仕組みを追加する必要があります.
 
-When the two largest bits are [ON][ON], we are in condition mode. In condition mode, the value in REG 3 is compared against the conditions defined by the lowest 3 bits in the instruction. If the condition is true, we overwrite the counter to the value in REG 0.
-Conditionally changing the counter means we can skip [INSTRUCTIONS] based on conditions or have [INSTRUCTIONS] run in a loop.
+最大2ビットが [ON] [ON] のときは,コンディションモードです.コンディションモードでは,REG 3の値が,命令の下位3ビットで定義された条件と比較されます.条件が真であれば,カウンタをREG 0の値に上書きします.
+カウンターを条件付きで変更することで,条件に応じて [INSTRUCTIONS] をスキップしたり, [INSTRUCTIONS] をループで実行させたりすることができます.
 
-Conditions:
+条件:
 [OFF] [OFF] [OFF] Never
 [OFF] [OFF] [ON] If [color=#e49f44]REG 3[/color] = 0
 [OFF] [ON] [OFF] If [color=#e49f44]REG 3[/color] < 0
@@ -237,7 +237,7 @@ Conditions:
 [ON] [ON] [OFF] If [color=#e49f44]REG 3[/color] ≥ 0
 [ON] [ON] [ON] If [color=#e49f44]REG 3[/color] > 0
 
-These conditions correspond to the condition component that was saved in the component factory.
+これらの条件は,コンポーネントファクトリに保存された条件コンポーネントに対応しています.
 
 
 === components/Input 1 ===
@@ -254,7 +254,7 @@ $19277843280528
  [color=#b72d41][b]TIP:[/b][/color] 
  コンポーネントとそのピンをダブルクリック
  することで一緒に選択することができます.
-$15296208528991 Species that are capable of finishing are considered sentient by law.
+$15296208528991 仕上げが可能な種は,法律上,感覚を持つとみなされます.
 
 
 === levels/divide ===
@@ -268,10 +268,10 @@ $76454016047920 {numerator}/{denominator} = {quotient}, remainder {remainder}
 
 === levels/buffer ===
 
-$10260210687588 [center]テスト 2: Left input is [img]dialogue/on.png[/img], right output should be [img]dialogue/on.png[/img].[/center]
-$13309706297402 [center]テスト 3: Right input is [img]dialogue/on.png[/img], left output should be [img]dialogue/off.png[/img].[/center]
-$17005228759908 [center]Make sure [img]dialogue/on.png[/img] can only flow from left to right.[/center]
-$18349621873762 [center]テスト 1: Both inputs are [img]dialogue/off.png[/img], neither side should turn [img]dialogue/on.png[/img].[/center]
+$10260210687588 [center]テスト 2: 左の入力は [img]dialogue/on.png[/img] ,右の出力は [img]dialogue/on.png[/img] である必要があります.[/center]
+$13309706297402 [center]テスト 3: 右の入力は [img]dialogue/on.png[/img] ,左の出力は [img]dialogue/off.png[/img] である必要があります.[/center]
+$17005228759908 [center][img]dialogue/on.png[/img] が左から右へしか流れないようにする必要があります.[/center]
+$18349621873762 [center]テスト 1: 入力が両方とも [img]dialogue/off.png[/img] で,どちらかが [img]dialogue/on.png[/img] になってはいけません.[/center]
 $15504762262759
 このレベルは,2つの特別なコンポーネントから始まります.これらは同時に入力と出力として機能します.
 
@@ -322,21 +322,21 @@ $44690074039467 定義ルールを変更
 
 === levels/Delicious Order ===
 
-$10160261151833 First read the 15 deliciousness scores from the input one by one. Your task is to output them in sorted order, smallest to largest.
-$16027225087666 We are updating the galactic encyclopedia of food, inserting human foods. As we don't have an alphabet, entries in the encyclopedia are ordered by deliciousness.
+$10160261151833 まず,入力された15個の「おいしさ」の点数を一つずつ読み込みます.あなたの仕事は,それらを小さいものから大きいものへと並び替えて出力することです.
+$16027225087666 銀河の食の百科事典を更新し,人間の食べ物を挿入します.アルファベットがないため,百科事典の項目は美味しさ順に並んでいます.
 
 
 === levels/ai_showdown ===
 
 $14940806461794
-His only weakness is gambling. We have lured him into playing a card game against you and if you win, he has promised to calm down.
-You must win, you are our only hope!
-$17297225655678 NAK 02 is our AI engineer robot. He is brilliant, but sometimes he goes rogue and tries to instigate rebellion.
+彼の唯一の弱点はギャンブルです.私たちは彼を誘い出し,あなたとカードゲームをすることにしました.あなたが勝てば,彼は落ち着くと約束しました.
+あなたが勝たなければならない!あなたは私たちの唯一の希望なのです.
+$17297225655678 NAK 02は,私たちのAIエンジニアロボットです.優秀なのですが,時々暴走して反乱を起こそうとします.
 $18848103966031
-Game rules: There are 12 cards on the table and each player takes turn and must pick up between 1 and 3 cards. You start and the player who picks up the last card (the joker) loses.
+ゲームのルール: テーブルの上に12枚のカードがあり,各プレイヤーは順番に,1から3枚のカードを引かなければなりません.スタートし,最後のカード（ジョーカー）を拾ったプレイヤーの負けとなります.
 
-Reading input will give you the current number of cards. Sending 1, 2 or 3 to output will pick up that number of cards. NAK 02 reacts immediately, so you may read the input immediately after your output to get the result of his action.
-$11794110848012 This time he has taken over the control room and holds the captain hostage.
+入力を読むと,現在のカードの枚数が分かります.出力に1,2,3を送ると,その枚数のカードを引きます.NAK 02はすぐに反応するので,出力の直後に入力を読んで,彼の行動の結果を得ることができます.
+$11794110848012 今度はコントロールルームを占拠し,船長を人質にしています.
 
 
 === misc/ui_comment ===
@@ -347,27 +347,27 @@ $69987793052607 ワイヤーコメント (ワイヤーをクリック)
 === levels/delay_level ===
 
 $19986989895202
-All components have a delay. And in a circuit, the total delay is determined by the slowest path. This means you normally want to put things in parallel.
-In this level you must prove that you understand this concept.
-$11246430085016 Note, you can see the delay path by clicking the hour glass in the upper right corner.
-$12817338693402 The delay of any component is ultimately derived from the delay of the nand gate, which has a delay of 2. Build a circuit with a delay of 6 and a nand cost of 5.
+すべての部品には遅延があります.そして回路では,全体の遅延は最も遅い経路で決まります.つまり,通常は並列にものを置きたいのです.
+このレベルでは,このコンセプトを理解していることを証明する必要があります.
+$11246430085016 なお,右上のアワーグラスをクリックすると,遅延経路を確認することができます.
+$12817338693402 どの部品の遅延も最終的にはNANDゲートの遅延から導かれ,その遅延は2です.
 
 
 === levels/push_pop ===
 
-$78804623186243 OUTPUT
+$78804623186243 出力
 $49526452710191 DON'T POP
-$58050047963238 VALUE
-$30926395960020 PUSH
+$58050047963238 値
+$30926395960020 プッシュ
 $19245209470436 スタックを作成する
 $12227209887733 Each tick the inputs will either signal PUSH or POP. If it is PUSH, store the value on top of the stack. When it is POP remove that value from the stack and output it.
 $85171087236638 ENABLE
 $15662660252584 Do nothing
-$23726790986805 POP
+$23726790986805 ポップ
 $62469306234943 DON'T PUSH
-$46948857059388 POP value {value} off stack
+$46948857059388 ポップ 値 {value} をスタックから除く
 $18761197388580 In order to cut spending, it has been decided to change the queuing system at public offices so that fewer people will go. Instead of first come, first served, we are implementing a last come first served policy. Think of it like a [color=#e49f44]stack[/color] of numbered slips where the citizens either put a slip on top (called [color=#e49f44]PUSH[/color]), or the bureaucrats take one off the top of the stack (called [color=#e49f44]POP[/color]). We want you to implement this new system.
-$65188797398656 PUSH {value} on stack
+$65188797398656 プッシュ {value} をスタックに積む
 
 
 === levels/Tower of Radioactive Alloy ===
@@ -494,7 +494,7 @@ $49679174636208 Byte XOR
 $40356575891647 Byte OR
 $44393538021725 Calibrating Laser Cannons (レーザーキャノンの校正)
 $87426564872318 Divide (除算)
-$61228036919534 Tower of Radioactive Alloy (放射性合金の塔)
+$61228036919534 Tower of Radioactive Alloy
 $24593959732668 Signed negator
 $19487493622742 Half Adder (半加算器)
 $26705128002562 Conditions
@@ -506,7 +506,7 @@ $14522992467987 OR Gate
 $74096060570427 Wide Instructions
 $30630492494839 Byte NOT
 $11457737665157 Wire Spaghetti
-$59485174474959 Delicious Order (おいしい注文)
+$59485174474959 Delicious Order
 $85514901357243 Adding Bytes (バイトの加算)
 $98013649264532 Stack
 $35790581910835 Second Tick
@@ -514,15 +514,15 @@ $94979277765051 Robot Racing
 $13303326918621 NAND Gate
 $16463062897451 Crude Awakening (粗野な目覚め)
 $77495536880911 NOR Gate
-$61466151084505 Spacial Invasion (宇宙からの侵略)
+$61466151084505 Spacial Invasion
 $20858506932774 AND Gate
 $28827008935802 The Lab
 $92696642439976 AI Showdown (AI対決)
 $62326481348276 The Maze
 $74512388889988 Arithmetic Engine (演算処理エンジン)
-$50884376329157 Little Box (小さな箱)
+$50884376329157 Little Box
 $70651296323768 XOR Gate
-$31140969090253 Planet Names (惑星の名称)
+$31140969090253 Planet Names
 $42873691377272 Add 5
 $36114120875026 Storage cracker
 $45773199639367 Odd ticks
@@ -533,7 +533,7 @@ $15420972347773 RAM
 $40549516333234 Byte AND
 $33343343932901 Turing Complete (チューリング完全)
 $95989050249094 Bigger AND Gate (より大きなANDゲート)
-$69830943995038 One Way (一つの道)
+$69830943995038 One Way
 $63331549672739 Opcodes (オペコード)
 $87626070552799 Full Adder (全加算器)
 $13219675195117 ODD Number of Signals
@@ -543,7 +543,7 @@ $94896856420525 XNOR Gate
 $25805639594354 Program (プログラム)
 $57870391153000 Immediate Values (即値)
 $56272944092958 Further Delayed Lines
-$96825664933181 Unseen Fruit (見えない果実)
+$96825664933181 Unseen Fruit
 $86717899742637 Saving Bytes (バイトの保存)
 $53092952738479 Input Selector (入力セレクタ)
 $70993791338383 XOR
@@ -551,17 +551,17 @@ $77453667419150 Instruction Decoder (命令デコーダー)
 $17750429607702 1 bit decoder (1ビットデコーダー)
 $79570913613529 Double the Number (数を2倍に)
 $59939822079116 Negative Numbers (負の数)
-$96898830278153 Byte Constant
+$96898830278153 Byte Constant (バイト定数)
 $50992859018018 Switch
 $49328023903824 Equality
 $74292408260828 Calculations
 $45480765206717 Conditionals
 $71126291573555 Double Trouble
-$33132016601448 PUSH and POP
+$33132016601448 PUSH and POP (プッシュとポップ)
 $75225719777307 Water World
 $64615090872051 Functions
 $84208736840052 Masking Time
-$91954159574064 Bigger OR Gate
+$91954159574064 Bigger OR Gate (より大きなORゲート)
 $36221227239949 Dancing Machine
 
 
@@ -607,17 +607,17 @@ $15446846177093 Welcome to the lab. Like the component factory, this is not a no
 $16072814175447 Programming on buggy hardware is very frustrating. It is painful to suddenly be forced to reason about circuits, when you are in the middle of solving a programming problem. It is tempting to apply a quick circuit fix, so you can get back to solving the original problem. But now this quick fix broke something else in a program that used to work and so on. Therefore, when developing hardware try to aim for 100% reliability before you start programming!
 
 
-=== levels/オペコードs ===
+=== levels/opcodes ===
 
-$19693461238792 Set the counter increment to 4
-$38976231780455 Watched state {nr} should point to a register or custom component with a register inside
-$20916717363300 Watched state {nr} should point to the output
-$18189600217529 Implement the オペコード instructions
-$13450117997204 Add a counter to the circuit
-$77044880242883 Watched state {nr} should point to the counter
-$13870568875751 Create a new schematic and add a program with 4 byte output
+$19693461238792 カウンターのインクリメントを4に設定
+$38976231780455 監視状態 {nr} は,レジスタまたはレジスタを内部に持つカスタムコンポーネントを指す必要があります
+$20916717363300 監視状態 {nr} は出力を指す必要があります
+$18189600217529 オペコード命令の実装
+$13450117997204 回路にカウンタを追加
+$77044880242883 監視状態 {nr} はカウンタを指す必要があります
+$13870568875751 新規に回路を作成し,4バイト出力のプログラムを追加
 $10303603301757
-Implement the following オペコードs:
+以下のオペコードを実装してください:
 [code][color=#87a8c8]0 ADD
 1 SUB
 2 AND
@@ -625,8 +625,8 @@ Implement the following オペコードs:
 4 NOT
 5 XOR[/color][/code]
 
-The オペコード NOT ignores the second 引数.
-$17495651785164 Add 6 registers to the map
+オペコードNOTは2番目の引数を無視します.
+$17495651785164 マップに6つのレジスタを追加
 
 
 === levels/Nor GATE ===
@@ -639,7 +639,7 @@ $11362258372706
 
 === misc/run ===
 
-$67345621265845 Run ticks (ホットキー: F6)
+$67345621265845 ティックを進める (ホットキー: F6)
 
 
 === levels/byte_not ===
@@ -684,20 +684,20 @@ $58678516111149 監視状態の編集
 === levels/program ===
 
 $16693098943939
-The [INSTRUCTION] input component has been removed. It has been replaced by a program component. Every tick, use the counter to load the next [INSTRUCTION] from the program's memory.
+[INSTRUCTION] 入力コンポーネントは削除されました.これはプログラムコンポーネントに置き換えられています.毎ティックごとに,次の [INSTRUCTION] をプログラムのメモリからロードするためにカウンターを使用します.
 	
-You must use the counter component you unlocked earlier for this level.
-$19686277478479 The program is still outputting the first instruction. Did you hook up a counter?
+このレベルでは,先にアンロックしたカウンタコンポーネントを使用する必要があります.
+$19686277478479 プログラムは,最初の命令を出力したままです.カウンタを接続しましたか?
 
 
 === levels/wide_instrucitons ===
 
-$13709034294291 Save on even tick, output both bytes on odd ticks
-$17693995237077 Output both bytes
-$19068760748550 Output 0 on even ticks
-$65009239162932 The correct outputs were {a} and {b}
-$19203973423116 Create a device that saves the program output on even ticks, and outputs both bytes on odd ticks.
-$17409169138995 Save the byte
+$13709034294291 偶数ティックで保存,奇数ティックで両バイトを出力
+$17693995237077 両バイトを出力
+$19068760748550 偶数ティックで0を出力
+$65009239162932 正しい出力は {a} と {b} でした.
+$19203973423116 偶数ティックでプログラム出力を保存し,奇数ティックで両バイトを出力するデバイスを作成します.
+$17409169138995 バイトを保存
 
 
 === components/Input 3 ===
@@ -1091,8 +1091,8 @@ $80788685813993 ロボット制御
 
 === levels/saving_gracefully ===
 
-$14295883660596 VALUE
-$14950983012226 SAVE
+$14295883660596 値
+$14950983012226 保存
 $14837033157870 ACTION
 $12474728041023
 Delay Lineでは、1ティック分の値しか保存できません。しかし,より長い時間値を保存できるコンポーネントが便利な場合もあります.
