@@ -41,7 +41,7 @@ $12639868461113 終了
 
 === misc/button_next ===
 
-$50213503063080 次のティック (ホットキー: F5)
+$50213503063080 次のTick (ホットキー: F5)
 
 
 === levels/saving_bytes ===
@@ -152,18 +152,18 @@ $59658696292688 ポップ {value} をスタックから除く
 $18510295620397 偶数のTickで[OFF]、奇数のTickで[ON]を出力する.
 $16987046679863 前のレベルでは,循環的な依存関係を実現しない方法を学びました.今回は、1つの例外を学びます.
 $16037516781370
-ゲーム内の四角いピンは,同じティック内の出力に影響を与えることはありません.したがって,循環的な依存関係が発生することはありません.
+ゲーム内の四角いピンは,同じTick内の出力に影響を与えることはありません.したがって,循環的な依存関係が発生することはありません.
 	
 	[img]dialogue/delay_buffer.png[/img]
 $17588119878416
-Delay Lineはそれ自身の入力に依存することが許されています.これは,その入力が次のティックまで回路の残りの部分に影響を与えないためです.
+Delay Lineはそれ自身の入力に依存することが許されています.これは,その入力が次のTickまで回路の残りの部分に影響を与えないためです.
 	
 [img]dialogue/delay_buffer.png[/img]
 
 
 === main_scripts/leg_level ===
 
-$70383685548547 REG 
+$70383685548547 REG {nr}
 $53021804895845 ANDi
 $69956969985790 ORi
 $85913831661289 IF_LESS
@@ -201,12 +201,12 @@ $21618236951146 解決策を見る
 
 === misc/run_fast ===
 
-$49363678936533 ティックの刻みを早くする (右クリック: ターゲットスピードの変更)
+$49363678936533 Tickの刻みを早くする (右クリック: ターゲットスピードの変更)
 
 
 === misc/delay_overlay ===
 
-$85430022417382 ディレイオーバーレイの表示
+$85430022417382 遅延の表示
 
 
 === misc/options ===
@@ -218,7 +218,7 @@ $49251062339706 設定
 
 $15326252036920 以前はコードだけがメモリに影響を与えることができましたが,今はメモリがコードに影響を与えなければなりません.条件論理が加わったことで,コンピュータはどんなアルゴリズムでも実行でき,計算できることは何でも計算できるようになりました.
 $16583885726240 そうだ,君はやったんだ!毛のない変な猿みたいな生き物だと思ってたけど,本当に本物のコンピュータを作ったんだね!驚きだ.
-$10510746154639 1ティック後にアドレス1をロードします.
+$10510746154639 1Tick後にアドレス1をロードします.
 $10317244906317 プログラムが見つかりません
 $14587485007736 この時点まで,すべての可能なプログラムは,1バイトずつ順番に実行されるように制限されていました.
 $19649119273248
@@ -350,7 +350,7 @@ $19986989895202
 すべての部品には遅延があります.そして回路では,全体の遅延は最も遅い経路で決まります.つまり,通常は並列にものを置きたいのです.
 このレベルでは,このコンセプトを理解していることを証明する必要があります.
 $11246430085016 なお,右上のアワーグラスをクリックすると,遅延経路を確認することができます.
-$12817338693402 どの部品の遅延も最終的にはNANDゲートの遅延から導かれ,その遅延は2です.
+$12817338693402 どの部品の遅延も最終的にはNANDゲートの遅延から導かれ,その遅延は2です.5のNANDコストで6の遅延を生じる回路を作成してください.
 
 
 === levels/push_pop ===
@@ -434,10 +434,10 @@ $40943344093513 入力
 
 === levels/signed_negator ===
 
-$10866019808027 For this level you probably want to turn on signed numbers, so the highest bit shows as -128. Click "+255" located in the top panel.
+$10866019808027 このレベルでは,符号付き数値を利用したいので,最上位ビットは-128と表示されます.トップパネルにある「+255」をクリックすることで表示を変更することができます.
 $10400106910274
-Taking the input as signed (where the 8th bit is -128), make a component that takes a number and negates it.
-例 4 negated would become -4. -9 negated would become 9.
+入力を符号付き (8番目のビットは-128) として,数値を取り,正負を反転するコンポーネントを作成します.
+例えば,4を正負を反転すると-4になります.-9の場合は9になります.
 
 
 === levels/byte_and ===
@@ -639,7 +639,7 @@ $11362258372706
 
 === misc/run ===
 
-$67345621265845 ティックを進める (ホットキー: F6)
+$67345621265845 Tickを進める (ホットキー: F6)
 
 
 === levels/byte_not ===
@@ -665,15 +665,15 @@ $11183892008673 You win this level when you output the correct passcode, no outp
 === levels/constants ===
 
 $17098439090371
-We need a way to directly move numbers from our program into registers. For this we use the immediate mode (when the two highest bits are [OFF][OFF]).
+プログラムからレジスタに直接数値を移動させる方法が必要です.そのためには,即値モード（上位2ビットが[OFF][OFF]）を使います.
 
-When in immediate mode the whole byte is interpreted as a number that we [SAVE] into REG 0. This means we can 
-[SAVE] any value between 0 and 63.
+即値モードでは,バイト全体を数値として解釈し、レジスタ 0に[SAVE]します.つまり,0から63までの任意の値を
+[SAVE]することができることを意味します.
 
 
 === misc/circuit_draw ===
 
-$59836059268386 新しい回路 (ホットキー: Alt & drag)
+$59836059268386 新しい回路 (ホットキー: Alt & ドラッグ)
 
 
 === misc/watchable_state ===
@@ -684,7 +684,7 @@ $58678516111149 監視状態の編集
 === levels/program ===
 
 $16693098943939
-[INSTRUCTION] 入力コンポーネントは削除されました.これはプログラムコンポーネントに置き換えられています.毎ティックごとに,次の [INSTRUCTION] をプログラムのメモリからロードするためにカウンターを使用します.
+[INSTRUCTION] 入力コンポーネントは削除されました.これはプログラムコンポーネントに置き換えられています.毎Tickごとに,次の [INSTRUCTION] をプログラムのメモリからロードするためにカウンターを使用します.
 	
 このレベルでは,先にアンロックしたカウンタコンポーネントを使用する必要があります.
 $19686277478479 プログラムは,最初の命令を出力したままです.カウンタを接続しましたか?
@@ -692,11 +692,11 @@ $19686277478479 プログラムは,最初の命令を出力したままです.�
 
 === levels/wide_instrucitons ===
 
-$13709034294291 偶数ティックで保存,奇数ティックで両バイトを出力
+$13709034294291 偶数Tickで保存,奇数Tickで両バイトを出力
 $17693995237077 両バイトを出力
-$19068760748550 偶数ティックで0を出力
+$19068760748550 偶数Tickで0を出力
 $65009239162932 正しい出力は {a} と {b} でした.
-$19203973423116 偶数ティックでプログラム出力を保存し,奇数ティックで両バイトを出力するデバイスを作成します.
+$19203973423116 偶数Tickでプログラム出力を保存し,奇数Tickで両バイトを出力するデバイスを作成します.
 $17409169138995 バイトを保存
 
 
@@ -764,7 +764,7 @@ You are given 2 inputs, a bit and a byte.
 
 The bit input should toggle between counting and overwriting with the value of the byte.
 $68874699768861 {value}で上書き
-$17883663978196 OVERWRITE
+$17883663978196 Overwrite
 $19407121413983 ACTION
 $10555159894041
 Counting is so fundamental even insects do it. From counting, species can evolve to compare and do arithmetic. And before you know it, you have apes building computers.
@@ -791,12 +791,12 @@ $10604720087324 [b]Instruction[/b]\n表と一致する回路を作成すする.\
 $19798729463813
 NANDゲートを使って,NOTゲートを作成する
 
-Using: [b]NANDゲート[/b]
+利用するもの: [b]NANDゲート[/b]
 [code]入力 1: [OFF][ON][OFF][ON]
 入力 2: [OFF][OFF][ON][ON]
 出力:  [ON][ON][ON][OFF][/code]
 
-Build: [b]NOTゲート[/b]
+作成するもの: [b]NOTゲート[/b]
 [code]入力 1: [ON][OFF]
 出力:  [OFF][ON][/code]
 
@@ -819,13 +819,13 @@ $16216408139965
 [OFF] [ON] [OFF] [ON] [ON] [OFF] [ON] [OFF] would become:
 [ON] [OFF] [ON] [ON] [OFF] [ON] [OFF] [OFF]
 
-Shifting by 3: [color=#e49f44]90 shl 3[/color]
+3つシフトする: [color=#e49f44]90 shl 3[/color]
 [OFF] [ON] [OFF] [ON] [ON] [OFF] [ON] [OFF] would become:
 [ON] [ON] [OFF] [ON] [OFF] [OFF] [OFF] [OFF]
 
 
-$18137790657923 In addition to giving you a shift left component, we also had the intern create a shift right component. All he had to do was to create the mirror version of this schematic.
-$18518173140953 I recommend that you add [color=#e49f44]shift left[/color] and [color=#e49f44]shift right[/color] to your hardware for future levels.
+$18137790657923 左シフトのコンポーネントを提供するだけでなく,右シフトのコンポーネントもインターン生に作ってもらいました.彼らがやったことはこの回路図のミラー版を作成することのみです.
+$18518173140953 今後のレベルのためにハードウェアに [color=#e49f44]左シフト[/color] と [color=#e49f44]右シフト[/color] を追加することをお勧めします.
 
 
 === misc/factory ===
@@ -859,13 +859,13 @@ These are the bit patterns for each [color=#c54d5e]source[/color] and [color=#e4
 [ON] [ON] [OFF]  出力
 [ON] [ON] [ON]  未使用
 
-To get a more intuitive understanding of the requirements, click the [INSTRUCTION] icon in the upper left corner.
+より直感的に要件を理解するためには,左上の[INSTRUCTION]アイコンをクリックします.
 $15888345020710
-In this level you need to create a circuit which can copy from a [color=#c54d5e]source[/color] to a [color=#e49f44]destination[/color]. 
+このレベルでは, [color=#c54d5e]source[/color] から [color=#e49f44]destination[/color] へコピーできる回路を作成する必要があります. 
 
-The instruction byte in this level determines the [color=#c54d5e]source[/color] and the [color=#e49f44]destination[/color]. 
+このレベルの命令バイトは, [color=#c54d5e]source[/color] と [color=#e49f44]destination[/color] を決定します. 
 
-Bits 1, 2 and 3 give the [color=#e49f44]destination[/color]. Bits 4, 5 and 6 give the [color=#c54d5e]source[/color].
+ビット1,2,3は [color=#e49f44]destination[/color] を意味します. 4,5,6ビットは [color=#c54d5e]source[/color] を指定します.
 $14823499195861 Open "Instructions" in the top bar
 $14108238519744 Time to create your master project, implementing the [color=#e49f44]OVERTURE[/color] computer architecture. This will be an actual Turing complete machine, a true computer in every way!
 $14411286553593 Finally, the input and output components now have an additional pin. Set that pin [ON] when you want to read from input, or copy to output.
@@ -984,16 +984,16 @@ $38481453712356 メモリの編集
 === levels/Switch ===
 
 $19935950225431
-Create a component that switches an input byte on or off.
-If you get stuck, try [color=#e63e5b][url=byte_switch]this hint[/url][/color].
-$77731476872422 Your answer {your_answer}\nCorrect answer {correct_answer}
+入力バイトのON/OFFを切り替えるコンポーネントを作成する.
+もし行き詰まったら, [color=#e63e5b][url=byte_switch]このヒント[/url][/color] を試してみてください.
+$77731476872422 あなたの答え {your_answer}\n正しい答え {correct_answer}
 
 
 === levels/Further Delayed Lines ===
 
-$17366913897135 Construct a circuit that outputs the same as the input, just delayed by 2 ticks.
+$17366913897135 入力と同じ出力を,2Tickだけ遅らせて出力する回路を作成する.
 $17497477227061
-In the last level you unlocked the Delay Line. It outputs its own input, just 1 tick late.
+前のレベルでは,Delay Lineをアンロックしました.これは自分の入力を1Tickだけ遅らせて出力します.
 
 [img]dialogue/delay_buffer.png[/img]
 
@@ -1063,25 +1063,25 @@ $86870364449392 入力
 
 === main_scripts/overture_level ===
 
-$27259865408750 Next tick the counter value will be {next}, it should be {expected}
-$95030012922256 Input should only be enabled when reading from input
-$12873109232054 Expected output {expected}, got {got}
-$47188699762650 Output not enabled
-$28026304798371 Output should only be enabled when outputting
-$85260864781281 Input not enabled
-$96569633331621 Load {value} into REG 0
-$83829200305236 Expected output {expected}, got {got}
+$27259865408750 次のTickのカウンタの値が {next} の場合, {expected} である必要があります
+$95030012922256 入力は,入力から読み出すときだけ有効にする必要があります
+$12873109232054 期待される出力 {expected},得られた出力 {got}
+$47188699762650 出力が有効になっていません
+$28026304798371 出力は,出力するときだけ有効にする必要があります
+$85260864781281 入力が有効になっていません
+$96569633331621 {value} をレジスタ0にロードする
+$83829200305236 期待される出力 {expected},得られた出力 {got}
 
 
 === levels/byte_adder ===
 
 $16888130664370
-If the result does not fit in 8 bits, turn the output carry [ON] (you can think of it as the 9th bit)
+結果が8ビットに収まらない場合は,出力キャリーを［ON］にする（9ビット目と考えてもよい）
 	
-Finally, there is an input carry as well. This is useful for chaining together byte adders to add larger numbers. You can think of this carry as adding either 0 [OFF] or 1 [ON].
+最後に,入力キャリーもあります.これは,バイト加算器を連結して,より大きな数を加算するのに便利です.このキャリーは、0[OFF]または1[ON]のどちらかを加算すると考えることができます.
 
-Use [color=#e63e5b][url=byte_adder]this hint[/url][/color] if you get stuck.
-$18732877690173 Add the two input bytes. Each output bit in the output should be a result of the addition of the corresponding bits from the inputs, and potentially a carry.
+行き詰まったら [color=#e63e5b][url=byte_adder]このヒント[/url][/color] を使ってください.
+$18732877690173 2つの入力バイトを加算する.出力の各ビットは,入力からの対応するビットの加算結果であるべきで,キャリーも含まれます.
 
 
 === misc/ide_control_link ===
@@ -1095,7 +1095,7 @@ $14295883660596 VALUE
 $14950983012226 SAVE
 $14837033157870 ACTION
 $12474728041023
-Delay Lineでは、1ティック分の値しか保存できません。しかし,より長い時間値を保存できるコンポーネントが便利な場合もあります.
+Delay Lineでは、1Tick分の値しか保存できません。しかし,より長い時間値を保存できるコンポーネントが便利な場合もあります.
 
 私たちはそんなコンポーネントを作ってほしいのです.
 $13045361823397 DON'T SAVE
@@ -1115,7 +1115,7 @@ $11023157447564
 2×π×r
 
 r は入力です.
-π は 3 として近似するものとします.
+π は 3 として近似します.
 
 計算が完了したら,答えを出力してください.
 $15260627694444 そのレーザーを校正するために,高度な計算式で小惑星の円周を計算してほしいのです.
@@ -1167,16 +1167,16 @@ $14975070588197
 
 答えは擬似乱数発生器です.
 $15955150920362
-In this level you only get one input, we call this the initial seed. The seed is put through the following steps to produce a pseudo random number.
+このレベルでは,入力は1つだけで、これを初期シードと呼びます。このシードを用いて次のような手順で疑似乱数を生成します.
 
-In the algorithm below, "shl 1" means shift left once, "shl 2" means shift left twice and "shr 1" means shift right once.
+下記のアルゴリズムにおいて,"shl 1 "は左シフト1回,"shl 2 "は左シフト2回,"shr 1 "は右シフト1回を意味します.
 
 [b]8 bit xorshift RNG:[/b][code][color=#87a8c8]
 temp1     = seed  xor (seed  shr 1)
 temp2     = temp1 xor (temp1 shl 1)
 next_seed = temp2 xor (temp2 shr 2)
 [/color][/code]
-Next output next_seed mod 4, to move the robot. Finally use next_seed (before mod 4) as the seed to get the next number in the dance sequence and repeat.
+次にnext_seed mod 4を出力し,ロボットを動かします.最後にnext_seed (mod 4の前)をダンスシーケンスの次の番号を得るためのシードとして使用し,これを繰り返します。
 
 (初期シードは決して0にならないことに注意してください)
 
@@ -1196,7 +1196,7 @@ $17770257567603 だから,その間は少し船の手伝いをしてもらうこ
 $19446152707984 プログラムコンポーネント上のメモリ編集アイコンをクリックし,コンピュータのプログラミングを開始します.あなたのコンピュータは入力を読み取り,それに5を加えて再び出力するはずです (オーバーフローの心配は不要です).
 $80639633676917 入力:
 $12078933051174 でも,まだプログラミングの仕方が分からないので,その辺はまだまだですね.
-$11074247151096 Notice that the immutable red register components have been replaced with a custom component with identical functionality.
+$11074247151096 イミュータブルレジスターコンポーネントが,同じ機能を持つカスタムコンポーネントに置き換えられていることに注意してください.
 $18134632592542 あなたはコンピュータを作り上げましたが,競争に勝つためには,迷路を完成させなければなりません.
 
 
@@ -1336,7 +1336,7 @@ $0
 === levels/sandbox ===
 
 $17054292175058 サンドボックスへようこそ、ここで自由にお遊びください. 64ビットワイヤといくつかのIOコンポーネントをお渡ししました.
-$10731996208080 プログラム、カウンタ、レジスタ、RAMの64ビット版もあります. ただし,64ビットのRAMはロードに1ティックかかります.
+$10731996208080 プログラム、カウンタ、レジスタ、RAMの64ビット版もあります. ただし,64ビットのRAMはロードに1Tickかかります.
 $19454393978813 キーボードはコンピュータをあなたのキーボードを利用して,直接操作することができます.
 $14434122873489 波形ジェネレーターで音を作ることができます.これをあげると,たぶん後悔しますよ.
 $18405942066048 時計は,現在のUNIXの時刻をマイクロ秒単位で表示します.
@@ -1432,9 +1432,9 @@ $12920514303805 6つのレジスタを追加する
 $14309211963063 新たな設計図を追加し,4バイト出力のプログラムを追加する
 $16826220977157
  [color=#b72d41][b]TIP:[/b][/color] 
- COPY is just ADD with the second
- 引数 being 0
-$14690660047411 Implement the condition opcode
+ COPYは2番目の引数が
+ 0の単なるADDです
+$14690660047411 条件オペコードの実装
 $30132649789584 監視状態 {number} は出力を指す必要があります
 $18994998239232 I will show you some upgrades you can make, on the path to implementing function calls. But from here on the details are up to you, I wont tell you what オペコードs to use and so on.
 $12034111753799 監視状態 {number} はカウンタを指す必要があります
@@ -1556,8 +1556,8 @@ $10141611261952 [center]即値の実装[/center]
 
 === levels/xor_gate ===
 
-$14093358515620 This is also known as an XOR gate. This level is difficult, so don't be discouraged if you don't get the answer right away.
-$19182751521677 Last level you built a circuit that was [ON] when we were at the second tick. This level build a circuit that is [ON] when we are at the second OR third tick.
+$14093358515620 これはXORゲートとも呼ばれます.このレベルは難しいので,すぐに答えが分からなくても落ち込まないでください.
+$19182751521677 前のレベルでは,2つ目のTickになったときに[ON]になる回路を作りました.このレベルでは,2番目または3番目のティックにあるときに[ON]になる回路を構築してください.
 
 
 === levels/xor ===
@@ -1579,7 +1579,7 @@ $20104629254326 引数 2
 $15754373587500 カウンタのインクリメントを4に設定
 $56024330661504 監視状態 {watched_state} はレジスタもしくはレジスタを内部に含むカスタムコンポーネントを指す必要があります.
 $19099471819164
-The following are the set up steps that needs to be done in order to complete this level:
+このレベルをクリアするために必要なセットアップの手順は以下の通りです:
 		
 [b]1.[/b] Click the schematic icon ([b][i][/i][/b]) and create a new empty architecture.
 [b]2.[/b] 4出力のプログラムブロックを配置する.
@@ -1588,26 +1588,26 @@ The following are the set up steps that needs to be done in order to complete th
 [b]5.[/b] プログラムコンポーネントの "監視状態の編集" をクリックし,0から5をレジスタに接続する.6はカウンタ,7は出力に接続する.
 
 $18860645759682
-The [color=#e49f44]LEG[/color] architecture is a computer that takes 4 bytes per tick from the program. 
+[color=#e49f44]LEG[/color] アーキテクチャは,プログラムから1Tickあたり4バイトを受け取るコンピュータです. 
 
-The first byte describes the operation (called the [color=#e49f44]オペコード[/color]).
+1バイト目は操作内容 ([color=#e49f44]オペコード[/color] と呼ぶ) を記述します.
 
-Since many operations take 2 引数s (like ADD, OR etc), the second and third byte are for 引数s.
+多くの演算は2つの引数を取るので（ADD、ORなど）,2バイト目と3バイト目は引数用です.
 
-And since most operations return 1 result, the fourth byte is for the result.
+そして,ほとんどの演算は1つの結果を返すので,4バイト目は結果用となります.
 	
 	[img]dialogue/leg_diagram_1.png[/img]
 $11377431500625 マップに6つのレジスタを追加
-$14051336765362 Finally it is time for you to start building the [color=#e49f44]LEG[/color] architecture!
+$14051336765362 いよいよ [color=#e49f44]LEG[/color] アーキテクチャの構築を開始する時が来ました!
 $38681417496680 引数 1
-$13268807052125 (You might be adding 7+7, but here 7 means load from input and the input has value 8)
-$30006055126224 Watched state {output} should point to the output
-$19066122929275 [center]Set up registers and implement the ADD オペコード[/center]
+$13268807052125 (7+7を足しているかもしれませんが,ここでは7は入力からの読み込みを意味し,入力は8です)
+$30006055126224 監視状態 {output} は出力を指す必要があります
+$19066122929275 [center]レジスタのセットアップとADDオペコードの実装[/center]
 $60997201855346 RESULT ADDRESS
 $10912834168905
-Finally, in this level the [color=#e49f44]オペコード[/color] is always 0. This means we ADD 引数 1 and 引数 2 and save the result to the destination.
+最後に,このレベルでは [color=#e49f44]オペコード[/color] は常に0です.つまり,引数1と引数2 を加算し,その結果をdestinationに保存するのです.
 
-The value of an 引数 or destination refers to one of these places:
+引数またはdestinationの値は、以下の場所のいずれかを指します:
 [code]
 [color=#e49f44]0[/color]: レジスタ 0
 [color=#e49f44]1[/color]: レジスタ 1
@@ -1619,7 +1619,7 @@ The value of an 引数 or destination refers to one of these places:
 [color=#e49f44]7[/color]: 入力/出力
 [/code]
 
-In the next level you will implement more [color=#e49f44]オペコード[/color], which will require a different ALU than that of [color=#e49f44]OVERTURE[/color].
+次のレベルでは,より多くの [color=#e49f44]オペコード[/color] を実装することになり, [color=#e49f44]OVERTURE[/color] とは異なるALUを必要とします.
 
 
 $10922418807673 引数7は入力からの読み込みを意味しますが,入力は有効ではありません.
@@ -1631,11 +1631,11 @@ $18769284297247 新規に回路を作成し,4バイト出力のプログラム�
 
 === levels/bit_adder ===
 
-$13109388951000 We measure the universe with numbers. So your machine must learn to count.
+$13109388951000 私たちは宇宙を数字で測っています.だから,あなたのマシンは数を数えることを学ばなければなりません.
 $16564356062672
-Treat the inputs as [ZERO] or [ONE] depending if they are [OFF] or [ON]. Add them together in binary, such that the result is either [ZERO] or [ONE].
+入力が[OFF]か[ON]かによって[ZERO]か[ONE]として扱います.2進数で加算し,結果が[ZERO]または[ONE]になるようにします.
 
-As with normal addition, if the result cannot be described with one digit, set the carry to [ONE].
+通常の加算と同様,結果が1桁で表現できない場合は,キャリーを[ONE]に設定します.
 
 
 === components/Output 3 ===
@@ -1662,9 +1662,9 @@ $14788981567936 3入力のANDゲートを作成する.
 
 $74261206899285 Your result {input} × 2 = {your_answer}\nCorrect result {input} × 2 = {correct_answer}
 $19766257822639
-The input and output of this level are using bytes instead of bits. One of the two new components you are given takes a byte and splits it into bits and the other does the opposite.
+このレベルの入出力は,ビットではなくバイトを使っています.与えられた2つの新しいコンポーネントのうちの1つはバイトを受け取ってビットに分割し,もう1つはその逆を行います.
 
-Using those components, figure out how to double the input number (up to 127).
+それらの部品を使って,入力された数値を2倍にする方法を考えよう（最大値127）.
 
 
 === levels/counting_signals ===
