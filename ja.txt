@@ -355,15 +355,15 @@ $12817338693402 どの部品の遅延も最終的にはNANDゲートの遅延か
 
 === levels/push_pop ===
 
-$78804623186243 出力
+$78804623186243 OUTPUT
 $49526452710191 DON'T POP
-$58050047963238 値
-$30926395960020 プッシュ
+$58050047963238 VALUE
+$30926395960020 PUSH
 $19245209470436 スタックを作成する
 $12227209887733 Each tick the inputs will either signal PUSH or POP. If it is PUSH, store the value on top of the stack. When it is POP remove that value from the stack and output it.
 $85171087236638 ENABLE
 $15662660252584 Do nothing
-$23726790986805 ポップ
+$23726790986805 POP
 $62469306234943 DON'T PUSH
 $46948857059388 ポップ 値 {value} をスタックから除く
 $18761197388580 In order to cut spending, it has been decided to change the queuing system at public offices so that fewer people will go. Instead of first come, first served, we are implementing a last come first served policy. Think of it like a [color=#e49f44]stack[/color] of numbered slips where the citizens either put a slip on top (called [color=#e49f44]PUSH[/color]), or the bureaucrats take one off the top of the stack (called [color=#e49f44]POP[/color]). We want you to implement this new system.
@@ -454,7 +454,7 @@ $91515053618360 マニュアル
 
 $11467644007149 カウンタ {nr}
 $10533010562232 DELAY SCORE: {delay}
-$87591753278764 Reg {nr}
+$87591753278764 レジスタ {nr}
 $29169064199243 出力 {nr}
 $13327741293223 入力 {nr}
 $32508339206292 NAND SCORE: {nand}
@@ -725,8 +725,8 @@ $14894954428144
 The inputs in this level represent the characters in a list of planet names, encoded as ASCII (see the manual). Each name is separated by a space which has the numeric value 32. Replace the first letter in each word with its uppercase counterpart.
 (The possible input characters are a to z lowercase, space, apostrophe and dash)
 $13301617098810 We had the intern type out planet names in human script. Unfortunately he forgot to capitalize each name.
-$11647445869837 Input: 
-$11201813578269 Output: 
+$11647445869837 入力: 
+$11201813578269 出力: 
 
 
 === levels/byte_equal ===
@@ -764,7 +764,7 @@ You are given 2 inputs, a bit and a byte.
 
 The bit input should toggle between counting and overwriting with the value of the byte.
 $68874699768861 {value}で上書き
-$17883663978196 上書き
+$17883663978196 OVERWRITE
 $19407121413983 ACTION
 $10555159894041
 Counting is so fundamental even insects do it. From counting, species can evolve to compare and do arithmetic. And before you know it, you have apes building computers.
@@ -791,14 +791,14 @@ $10604720087324 [b]Instruction[/b]\n表と一致する回路を作成すする.\
 $19798729463813
 NANDゲートを使って,NOTゲートを作成する
 
-Using: [b]NAND gate[/b]
-[code]INPUT 1: [OFF][ON][OFF][ON]
-INPUT 2: [OFF][OFF][ON][ON]
-OUTPUT:  [ON][ON][ON][OFF][/code]
+Using: [b]NANDゲート[/b]
+[code]入力 1: [OFF][ON][OFF][ON]
+入力 2: [OFF][OFF][ON][ON]
+出力:  [ON][ON][ON][OFF][/code]
 
-Build: [b]NOT gate[/b]
-[code]INPUT 1: [ON][OFF]
-OUTPUT:  [OFF][ON][/code]
+Build: [b]NOTゲート[/b]
+[code]入力 1: [ON][OFF]
+出力:  [OFF][ON][/code]
 
 $18442122157391 [b]Instruction[/b]\n背景をクリックして,コンポーネントの選択を解除する
 $12880883686501 [b]Instruction[/b]\n画面右上のNANDコンポーネントをクリックし、配置する
@@ -840,24 +840,24 @@ $10211777161405
 These are the bit patterns for each [color=#c54d5e]source[/color] and [color=#e49f44]destination[/color].
 
 [color=#c54d5e]Source[/color]:
-[OFF] [OFF] [OFF]  REG 0 
-[OFF] [OFF] [ON]  REG 1 
-[OFF] [ON] [OFF]  REG 2 
-[OFF] [ON] [ON]  REG 3 
-[ON] [OFF] [OFF]  REG 4 
-[ON] [OFF] [ON]  REG 5 
-[ON] [ON] [OFF]  INPUT 
-[ON] [ON] [ON]  UNUSED
+[OFF] [OFF] [OFF]  レジスタ 0 
+[OFF] [OFF] [ON]  レジスタ 1 
+[OFF] [ON] [OFF]  レジスタ 2 
+[OFF] [ON] [ON]  レジスタ 3 
+[ON] [OFF] [OFF]  レジスタ 4 
+[ON] [OFF] [ON]  レジスタ 5 
+[ON] [ON] [OFF]  入力
+[ON] [ON] [ON]  未使用
 
 [color=#e49f44]Destination[/color]:
-[OFF] [OFF] [OFF]  REG 0 
-[OFF] [OFF] [ON]  REG 1 
-[OFF] [ON] [OFF]  REG 2 
-[OFF] [ON] [ON]  REG 3 
-[ON] [OFF] [OFF]  REG 4 
-[ON] [OFF] [ON]  REG 5 
-[ON] [ON] [OFF]  OUTPUT
-[ON] [ON] [ON]  UNUSED
+[OFF] [OFF] [OFF]  レジスタ 0 
+[OFF] [OFF] [ON]  レジスタ 1 
+[OFF] [ON] [OFF]  レジスタ 2 
+[OFF] [ON] [ON]  レジスタ 3 
+[ON] [OFF] [OFF]  レジスタ 4 
+[ON] [OFF] [ON]  レジスタ 5 
+[ON] [ON] [OFF]  出力
+[ON] [ON] [ON]  未使用
 
 To get a more intuitive understanding of the requirements, click the [INSTRUCTION] icon in the upper left corner.
 $15888345020710
@@ -1091,8 +1091,8 @@ $80788685813993 ロボット制御
 
 === levels/saving_gracefully ===
 
-$14295883660596 値
-$14950983012226 保存
+$14295883660596 VALUE
+$14950983012226 SAVE
 $14837033157870 ACTION
 $12474728041023
 Delay Lineでは、1ティック分の値しか保存できません。しかし,より長い時間値を保存できるコンポーネントが便利な場合もあります.
@@ -1129,7 +1129,7 @@ $16954408093587 私たちの船では,迫ってくる小惑星を当然レーザ
 $16336401898647 テスト 1/2
 $13880985462901 あるコンポーネントの入力がそれ自身の出力に依存するような回路を作成する
 $18010308863615
-"circular dependency"を作成する. これは,あるコンポーネントの入力がそれ自身の出力に依存している回路です. 循環型依存関係の状況では,まず入力を決定する必要があり,それが出力に依存するというように,コンポーネントの出力を決定することはできません(それゆえ"循環型"なのです).
+"circular dependency" を作成する. これは,あるコンポーネントの入力がそれ自身の出力に依存している回路です. 循環型依存関係の状況では,まず入力を決定する必要があり,それが出力に依存するというように,コンポーネントの出力を決定することはできません(それゆえ"循環型"なのです).
 
 この状態は通常ほかのレベルでは許されませんが,このレベルではそれを作ることが目的なので,それがどういう状態かを理解した上で先に進みましょう.
 $13520037133129 生徒のためになっているのかどうかはわかりませんが,先生方には好評です.
@@ -1407,12 +1407,12 @@ $10794262854382
 Add if statements to your circuit. For the if statements, the 2 引数s are compared and if the condition is true, the counter is set to a jump address.
 	
 The previous instructions had the 4 bytes represent:
-[code][color=#87a8c8]オペコード, 引数_1, 引数_2, RESULT[/color][/code]
+[code][color=#87a8c8]オペコード, 引数1, 引数2, 結果[/color][/code]
 
 For if statements the bytes represent:
-[code][color=#87a8c8]オペコード, 引数_1, 引数_2, JUMP_ADDRESS[/color][/code]
+[code][color=#87a8c8]オペコード, 引数1, 引数2, ジャンプするアドレス[/color][/code]
 
-In addition to the previous オペコード, add:
+In addition to the previous opcode, add:
 [code][color=#87a8c8]32 IF_EQUAL
 33 IF_NOT_EQUAL
 34 IF_LESS
@@ -1422,22 +1422,22 @@ In addition to the previous オペコード, add:
 
 Use unsigned less / greater for the comparisons.
 
-Each オペコード does what their name implies. 例 the following jumps to byte 16 if REG0 is less than REG1: 
+Each opcode does what their name implies. 例 the following jumps to byte 16 if REG0 is less than REG1: 
 [code][color=#87a8c8]IF_LESS REG0 REG1 16[/color][/code]
 
-$18542005958715 Set the counter increment to 4
-$17133561664335 Congratulations, you finished the [color=#e49f44]LEG[/color] computer!
-$14973719570693 Add a counter to the circuit
-$12920514303805 Add 6 registers to the map
-$14309211963063 Create a new schematic and add a program with 4 byte output
+$18542005958715 カウンタのインクリメントを4に設定
+$17133561664335 おめでとうございます,あなたは [color=#e49f44]LEG[/color] コンピュータを完成させました!
+$14973719570693 回路にカウンタを追加する
+$12920514303805 6つのレジスタを追加する
+$14309211963063 新たな設計図を追加し,4バイト出力のプログラムを追加する
 $16826220977157
  [color=#b72d41][b]TIP:[/b][/color] 
  COPY is just ADD with the second
  引数 being 0
-$14690660047411 Implement the condition オペコード
-$30132649789584 Watched state {number} should point to the output
+$14690660047411 Implement the condition opcode
+$30132649789584 監視状態 {number} は出力を指す必要があります
 $18994998239232 I will show you some upgrades you can make, on the path to implementing function calls. But from here on the details are up to you, I wont tell you what オペコードs to use and so on.
-$12034111753799 Watched state {number} should point to the counter
+$12034111753799 監視状態 {number} はカウンタを指す必要があります
 
 
 === misc/change_schematic ===
@@ -1577,15 +1577,15 @@ $56916384895438 メインメニュー
 $17106892574116 回路にカウンタを追加する
 $20104629254326 引数 2
 $15754373587500 カウンタのインクリメントを4に設定
-$56024330661504 Watched state {watched_state} should point to a register or custom component with a register inside
+$56024330661504 監視状態 {watched_state} はレジスタもしくはレジスタを内部に含むカスタムコンポーネントを指す必要があります.
 $19099471819164
 The following are the set up steps that needs to be done in order to complete this level:
 		
 [b]1.[/b] Click the schematic icon ([b][i][/i][/b]) and create a new empty architecture.
-[b]2.[/b] Place a program block with 4 outputs.
-[b]3.[/b] Place a counter, set its increment to 4 and connect it to the program block.
-[b]4.[/b] Add 6 registers (or custom components with registers)
-[b]5.[/b] Click "Edit watched state" on the program component and connect registers to 0 to 5. Connect the counter to 6 and the output to 7.
+[b]2.[/b] 4出力のプログラムブロックを配置する.
+[b]3.[/b] カウンタを配置し,インクリメントを4に設定して,プログラムブロックに接続する.
+[b]4.[/b] 6つのレジスタを追加する (レジスタを含むカスタムコンポーネントも可)
+[b]5.[/b] プログラムコンポーネントの "監視状態の編集" をクリックし,0から5をレジスタに接続する.6はカウンタ,7は出力に接続する.
 
 $18860645759682
 The [color=#e49f44]LEG[/color] architecture is a computer that takes 4 bytes per tick from the program. 
